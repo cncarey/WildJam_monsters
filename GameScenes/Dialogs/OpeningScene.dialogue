@@ -1,0 +1,35 @@
+~ start
+
+#do walkIntoBar()
+#do wait(0.5)
+#do add_portrait("player", 0)
+Player : Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town
+Player : Have you seen it
+#do add_portrait("TownsPerson1", 4)
+Towns Person 1: Why do you want to find that old thing?
+Player: ...I could use the gold
+Towns Person 1: I guess I could tell you were some of it is, but you have to do something for me first.
+Player: Some of it...[wait=2] What am I suppose to do with some of it?
+Towns Person 1: Okay well I guess you can have none of it.
+#do TP1WalkAway
+Player: Wait. What do you need me to do?
+Towns Person 1: There's a Giant Crab at the bottom of the cavern that has been causing a lot of trouble in the area.
+Towns Person 1: If you get rid of them I can get you part of the map.
+- What's so bad about this crab
+#do enter town person 2
+	=>< TP2Enters
+	Towns Person 2 : It seems pretty harmless during the day...[wait=1]but night it thrashes about
+- Sure this shouldn't be too bad
+	=>< TP2Enters
+	Towns Person 2 : Not too bad...that thing is crazy. Expecially at night
+- This may have been way move then I want to sign up for
+	=>< TP2Enters
+	Towns Person 2 : Well take your ship and get out of here
+	=> END
+
+Player: I'll be back just you wait.
+=> END
+
+~ TP2Enters
+#do TP2WalksIn
+Towns Person 2: Well..

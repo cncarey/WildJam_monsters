@@ -1,0 +1,60 @@
+~ Find_Crab
+do pauseTimer()
+if Global.quests.Crab.QuestStarted == false
+	=> Pre_Quest
+else
+	=> Update_Quest
+
+~ Pre_Quest
+Crab: ...
+Player: 
+- Why are you terrorizing to town?
+	Crab: What are you talking about. What town?
+	Crab: I've been here in the swell all week.
+	=> Start_Quest
+- Are you okay?
+	Crab: No
+	=> Start_Quest
+- End the conversation 
+	do restartTimer()
+	=> END
+
+~ Start_Quest
+Crab: I was surfing a HUGE wave...maybe a bit too huge
+Crab: ...When I lost controll and landed up here.
+Crab: I dropped all my rubies and I need help finidng them
+Player: I can help you with that.
+Crab: Really. I'm missing 5 rubies throught the map.
+Player: So if I find your 5 rubies you'll head back to the sea
+Crab: Yeah. And can you please take me there after you find them. I can get back from the big flag
+set Global.quests.Crab.QuestStarted = true
+do startQuest(Global.quests.Crab.QuestItem, "Crab")
+do restartTimer()
+=> END
+
+~ Update_Quest
+if  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount 
+	Crab: You got all my rubies. Let's find the flag!
+elif Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount/2
+	Crab: Yeah we don't have to many more to find
+else
+	Crab: Let's find my rubies.
+do restartTimer()
+=> END!
+
+~ Start_Flag
+if Global.quests.Crab.QuestStarted == false
+	You don't have an active quest
+elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount 
+	=> Flag_Stop
+else
+	You don't have enough items to send crab back to the sea
+=> END
+
+~ Flag_Stop
+- Send Crab back to the sea
+	Crab: Thanks for helping me
+- Let Crab stay on the island
+	Crab: Are you sure I think all the town people will be mad if i stay
+- Come back later
+=> END!

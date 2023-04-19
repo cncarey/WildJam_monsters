@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxnpb7iv5b3q4"]
+
+[ext_resource type="Script" path="res://GameScenes/HUD/hud.gd" id="1_21n4f"]
+[ext_resource type="Texture2D" uid="uid://b4ppv4ormedlc" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Yellow Board/16.png" id="2_1acro"]
+[ext_resource type="Texture2D" uid="uid://cjdvnkwjrnmcx" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Small Banner/4.png" id="4_vw321"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_21n4f")
+
+[node name="DayCount" type="Label" parent="."]
+z_index = 1
+offset_left = 56.0
+offset_top = 40.0
+offset_right = 124.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 11
+text = "0"
+
+[node name="CurQuestName" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -166.0
+offset_top = 7.0
+offset_right = -5.0
+offset_bottom = 33.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Find the Monster"
+horizontal_alignment = 2
+
+[node name="CurQuestInstuctions" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -239.0
+offset_top = 24.0
+offset_right = -3.0
+offset_bottom = 50.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+text = "Find the Crab down below"
+horizontal_alignment = 2
+
+[node name="TextureHolder" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 84.0
+offset_top = 11.0
+offset_right = 124.0
+offset_bottom = 51.0
+
+[node name="DayLabel" type="Label" parent="."]
+z_index = 1
+offset_left = 30.2327
+offset_top = 38.9251
+offset_right = 65.2327
+offset_bottom = 66.9251
+theme_override_font_sizes/font_size = 11
+text = "Day"
+
+[node name="CurQuestItemCount" type="Label" parent="."]
+z_index = 1
+offset_left = 117.0
+offset_top = 22.0
+offset_right = 176.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 11
+text = "0"
+
+[node name="DayHolder" type="NinePatchRect" parent="."]
+modulate = Color(1, 1, 1, 0.764706)
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 68.0
+texture = ExtResource("2_1acro")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="Banner" type="Sprite2D" parent="."]
+position = Vector2(144, 33.5)
+scale = Vector2(3.32812, 2.53125)
+texture = ExtResource("4_vw321")

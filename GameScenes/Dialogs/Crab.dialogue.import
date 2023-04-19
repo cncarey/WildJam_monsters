@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://b20u1mll2bavx"
+path="res://.godot/imported/Crab.dialogue-d30294bb23ca2104eba8a176e6cde241.tres"
+
+[deps]
+
+source_file="res://GameScenes/Dialogs/Crab.dialogue"
+dest_files=["res://.godot/imported/Crab.dialogue-d30294bb23ca2104eba8a176e6cde241.tres"]
+
+[params]
+

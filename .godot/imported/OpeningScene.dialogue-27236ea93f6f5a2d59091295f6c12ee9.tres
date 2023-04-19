@@ -1,0 +1,220 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5usoh"]
+
+[resource]
+script = ExtResource("1_5usoh")
+titles = {
+"TP2Enters": "35",
+"start": "6"
+}
+character_names = PackedStringArray("Player", "Towns Person 1", "Towns Person 2")
+first_title = "6"
+lines = {
+"1": {
+"next_id": "6",
+"text": "start",
+"type": "title"
+},
+"10": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "11",
+"text": "...I could use the gold",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...I could use the gold",
+"type": "dialogue"
+},
+"11": {
+"character": "Towns Person 1",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "12",
+"text": "I guess I could tell you were some of it is, but you have to do something for me first.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I guess I could tell you were some of it is, but you have to do something for me first.",
+"type": "dialogue"
+},
+"12": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "13",
+"text": "Some of it...[wait=2] What am I suppose to do with some of it?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Some of it...[wait=2] What am I suppose to do with some of it?",
+"type": "dialogue"
+},
+"13": {
+"character": "Towns Person 1",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "15",
+"text": "Okay well I guess you can have none of it.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Okay well I guess you can have none of it.",
+"type": "dialogue"
+},
+"15": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "16",
+"text": "Wait. What do you need me to do?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Wait. What do you need me to do?",
+"type": "dialogue"
+},
+"16": {
+"character": "Towns Person 1",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "17",
+"text": "There's a Giant Crab at the bottom of the cavern that has been causing a lot of trouble in the area.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There's a Giant Crab at the bottom of the cavern that has been causing a lot of trouble in the area.",
+"type": "dialogue"
+},
+"17": {
+"character": "Towns Person 1",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "18",
+"text": "If you get rid of them I can get you part of the map.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "If you get rid of them I can get you part of the map.",
+"type": "dialogue"
+},
+"18": {
+"next_id": "20",
+"next_id_after": "30",
+"responses": PackedStringArray("18", "22", "25"),
+"text": "What's so bad about this crab",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What's so bad about this crab",
+"type": "response"
+},
+"20": {
+"is_snippet": true,
+"next_id": "35",
+"next_id_after": "21",
+"parent_id": "18",
+"type": "goto"
+},
+"21": {
+"character": "Towns Person 2",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "30",
+"parent_id": "18",
+"text": "It seems pretty harmless during the day...[wait=1]but night it thrashes about",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "It seems pretty harmless during the day...[wait=1]but night it thrashes about",
+"type": "dialogue"
+},
+"22": {
+"next_id": "23",
+"next_id_after": "30",
+"text": "Sure this shouldn't be too bad",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sure this shouldn't be too bad",
+"type": "response"
+},
+"23": {
+"is_snippet": true,
+"next_id": "35",
+"next_id_after": "24",
+"parent_id": "22",
+"type": "goto"
+},
+"24": {
+"character": "Towns Person 2",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "30",
+"parent_id": "22",
+"text": "Not too bad...that thing is crazy. Expecially at night",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Not too bad...that thing is crazy. Expecially at night",
+"type": "dialogue"
+},
+"25": {
+"next_id": "26",
+"next_id_after": "30",
+"text": "This may have been way move then I want to sign up for",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "This may have been way move then I want to sign up for",
+"type": "response"
+},
+"26": {
+"is_snippet": true,
+"next_id": "35",
+"next_id_after": "27",
+"parent_id": "25",
+"type": "goto"
+},
+"27": {
+"character": "Towns Person 2",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "28",
+"parent_id": "25",
+"text": "Well take your ship and get out of here",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well take your ship and get out of here",
+"type": "dialogue"
+},
+"28": {
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "25",
+"type": "goto"
+},
+"30": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "31",
+"text": "I'll be back just you wait.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'll be back just you wait.",
+"type": "dialogue"
+},
+"31": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"33": {
+"next_id": "35",
+"text": "TP2Enters",
+"type": "title"
+},
+"35": {
+"character": "Towns Person 2",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "",
+"text": "Well..",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well..",
+"type": "dialogue"
+},
+"6": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "7",
+"text": "Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town",
+"type": "dialogue"
+},
+"7": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"text": "Have you seen it",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Have you seen it",
+"type": "dialogue"
+},
+"9": {
+"character": "Towns Person 1",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "10",
+"text": "Why do you want to find that old thing?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Why do you want to find that old thing?",
+"type": "dialogue"
+}
+}
+metadata/dialogue_manager_version = "2.15.2"

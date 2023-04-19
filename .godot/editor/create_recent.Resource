@@ -1,0 +1,2 @@
+DialogueResource
+AnimatedTexture

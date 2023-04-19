@@ -1,0 +1,28 @@
+[gd_resource type="AnimatedTexture" load_steps=9 format=3 uid="uid://v0kuqutvh8bo"]
+
+[ext_resource type="Texture2D" uid="uid://8w1uptasy1tb" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/01.png" id="1_15med"]
+[ext_resource type="Texture2D" uid="uid://bu3uhxtuv37ne" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/02.png" id="2_esbed"]
+[ext_resource type="Texture2D" uid="uid://dggbeq3bhpl1p" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/03.png" id="3_gyw1r"]
+[ext_resource type="Texture2D" uid="uid://cy6048tofcmje" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/04.png" id="4_eqwh4"]
+[ext_resource type="Texture2D" uid="uid://borg0ky3sft58" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/05.png" id="5_2kas5"]
+[ext_resource type="Texture2D" uid="uid://df5xojd2cqy2" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/06.png" id="6_cqy0w"]
+[ext_resource type="Texture2D" uid="uid://2a53i5ne68k0" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/07.png" id="7_c435w"]
+[ext_resource type="Texture2D" uid="uid://dsosn543vtdmy" path="res://Assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/08.png" id="8_ljurb"]
+
+[resource]
+frames = 8
+frame_0/texture = ExtResource("1_15med")
+frame_1/texture = ExtResource("2_esbed")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_gyw1r")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_eqwh4")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_2kas5")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6_cqy0w")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("7_c435w")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("8_ljurb")
+frame_7/duration = 1.0

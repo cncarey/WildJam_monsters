@@ -1,0 +1,146 @@
+[gd_scene load_steps=23 format=3 uid="uid://cxpm24gal0ien"]
+
+[ext_resource type="Script" path="res://GameScenes/CutScenes/OpeningScene.gd" id="1_ob55m"]
+[ext_resource type="Resource" uid="uid://df0k34mg4ks74" path="res://GameScenes/Dialogs/OpeningScene.dialogue" id="2_bo3k3"]
+[ext_resource type="Texture2D" uid="uid://t4pfbekufyr4" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="3_i88q4"]
+[ext_resource type="Texture2D" uid="uid://dfepjygckoxt8" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="4_jpa2v"]
+[ext_resource type="Texture2D" uid="uid://dbts5peacbp23" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="5_stnx5"]
+[ext_resource type="Texture2D" uid="uid://0gf2hxtkcwc8" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="6_iklai"]
+[ext_resource type="Texture2D" uid="uid://d0c0me3epuebn" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="7_tc1rh"]
+[ext_resource type="Texture2D" uid="uid://82sjw7mqh2mm" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/19.png" id="8_x11e1"]
+[ext_resource type="Texture2D" uid="uid://u773j87kjsvy" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/20.png" id="9_hp356"]
+[ext_resource type="Texture2D" uid="uid://cfq43dfnqebwm" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/21.png" id="10_8wjcf"]
+[ext_resource type="Texture2D" uid="uid://vqt1p0aj38jf" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/22.png" id="11_6y7yt"]
+[ext_resource type="Texture2D" uid="uid://c14ssgfbygs46" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/23.png" id="12_kjg5p"]
+[ext_resource type="Texture2D" uid="uid://cm1j3wlwlo4lv" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/24.png" id="13_dx6fh"]
+[ext_resource type="Texture2D" uid="uid://ct2wkueem4mbf" path="res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/25.png" id="14_fd0oe"]
+[ext_resource type="Texture2D" uid="uid://jsrnp55bvdb0" path="res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/10.png" id="15_dhhy2"]
+[ext_resource type="Texture2D" uid="uid://8bw84gp1n5mn" path="res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/11.png" id="16_3s1o0"]
+[ext_resource type="Texture2D" uid="uid://djc2l6fh82w7y" path="res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/12.png" id="17_tl45d"]
+[ext_resource type="Texture2D" uid="uid://bs0d145eul5qc" path="res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/13.png" id="18_yeyg2"]
+[ext_resource type="Texture2D" uid="uid://cqlwek0swumnt" path="res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/14.png" id="19_k1tdf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rdibt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_i88q4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jpa2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_stnx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iklai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tc1rh")
+}],
+"loop": true,
+"name": &"Idless",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0xmf3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_x11e1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hp356")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8wjcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6y7yt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kjg5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dx6fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_fd0oe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dx6fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kjg5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6y7yt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8wjcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hp356")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_x11e1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jjs8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_dhhy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3s1o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tl45d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_yeyg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_k1tdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tl45d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3s1o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dhhy2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="OpeningScene" type="Node2D"]
+position = Vector2(472, 142)
+script = ExtResource("1_ob55m")
+dialogueResourse = ExtResource("2_bo3k3")
+
+[node name="Player" type="AnimatedSprite2D" parent="."]
+position = Vector2(-18, -5)
+scale = Vector2(1.79688, 2.2)
+sprite_frames = SubResource("SpriteFrames_rdibt")
+animation = &"Idless"
+frame_progress = 0.395924
+
+[node name="TP1" type="AnimatedSprite2D" parent="."]
+position = Vector2(72, -9)
+sprite_frames = SubResource("SpriteFrames_0xmf3")
+animation = &"Idle"
+frame_progress = 0.512945
+
+[node name="TP2" type="AnimatedSprite2D" parent="."]
+position = Vector2(-113, -9)
+sprite_frames = SubResource("SpriteFrames_7jjs8")
+frame_progress = 0.685769
