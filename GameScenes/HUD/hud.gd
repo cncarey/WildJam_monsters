@@ -18,16 +18,19 @@ func _ready():
 	pass
 
 #TODO load up the sprite
-func updateItem(name: StringName):
+func updateHUDQuest():
 	var curQuest = Global.quests[Global.currentQuest]
-	Banner.visible = true
-	CurQuestItemCount.visible = true
 	
-	match curQuest.QuestItem:
-		"Red Diamond" :
-			itemPic.texture = RedDiamond
-		"Blue Diamond":
-			itemPic.texture = BlueDiamond
+	if "QuestItem" in curQuest:
+		Banner.visible = true
+		CurQuestItemCount.visible = true
+		CurQuestItemCount.text = str(0)
+		
+		match curQuest.QuestItem:
+			"Red Diamond" :
+				itemPic.texture = RedDiamond
+			"Blue Diamond":
+				itemPic.texture = BlueDiamond
 		
 	QuestInstructions.text =  curQuest.QuestInstructions
 	QuestName.text = curQuest.QuestName
@@ -37,3 +40,5 @@ func updateItemCount(score):
 	
 func updateDayCount(day):
 	DayCount.text = str(day)
+	
+	

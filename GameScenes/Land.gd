@@ -7,21 +7,30 @@ var redDiamond = preload("res://GameScenes/Objects/Collectables/RedDiamond.tscn"
 @onready var HUDDayNight = $HUD/DayAndNight
 @onready var questTimer = $CurQuestTimer
 @onready var pauseMenu = $PauseMenu
+@onready var tutorial = $Tutorial
 
 func _ready():
+	if(Global.currentQuest == "Quest1" || Global.currentQuest == "Crab"):
+		tutorial.visible = true
+	else:
+		tutorial.visible = false
+	
+	#get the current quest from globals and scyn the HUD
+	var curQuest = Global.quests[Global.currentQuest]
+	if(curQuest && "MaxDays" in curQuest):
+		var questTime = (HUDDayNight.LenghtOfDay + HUDDayNight.LenghtOfNight) * curQuest.MaxDays
+		questTimer.start(questTime)
+		pass
+	HUD.updateHUDQuest()
 	pass
 
 func startQuest(type : StringName, questName: StringName):
 	#TODO randomly pick the number and which of points to use based on the difficulty set
 	#TODO pass in which collectable the monster is requiring us to find
 	#TODO return the number of easy items and keyed items so the monster can tell us in the chat
+	Global.previousQuest = Global.currentQuest
 	Global.currentQuest = questName
-	
-	var curQuest = Global.quests[Global.currentQuest]
-	if(curQuest):
-		var questTime = (HUDDayNight.LenghtOfDay + HUDDayNight.LenghtOfNight) * curQuest.MaxDays
-		questTimer.start(questTime)
-		pass
+	HUD.updateHUDQuest()
 	
 	for p in easyCollectablePoints.get_children():
 		match type:
@@ -34,7 +43,6 @@ func startQuest(type : StringName, questName: StringName):
 	pass
 
 func spawnCollectable(spawn, parent):
-	HUD.updateItem(spawn.collectionType)
 	spawn.position = parent.position
 	add_child(spawn)
 	spawn.collection.collected.connect(onItemCollected)
@@ -59,7 +67,6 @@ func onItemCollected(itemCollected):
 			curQuest.CurrQuestItemCount += 1
 			pass
 		
-		HUD.updateItem(itemCollected.collectionType)
 		HUD.updateItemCount(Global.collectables[itemCollected.collectionType])
 		
 		itemCollected.removing = true
@@ -77,3 +84,6 @@ func pauseTimer():
 	
 func restartTimer():
 	HUDDayNight.restartTimer()
+
+func toCutScene():
+	get_tree().change_scene_to_file("res://GameScenes/CutScenes/OpeningScene.tscn")

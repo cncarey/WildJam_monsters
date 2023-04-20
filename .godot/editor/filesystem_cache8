@@ -1,5 +1,5 @@
 b4bb536c7fbe646fec36344f2ea47b2f
-::res://::1681876851
+::res://::1681963420
 icon.svg::CompressedTexture2D::1150606008245948866::1681521490::1681521506::1::::<><>::
 ::res://addons/::1681787781
 ::res://addons/dialogue_manager/::1681788219
@@ -54,7 +54,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 ::res://Assets/Pirate Bomb/Aseprite Files/::1681878468
 ::res://Assets/Pirate Bomb/Sprites/::1681878469
 ::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/::1570817586
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/::1681878626
 1.png::CompressedTexture2D::6477783134844370921::1570817556::1681878626::1::::<><>::
 2.png::CompressedTexture2D::3798454281725577494::1570817556::1681878626::1::::<><>::
 3.png::CompressedTexture2D::6226874923533425607::1570817558::1681878626::1::::<><>::
@@ -81,7 +81,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 24.png::CompressedTexture2D::3223305013865096242::1570817558::1681878626::1::::<><>::
 25.png::CompressedTexture2D::2973040697386792418::1570817558::1681878626::1::::<><>::
 26.png::CompressedTexture2D::6640333356595274183::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/2-Run/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/2-Run/::1681878626
 1.png::CompressedTexture2D::5804697602161483827::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::8874121599628695233::1570817558::1681878626::1::::<><>::
 3.png::CompressedTexture2D::865698303361255119::1570817558::1681878626::1::::<><>::
@@ -96,21 +96,21 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 12.png::CompressedTexture2D::1432499778305374235::1570817558::1681878626::1::::<><>::
 13.png::CompressedTexture2D::2679756740542097246::1570817558::1681878626::1::::<><>::
 14.png::CompressedTexture2D::2098338384959897865::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/3-Jump Anticipation/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/3-Jump Anticipation/::1681878626
 1.png::CompressedTexture2D::2138094190958391976::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/4-Jump/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/4-Jump/::1681878626
 1.png::CompressedTexture2D::5647556059233178514::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::2666136015519634411::1570817558::1681878626::1::::<><>::
 3.png::CompressedTexture2D::6700823514786221055::1570817558::1681878626::1::::<><>::
 4.png::CompressedTexture2D::3275161607216691885::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/5-Fall/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/5-Fall/::1681878626
 1.png::CompressedTexture2D::5019415674661484940::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::5825303653960092444::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/6-Ground/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/6-Ground/::1681878626
 1.png::CompressedTexture2D::6043776496666578663::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::5974749968677512011::1570817558::1681878626::1::::<><>::
 3.png::CompressedTexture2D::8837169819214016166::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/7-Hit/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/7-Hit/::1681878626
 1.png::CompressedTexture2D::2147138575772551114::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::3889363768633435131::1570817558::1681878626::1::::<><>::
 3.png::CompressedTexture2D::6386092478148882875::1570817558::1681878626::1::::<><>::
@@ -119,19 +119,19 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::7333151248091370929::1570817558::1681878626::1::::<><>::
 7.png::CompressedTexture2D::7364306426544868986::1570817558::1681878626::1::::<><>::
 8.png::CompressedTexture2D::3054592632526359083::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/8-Dead Hit/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/8-Dead Hit/::1681878626
 1.png::CompressedTexture2D::2157730453325634340::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::1325167041179062592::1570817558::1681878626::1::::<><>::
 3.png::CompressedTexture2D::3780426432280704361::1570817558::1681878626::1::::<><>::
 4.png::CompressedTexture2D::8390310322007647443::1570817558::1681878626::1::::<><>::
 5.png::CompressedTexture2D::1816949216147918632::1570817558::1681878626::1::::<><>::
 6.png::CompressedTexture2D::3958744201610743693::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/9-Dead Ground/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/9-Dead Ground/::1681878626
 1.png::CompressedTexture2D::3550929667411405598::1570817558::1681878626::1::::<><>::
 2.png::CompressedTexture2D::1046448069092303105::1570817558::1681878626::1::::<><>::
 3.png::CompressedTexture2D::8401900175370830354::1570817558::1681878626::1::::<><>::
 4.png::CompressedTexture2D::8869443417243591442::1570817558::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/10-Door In/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/10-Door In/::1681878626
 1.png::CompressedTexture2D::3170535436135825719::1570817556::1681878626::1::::<><>::
 2.png::CompressedTexture2D::7873383171238462809::1570817556::1681878626::1::::<><>::
 3.png::CompressedTexture2D::9178190039852218061::1570817556::1681878626::1::::<><>::
@@ -148,7 +148,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 14.png::CompressedTexture2D::6922846599468132196::1570817556::1681878626::1::::<><>::
 15.png::CompressedTexture2D::1221637837172759091::1570817556::1681878626::1::::<><>::
 16.png::CompressedTexture2D::6325163389768641805::1570817556::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/11-Door Out/::1570817586
+::res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/11-Door Out/::1681878626
 1.png::CompressedTexture2D::356740885952635257::1570817556::1681878626::1::::<><>::
 2.png::CompressedTexture2D::3261230914420910995::1570817556::1681878626::1::::<><>::
 3.png::CompressedTexture2D::1372039934424902075::1570817556::1681878626::1::::<><>::
@@ -166,7 +166,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 15.png::CompressedTexture2D::4203603190201120663::1570817556::1681878625::1::::<><>::
 16.png::CompressedTexture2D::9174507102354366302::1570817556::1681878625::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/::1570817588
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/1-Idle/::1681878625
 1.png::CompressedTexture2D::2322037785529443049::1570817558::1681878625::1::::<><>::
 2.png::CompressedTexture2D::2418398582818875251::1570817558::1681878625::1::::<><>::
 3.png::CompressedTexture2D::954085040728168551::1570817558::1681878625::1::::<><>::
@@ -201,7 +201,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 32.png::CompressedTexture2D::185792058373261863::1570817560::1681878625::1::::<><>::
 33.png::CompressedTexture2D::3901625930517753280::1570817560::1681878625::1::::<><>::
 34.png::CompressedTexture2D::4281698762136700525::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/2-Run/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/2-Run/::1681878625
 1.png::CompressedTexture2D::4664964404899029670::1570817560::1681878625::1::::<><>::
 2.png::CompressedTexture2D::8509712406861663227::1570817560::1681878625::1::::<><>::
 3.png::CompressedTexture2D::3165661108849399792::1570817560::1681878625::1::::<><>::
@@ -216,21 +216,21 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 12.png::CompressedTexture2D::3135687022275780705::1570817560::1681878625::1::::<><>::
 13.png::CompressedTexture2D::9063756626894475245::1570817560::1681878625::1::::<><>::
 14.png::CompressedTexture2D::4404332604060843926::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/3-Jump Anticipation/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/3-Jump Anticipation/::1681878625
 1.png::CompressedTexture2D::8010428424056774863::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/4-Jump/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/4-Jump/::1681878625
 1.png::CompressedTexture2D::9084643004171981309::1570817560::1681878625::1::::<><>::
 2.png::CompressedTexture2D::2488280709814101681::1570817560::1681878625::1::::<><>::
 3.png::CompressedTexture2D::5691428691832885508::1570817560::1681878625::1::::<><>::
 4.png::CompressedTexture2D::6065689765057535165::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/5-Fall/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/5-Fall/::1681878626
 1.png::CompressedTexture2D::6494550626600858531::1570817560::1681878626::1::::<><>::
 2.png::CompressedTexture2D::5195558893230339154::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/6-Ground/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/6-Ground/::1681878626
 1.png::CompressedTexture2D::5347952788316571178::1570817560::1681878626::1::::<><>::
 2.png::CompressedTexture2D::7334869154988346443::1570817560::1681878625::1::::<><>::
 3.png::CompressedTexture2D::7312093381511768379::1570817560::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/7-Attack/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/7-Attack/::1681878626
 1.png::CompressedTexture2D::3533268215330534909::1570817560::1681878626::1::::<><>::
 2.png::CompressedTexture2D::9086806239106935434::1570817560::1681878626::1::::<><>::
 3.png::CompressedTexture2D::2133727862565013523::1570817560::1681878626::1::::<><>::
@@ -243,7 +243,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 10.png::CompressedTexture2D::2411988483336959759::1570817560::1681878626::1::::<><>::
 11.png::CompressedTexture2D::9009256202087123466::1570817560::1681878626::1::::<><>::
 12.png::CompressedTexture2D::4688003713149254943::1570817560::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/8-Hit/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/8-Hit/::1681878626
 1.png::CompressedTexture2D::310081520374225151::1570817560::1681878626::1::::<><>::
 2.png::CompressedTexture2D::49660173047625142::1570817560::1681878625::1::::<><>::
 3.png::CompressedTexture2D::450034338378800018::1570817560::1681878625::1::::<><>::
@@ -252,20 +252,20 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::3483522439210004375::1570817560::1681878625::1::::<><>::
 7.png::CompressedTexture2D::491544311755799803::1570817560::1681878625::1::::<><>::
 8.png::CompressedTexture2D::542090447825962817::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/9-Dead Hit/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/9-Dead Hit/::1681878625
 1.png::CompressedTexture2D::6428603241855319666::1570817560::1681878625::1::::<><>::
 2.png::CompressedTexture2D::7606079524725065174::1570817560::1681878625::1::::<><>::
 3.png::CompressedTexture2D::8371745495573527293::1570817560::1681878625::1::::<><>::
 4.png::CompressedTexture2D::116947958034994286::1570817560::1681878625::1::::<><>::
 5.png::CompressedTexture2D::5072492953641575721::1570817560::1681878625::1::::<><>::
 6.png::CompressedTexture2D::8940822772545285046::1570817560::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/10-Dead Ground/::1570817588
+::res://Assets/Pirate Bomb/Sprites/2-Enemy-Bald Pirate/10-Dead Ground/::1681878625
 1.png::CompressedTexture2D::7417210742271073257::1570817558::1681878625::1::::<><>::
 2.png::CompressedTexture2D::8961352784056999098::1570817558::1681878625::1::::<><>::
 3.png::CompressedTexture2D::3124462037253062491::1570817558::1681878625::1::::<><>::
 4.png::CompressedTexture2D::4706159164812295584::1570817558::1681878625::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/::1570817588
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/1-Idle/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/1-Idle/::1681878627
 1.png::CompressedTexture2D::4895101445950032101::1570817560::1681878625::1::::<><>::
 2.png::CompressedTexture2D::491331928425553554::1570817560::1681878625::1::::<><>::
 3.png::CompressedTexture2D::7661126888802476384::1570817562::1681878625::1::::<><>::
@@ -302,7 +302,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 34.png::CompressedTexture2D::4090437415530473232::1570817562::1681878627::1::::<><>::
 35.png::CompressedTexture2D::2621155658646766805::1570817562::1681878627::1::::<><>::
 36.png::CompressedTexture2D::8881327817262219129::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/2-Run/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/2-Run/::1681878627
 1.png::CompressedTexture2D::107124765205358985::1570817562::1681878627::1::::<><>::
 2.png::CompressedTexture2D::4745595502738705837::1570817562::1681878627::1::::<><>::
 3.png::CompressedTexture2D::2743072392669872304::1570817562::1681878627::1::::<><>::
@@ -315,21 +315,21 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 10.png::CompressedTexture2D::2570010353419445043::1570817562::1681878627::1::::<><>::
 11.png::CompressedTexture2D::1757257677049486399::1570817562::1681878627::1::::<><>::
 12.png::CompressedTexture2D::4737330866788691801::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/3-Jump Anticipation/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/3-Jump Anticipation/::1681878627
 1.png::CompressedTexture2D::5628276499314380909::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/4-Jump/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/4-Jump/::1681878627
 1.png::CompressedTexture2D::7746757133693964784::1570817562::1681878627::1::::<><>::
 2.png::CompressedTexture2D::7165525280166852944::1570817562::1681878627::1::::<><>::
 3.png::CompressedTexture2D::6372084644827129281::1570817562::1681878627::1::::<><>::
 4.png::CompressedTexture2D::2514661693560764540::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/5-Fall/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/5-Fall/::1681878627
 1.png::CompressedTexture2D::6414962898187237479::1570817562::1681878627::1::::<><>::
 2.png::CompressedTexture2D::9193471367353151641::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/6-Ground/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/6-Ground/::1681878627
 1.png::CompressedTexture2D::8046876078272004933::1570817562::1681878627::1::::<><>::
 2.png::CompressedTexture2D::7470139210757833183::1570817562::1681878627::1::::<><>::
 3.png::CompressedTexture2D::7399051174856606585::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/7-Attack/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/7-Attack/::1681878628
 1.png::CompressedTexture2D::8820048100131350143::1570817562::1681878627::1::::<><>::
 2.png::CompressedTexture2D::5122795828063137107::1570817562::1681878627::1::::<><>::
 3.png::CompressedTexture2D::6949795201850815921::1570817562::1681878627::1::::<><>::
@@ -341,7 +341,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 9.png::CompressedTexture2D::494445483407098717::1570817562::1681878627::1::::<><>::
 10.png::CompressedTexture2D::4171384572253347320::1570817562::1681878627::1::::<><>::
 11.png::CompressedTexture2D::7270654958149182394::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/8-Blow the wick/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/8-Blow the wick/::1681878628
 1.png::CompressedTexture2D::109345834287748241::1570817562::1681878628::1::::<><>::
 2.png::CompressedTexture2D::2323199213922504576::1570817562::1681878628::1::::<><>::
 3.png::CompressedTexture2D::6843561172649541787::1570817562::1681878628::1::::<><>::
@@ -353,7 +353,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 9.png::CompressedTexture2D::3314426570523366014::1570817562::1681878628::1::::<><>::
 10.png::CompressedTexture2D::6519629443223825254::1570817562::1681878628::1::::<><>::
 11.png::CompressedTexture2D::1769830602462031366::1570817562::1681878628::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/9-Hit/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/9-Hit/::1681878628
 1.png::CompressedTexture2D::8590942196976782127::1570817562::1681878628::1::::<><>::
 2.png::CompressedTexture2D::1622842364872964623::1570817562::1681878627::1::::<><>::
 3.png::CompressedTexture2D::4296302744092863776::1570817562::1681878627::1::::<><>::
@@ -362,20 +362,20 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::526775659514877210::1570817562::1681878627::1::::<><>::
 7.png::CompressedTexture2D::8616020859251935145::1570817562::1681878627::1::::<><>::
 8.png::CompressedTexture2D::4537445869186383190::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/10-Dead Hit/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/10-Dead Hit/::1681878627
 1.png::CompressedTexture2D::6728367806253521128::1570817560::1681878627::1::::<><>::
 2.png::CompressedTexture2D::3152769439021258936::1570817560::1681878627::1::::<><>::
 3.png::CompressedTexture2D::984584790902182871::1570817560::1681878627::1::::<><>::
 4.png::CompressedTexture2D::2779556958876241404::1570817560::1681878627::1::::<><>::
 5.png::CompressedTexture2D::6177346556245876668::1570817560::1681878627::1::::<><>::
 6.png::CompressedTexture2D::4334370481100136288::1570817560::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/11-Dead Ground/::1570817588
+::res://Assets/Pirate Bomb/Sprites/3-Enemy-Cucumber/11-Dead Ground/::1681878627
 1.png::CompressedTexture2D::5452420470247666835::1570817560::1681878627::1::::<><>::
 2.png::CompressedTexture2D::6368950530532326125::1570817560::1681878627::1::::<><>::
 3.png::CompressedTexture2D::2003457930566616678::1570817560::1681878627::1::::<><>::
 4.png::CompressedTexture2D::1789663632753946986::1570817560::1681878627::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/::1570817590
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/::1570817588
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/1-Idle/::1681878627
 1.png::CompressedTexture2D::3333326191211963419::1570817564::1681878627::1::::<><>::
 2.png::CompressedTexture2D::2652679542973894212::1570817564::1681878627::1::::<><>::
 3.png::CompressedTexture2D::5927163473783421066::1570817564::1681878627::1::::<><>::
@@ -414,7 +414,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 36.png::CompressedTexture2D::4614038702331703932::1570817564::1681878626::1::::<><>::
 37.png::CompressedTexture2D::8340321155905204983::1570817564::1681878626::1::::<><>::
 38.png::CompressedTexture2D::5860905532492672774::1570817564::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/2-Run/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/2-Run/::1681878626
 1.png::CompressedTexture2D::4637533759559356741::1570817564::1681878626::1::::<><>::
 2.png::CompressedTexture2D::3792093720159217351::1570817564::1681878626::1::::<><>::
 3.png::CompressedTexture2D::7817110516575401703::1570817564::1681878626::1::::<><>::
@@ -431,21 +431,21 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 14.png::CompressedTexture2D::5559090906579680369::1570817564::1681878626::1::::<><>::
 15.png::CompressedTexture2D::1646738380847197197::1570817564::1681878626::1::::<><>::
 16.png::CompressedTexture2D::1168549829142559779::1570817564::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/3-Jump Anticipation/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/3-Jump Anticipation/::1681878626
 1.png::CompressedTexture2D::2886307691890305753::1570817566::1681878626::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/4-Jump/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/4-Jump/::1681878627
 1.png::CompressedTexture2D::6340538685053969143::1570817566::1681878626::1::::<><>::
 2.png::CompressedTexture2D::6467120708291107246::1570817566::1681878627::1::::<><>::
 3.png::CompressedTexture2D::6994969670443023330::1570817566::1681878627::1::::<><>::
 4.png::CompressedTexture2D::2623686945932012692::1570817566::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/5-Fall/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/5-Fall/::1681878627
 1.png::CompressedTexture2D::2340146418331502377::1570817566::1681878627::1::::<><>::
 2.png::CompressedTexture2D::5346361010287912096::1570817566::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/6-Ground/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/6-Ground/::1681878627
 1.png::CompressedTexture2D::7165686019544389874::1570817566::1681878627::1::::<><>::
 2.png::CompressedTexture2D::1081082744590063255::1570817566::1681878627::1::::<><>::
 3.png::CompressedTexture2D::756272567295003754::1570817566::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/7-Attack/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/7-Attack/::1681878627
 1.png::CompressedTexture2D::4491127977278420383::1570817566::1681878627::1::::<><>::
 2.png::CompressedTexture2D::2731179990849427340::1570817566::1681878627::1::::<><>::
 3.png::CompressedTexture2D::8215614609530666646::1570817566::1681878627::1::::<><>::
@@ -457,7 +457,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 9.png::CompressedTexture2D::4279655859055017128::1570817566::1681878627::1::::<><>::
 10.png::CompressedTexture2D::1336117003663171537::1570817566::1681878627::1::::<><>::
 11.png::CompressedTexture2D::621465943883572038::1570817566::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/8-Pick (Bomb)/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/8-Pick (Bomb)/::1681878627
 1.png::CompressedTexture2D::7666146924587899492::1570817566::1681878627::1::::<><>::
 2.png::CompressedTexture2D::6955632127623383982::1570817566::1681878627::1::::<><>::
 3.png::CompressedTexture2D::4785584393121280096::1570817566::1681878627::1::::<><>::
@@ -466,9 +466,9 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::3726738800038165726::1570817566::1681878627::1::::<><>::
 7.png::CompressedTexture2D::1953646875697902069::1570817566::1681878627::1::::<><>::
 8.png::CompressedTexture2D::1364252959695707904::1570817566::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/9-Idle (Bomb)/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/9-Idle (Bomb)/::1681878627
 1.png::CompressedTexture2D::7058899206538500748::1570817566::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/10-Run (Bomb)/::1570817588
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/10-Run (Bomb)/::1681878627
 1.png::CompressedTexture2D::2059334477821052221::1570817562::1681878627::1::::<><>::
 2.png::CompressedTexture2D::230511022162176595::1570817564::1681878627::1::::<><>::
 3.png::CompressedTexture2D::7854181757024775816::1570817564::1681878627::1::::<><>::
@@ -485,7 +485,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 14.png::CompressedTexture2D::9807467022612031::1570817562::1681878627::1::::<><>::
 15.png::CompressedTexture2D::9189655089307484178::1570817562::1681878627::1::::<><>::
 16.png::CompressedTexture2D::443735538797460503::1570817562::1681878627::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/11-Throw (Bomb)/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/11-Throw (Bomb)/::1681878627
 1.png::CompressedTexture2D::2675194480778862674::1570817564::1681878627::1::::<><>::
 2.png::CompressedTexture2D::5060939422485270610::1570817564::1681878627::1::::<><>::
 3.png::CompressedTexture2D::4679143179071729651::1570817564::1681878627::1::::<><>::
@@ -497,7 +497,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 9.png::CompressedTexture2D::5293236006737322342::1570817564::1681878623::1::::<><>::
 10.png::CompressedTexture2D::8929562531571143141::1570817564::1681878623::1::::<><>::
 11.png::CompressedTexture2D::3263642465453638912::1570817564::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/12-Hit/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/12-Hit/::1681878623
 1.png::CompressedTexture2D::4325792985196828250::1570817564::1681878623::1::::<><>::
 2.png::CompressedTexture2D::7355847624093110594::1570817564::1681878623::1::::<><>::
 3.png::CompressedTexture2D::2761920550075792434::1570817564::1681878623::1::::<><>::
@@ -506,20 +506,20 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::2040362726775724980::1570817564::1681878623::1::::<><>::
 7.png::CompressedTexture2D::9112215963994226022::1570817564::1681878623::1::::<><>::
 8.png::CompressedTexture2D::29760156334057718::1570817564::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/13-Dead Hit/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/13-Dead Hit/::1681878623
 1.png::CompressedTexture2D::2393599884677659226::1570817564::1681878623::1::::<><>::
 2.png::CompressedTexture2D::5800677589917947497::1570817564::1681878623::1::::<><>::
 3.png::CompressedTexture2D::1805577203423344379::1570817564::1681878623::1::::<><>::
 4.png::CompressedTexture2D::6519585542527067151::1570817564::1681878623::1::::<><>::
 5.png::CompressedTexture2D::6511848561094589750::1570817564::1681878623::1::::<><>::
 6.png::CompressedTexture2D::8862823999565025806::1570817564::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/14-Dead Ground/::1570817590
+::res://Assets/Pirate Bomb/Sprites/4-Enemy-Big Guy/14-Dead Ground/::1681878623
 1.png::CompressedTexture2D::8921163535799093743::1570817564::1681878623::1::::<><>::
 2.png::CompressedTexture2D::2072192557461899879::1570817564::1681878623::1::::<><>::
 3.png::CompressedTexture2D::1526930245936848245::1570817564::1681878623::1::::<><>::
 4.png::CompressedTexture2D::5941266268895968900::1570817564::1681878623::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/::1570817590
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/::1681878623
 1.png::CompressedTexture2D::7633998022467990207::1570817566::1681878623::1::::<><>::
 2.png::CompressedTexture2D::4489698782835006490::1570817566::1681878623::1::::<><>::
 3.png::CompressedTexture2D::1560890192843725955::1570817566::1681878623::1::::<><>::
@@ -552,7 +552,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 30.png::CompressedTexture2D::4979619459266817114::1570817566::1681878623::1::::<><>::
 31.png::CompressedTexture2D::4187412484819809645::1570817566::1681878623::1::::<><>::
 32.png::CompressedTexture2D::4323206555688193612::1570817566::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/2-Run/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/2-Run/::1681878624
 1.png::CompressedTexture2D::7600925324616553320::1570817566::1681878623::1::::<><>::
 2.png::CompressedTexture2D::7411521132587971479::1570817566::1681878623::1::::<><>::
 3.png::CompressedTexture2D::770686054546490923::1570817568::1681878623::1::::<><>::
@@ -567,21 +567,21 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 12.png::CompressedTexture2D::5759467172156620687::1570817566::1681878623::1::::<><>::
 13.png::CompressedTexture2D::5287876129914771451::1570817566::1681878624::1::::<><>::
 14.png::CompressedTexture2D::5631620649034675703::1570817566::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/3-Jump Anticipation/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/3-Jump Anticipation/::1681878624
 1.png::CompressedTexture2D::2981905323163234114::1570817568::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/4-Jump/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/4-Jump/::1681878624
 1.png::CompressedTexture2D::8603967588487055508::1570817568::1681878624::1::::<><>::
 2.png::CompressedTexture2D::8575417422592474270::1570817568::1681878624::1::::<><>::
 3.png::CompressedTexture2D::9156275243501687467::1570817568::1681878624::1::::<><>::
 4.png::CompressedTexture2D::4525069664476321893::1570817568::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/5-Fall/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/5-Fall/::1681878623
 1.png::CompressedTexture2D::4231335584251986358::1570817568::1681878623::1::::<><>::
 2.png::CompressedTexture2D::8274719402798955754::1570817568::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/6-Ground/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/6-Ground/::1681878623
 1.png::CompressedTexture2D::8620467037283233472::1570817568::1681878623::1::::<><>::
 2.png::CompressedTexture2D::8254391536857208565::1570817568::1681878623::1::::<><>::
 3.png::CompressedTexture2D::6883327805248118414::1570817568::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/7-Attack/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/7-Attack/::1681878623
 1.png::CompressedTexture2D::1585103236956670837::1570817568::1681878623::1::::<><>::
 2.png::CompressedTexture2D::594774567167910059::1570817568::1681878623::1::::<><>::
 3.png::CompressedTexture2D::7666372434767162570::1570817568::1681878623::1::::<><>::
@@ -589,7 +589,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 5.png::CompressedTexture2D::7753288638135258116::1570817568::1681878623::1::::<><>::
 6.png::CompressedTexture2D::2758312909525095240::1570817568::1681878623::1::::<><>::
 7.png::CompressedTexture2D::7710454827690468549::1570817568::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/8-Scare Run/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/8-Scare Run/::1681878623
 1.png::CompressedTexture2D::6370640934585330436::1570817568::1681878623::1::::<><>::
 2.png::CompressedTexture2D::5676064792609480759::1570817568::1681878623::1::::<><>::
 3.png::CompressedTexture2D::5442235413011040165::1570817568::1681878623::1::::<><>::
@@ -602,7 +602,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 10.png::CompressedTexture2D::9086638306197807790::1570817568::1681878623::1::::<><>::
 11.png::CompressedTexture2D::3412190351953575669::1570817568::1681878623::1::::<><>::
 12.png::CompressedTexture2D::4872420932875784775::1570817568::1681878622::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/9-Hit/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/9-Hit/::1681878623
 1.png::CompressedTexture2D::2297060106140466595::1570817568::1681878622::1::::<><>::
 2.png::CompressedTexture2D::5102528276823976151::1570817568::1681878622::1::::<><>::
 3.png::CompressedTexture2D::2005822603895211281::1570817568::1681878622::1::::<><>::
@@ -611,20 +611,20 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::6795708428706860538::1570817568::1681878623::1::::<><>::
 7.png::CompressedTexture2D::2374695223603455321::1570817568::1681878623::1::::<><>::
 8.png::CompressedTexture2D::4376917766423969281::1570817568::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/10-Dead Hit/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/10-Dead Hit/::1681878623
 1.png::CompressedTexture2D::6613979596176473387::1570817566::1681878623::1::::<><>::
 2.png::CompressedTexture2D::5408486514921315519::1570817566::1681878623::1::::<><>::
 3.png::CompressedTexture2D::5385806539062674446::1570817566::1681878623::1::::<><>::
 4.png::CompressedTexture2D::8067102967597728993::1570817566::1681878623::1::::<><>::
 5.png::CompressedTexture2D::3705047254678692268::1570817566::1681878623::1::::<><>::
 6.png::CompressedTexture2D::5439992621422186742::1570817566::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/11-Dead Ground/::1570817590
+::res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/11-Dead Ground/::1681878623
 1.png::CompressedTexture2D::3960112483788993075::1570817566::1681878623::1::::<><>::
 2.png::CompressedTexture2D::7996659674320403837::1570817566::1681878623::1::::<><>::
 3.png::CompressedTexture2D::7486279681590247680::1570817566::1681878623::1::::<><>::
 4.png::CompressedTexture2D::2634616104106931609::1570817566::1681878623::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/::1570817592
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/1-Idle/::1570817590
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/1-Idle/::1681878623
 1.png::CompressedTexture2D::749790978696938390::1570817568::1681878623::1::::<><>::
 2.png::CompressedTexture2D::2520605246592952826::1570817568::1681878623::1::::<><>::
 3.png::CompressedTexture2D::1962286530058636212::1570817568::1681878623::1::::<><>::
@@ -669,7 +669,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 42.png::CompressedTexture2D::1095251909015354264::1570817570::1681878623::1::::<><>::
 43.png::CompressedTexture2D::8396285648147874425::1570817570::1681878623::1::::<><>::
 44.png::CompressedTexture2D::7398202138623274284::1570817570::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/2-Run/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/2-Run/::1681878623
 1.png::CompressedTexture2D::9017906973746828077::1570817570::1681878623::1::::<><>::
 2.png::CompressedTexture2D::5634159983650624234::1570817570::1681878623::1::::<><>::
 3.png::CompressedTexture2D::2266825502039750507::1570817570::1681878623::1::::<><>::
@@ -684,21 +684,21 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 12.png::CompressedTexture2D::1631954057430355831::1570817570::1681878623::1::::<><>::
 13.png::CompressedTexture2D::4284845098721789000::1570817570::1681878623::1::::<><>::
 14.png::CompressedTexture2D::1359538675857240167::1570817570::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/3-Jump Anticipation/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/3-Jump Anticipation/::1681878623
 1.png::CompressedTexture2D::8926681419487764006::1570817570::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/4-Jump/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/4-Jump/::1681878623
 1.png::CompressedTexture2D::5341709658348548826::1570817570::1681878623::1::::<><>::
 2.png::CompressedTexture2D::7447562433273304974::1570817570::1681878623::1::::<><>::
 3.png::CompressedTexture2D::2985666814789211688::1570817570::1681878623::1::::<><>::
 4.png::CompressedTexture2D::6758823711785021728::1570817570::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/5-Fall/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/5-Fall/::1681878623
 1.png::CompressedTexture2D::3084127954564420962::1570817570::1681878623::1::::<><>::
 2.png::CompressedTexture2D::8362774631883609343::1570817570::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/6-Ground/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/6-Ground/::1681878623
 1.png::CompressedTexture2D::3479064224931294690::1570817570::1681878623::1::::<><>::
 2.png::CompressedTexture2D::4849519903843465124::1570817570::1681878623::1::::<><>::
 3.png::CompressedTexture2D::2194852063403063927::1570817570::1681878623::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/7-Attack/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/7-Attack/::1681878624
 1.png::CompressedTexture2D::2810655467154402212::1570817570::1681878623::1::::<><>::
 2.png::CompressedTexture2D::6015880665835257005::1570817570::1681878623::1::::<><>::
 3.png::CompressedTexture2D::8429435381126475752::1570817570::1681878623::1::::<><>::
@@ -710,7 +710,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 9.png::CompressedTexture2D::3209389846312574890::1570817570::1681878623::1::::<><>::
 10.png::CompressedTexture2D::8753959960085587127::1570817570::1681878623::1::::<><>::
 11.png::CompressedTexture2D::8207491498081667747::1570817570::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/8-Swalow (Bomb)/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/8-Swalow (Bomb)/::1681878624
 1.png::CompressedTexture2D::4327932463466513738::1570817570::1681878624::1::::<><>::
 2.png::CompressedTexture2D::3095708086508459247::1570817570::1681878624::1::::<><>::
 3.png::CompressedTexture2D::1280875527796243130::1570817570::1681878624::1::::<><>::
@@ -721,7 +721,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 8.png::CompressedTexture2D::3561007311185006543::1570817570::1681878624::1::::<><>::
 9.png::CompressedTexture2D::5321940885498169546::1570817570::1681878624::1::::<><>::
 10.png::CompressedTexture2D::507616205220500672::1570817570::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/9-Hit/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/9-Hit/::1681878624
 1.png::CompressedTexture2D::8831986067558468432::1570817570::1681878624::1::::<><>::
 2.png::CompressedTexture2D::8509510681662335903::1570817570::1681878624::1::::<><>::
 3.png::CompressedTexture2D::7177432021632484878::1570817570::1681878624::1::::<><>::
@@ -729,23 +729,23 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 5.png::CompressedTexture2D::8466873980054089643::1570817570::1681878624::1::::<><>::
 6.png::CompressedTexture2D::5527948527954718442::1570817570::1681878624::1::::<><>::
 7.png::CompressedTexture2D::3983607583408374721::1570817570::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/10-Dead Hit/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/10-Dead Hit/::1681878624
 1.png::CompressedTexture2D::6571519293411149647::1570817568::1681878624::1::::<><>::
 2.png::CompressedTexture2D::7249017464286698700::1570817568::1681878624::1::::<><>::
 3.png::CompressedTexture2D::1611668445513420211::1570817568::1681878624::1::::<><>::
 4.png::CompressedTexture2D::7091239982907231530::1570817568::1681878624::1::::<><>::
 5.png::CompressedTexture2D::8027803042492453831::1570817568::1681878624::1::::<><>::
 6.png::CompressedTexture2D::5842880419964241068::1570817568::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/11-Dead Ground/::1570817592
+::res://Assets/Pirate Bomb/Sprites/6-Enemy-Whale/11-Dead Ground/::1681878624
 1.png::CompressedTexture2D::3544792720075047604::1570817568::1681878624::1::::<><>::
 2.png::CompressedTexture2D::645795541432049410::1570817568::1681878624::1::::<><>::
 3.png::CompressedTexture2D::5048096398241864877::1570817568::1681878624::1::::<><>::
 4.png::CompressedTexture2D::1228112928992612634::1570817568::1681878624::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/::1570819398
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/::1570817592
-::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/1-Bomb Off/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/1-Bomb Off/::1681878624
 1.png::CompressedTexture2D::9053814350600099689::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/2-Bomb On/::1681878624
 1.png::CompressedTexture2D::2857874306579194629::1570817572::1681878624::1::::<><>::
 2.png::CompressedTexture2D::5299532225589066888::1570817572::1681878624::1::::<><>::
 3.png::CompressedTexture2D::189105248974825379::1570817572::1681878624::1::::<><>::
@@ -756,7 +756,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 8.png::CompressedTexture2D::8945589321508946703::1570817572::1681878624::1::::<><>::
 9.png::CompressedTexture2D::4659246714932376311::1570817572::1681878624::1::::<><>::
 10.png::CompressedTexture2D::8859514536263751856::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/3-Explotion/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/1-BOMB/3-Explotion/::1681878624
 1.png::CompressedTexture2D::7703349719648713733::1570817572::1681878624::1::::<><>::
 2.png::CompressedTexture2D::8776772614712782980::1570817572::1681878624::1::::<><>::
 3.png::CompressedTexture2D::4094790517037289491::1570817572::1681878624::1::::<><>::
@@ -767,22 +767,22 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 8.png::CompressedTexture2D::7793562984506179562::1570817572::1681878624::1::::<><>::
 9.png::CompressedTexture2D::1923631013285129071::1570817572::1681878624::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/::1570817592
-::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/1-Closed/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/1-Closed/::1681878624
 1.png::CompressedTexture2D::6372577835981998071::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/::1681878625
 1.png::CompressedTexture2D::4869536990600207345::1570817572::1681878625::1::::<><>::
 2.png::CompressedTexture2D::2537127837355003483::1570817572::1681878625::1::::<><>::
 3.png::CompressedTexture2D::7646534029536008037::1570817572::1681878625::1::::<><>::
 4.png::CompressedTexture2D::5121016496049476450::1570817572::1681878625::1::::<><>::
 5.png::CompressedTexture2D::7076966872138424526::1570817572::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/::1681878625
 1.png::CompressedTexture2D::3657778767456433897::1570817572::1681878625::1::::<><>::
 2.png::CompressedTexture2D::2454026247477533658::1570817572::1681878625::1::::<><>::
 3.png::CompressedTexture2D::508311348748683061::1570817572::1681878625::1::::<><>::
 4.png::CompressedTexture2D::7809793809424009302::1570817572::1681878625::1::::<><>::
 5.png::CompressedTexture2D::2886942861822071634::1570817572::1681878625::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/::1570817592
-::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/1-Charging Bar/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/1-Charging Bar/::1681878625
 1.png::CompressedTexture2D::7341672661739193706::1570817572::1681878625::1::::<><>::
 2.png::CompressedTexture2D::3190170689836780958::1570817572::1681878625::1::::<><>::
 3.png::CompressedTexture2D::6859394328361813295::1570817572::1681878625::1::::<><>::
@@ -794,29 +794,29 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 9.png::CompressedTexture2D::5824811182175639595::1570817572::1681878625::1::::<><>::
 10.png::CompressedTexture2D::8587828306103263178::1570817572::1681878625::1::::<><>::
 11.png::CompressedTexture2D::1070164978280423945::1570817572::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/2-Full (Intermitent)/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/2-Full (Intermitent)/::1681878625
 1.png::CompressedTexture2D::2693218359018041265::1570817572::1681878625::1::::<><>::
 2.png::CompressedTexture2D::4799527198620239571::1570817572::1681878625::1::::<><>::
 3.png::CompressedTexture2D::333624930341649723::1570817572::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/3-Closing/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/3-Bomb Bar/3-Closing/::1681878625
 1.png::CompressedTexture2D::3362889737008941875::1570817572::1681878625::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/4-Interrogation Dialog/::1570817592
-::res://Assets/Pirate Bomb/Sprites/7-Objects/4-Interrogation Dialog/1-Opening/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/4-Interrogation Dialog/1-Opening/::1681878624
 1.png::CompressedTexture2D::1018409851130292300::1570817572::1681878624::1::::<><>::
 2.png::CompressedTexture2D::4266646836831090521::1570817572::1681878624::1::::<><>::
 3.png::CompressedTexture2D::795416704985519422::1570817572::1681878624::1::::<><>::
 4.png::CompressedTexture2D::4242926996917437631::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/4-Interrogation Dialog/2-Closing/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/4-Interrogation Dialog/2-Closing/::1681878624
 1.png::CompressedTexture2D::7064610831146920466::1570817572::1681878624::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/5-Exclamation Dialog/::1570817592
-::res://Assets/Pirate Bomb/Sprites/7-Objects/5-Exclamation Dialog/1-Opening/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/5-Exclamation Dialog/1-Opening/::1681878624
 1.png::CompressedTexture2D::2162058806968517736::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::4015754022284917181::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::3698742501535754017::1570817574::1681878624::1::::<><>::
 4.png::CompressedTexture2D::5808180756387269842::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/5-Exclamation Dialog/2-Closing/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/5-Exclamation Dialog/2-Closing/::1681878624
 1.png::CompressedTexture2D::1779139900202282214::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/6-Candle/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/6-Candle/::1681878625
 1.png::CompressedTexture2D::682054290576688845::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::2289387424322746441::1570817574::1681878625::1::::<><>::
 3.png::CompressedTexture2D::2799469677381301427::1570817574::1681878625::1::::<><>::
@@ -825,18 +825,18 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 6.png::CompressedTexture2D::141434677178372020::1570817574::1681878625::1::::<><>::
 7.png::CompressedTexture2D::3558460041967021643::1570817574::1681878625::1::::<><>::
 8.png::CompressedTexture2D::579629357588047027::1570817574::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/7-Candle Light/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/7-Candle Light/::1681878625
 1.png::CompressedTexture2D::2986894828871931875::1570817574::1681878625::1::::<><>::
 2.png::CompressedTexture2D::7960951596760955409::1570817574::1681878625::1::::<><>::
 3.png::CompressedTexture2D::1977632675786681674::1570817574::1681878625::1::::<><>::
 4.png::CompressedTexture2D::5604907581845087614::1570817574::1681878625::1::::<><>::
 5.png::CompressedTexture2D::1774302550830019801::1570817574::1681878625::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/8-Window Light/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/8-Window Light/::1681878625
 1.png::CompressedTexture2D::3308750033341905182::1570817574::1681878625::1::::<><>::
 2.png::CompressedTexture2D::4961269519709027146::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::2164135574781964401::1570817574::1681878624::1::::<><>::
 4.png::CompressedTexture2D::5142343246973098453::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/9-Small Chain/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/9-Small Chain/::1681878624
 1.png::CompressedTexture2D::7126364168850023685::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::9081181601432471158::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::650584966316468882::1570817574::1681878624::1::::<><>::
@@ -847,7 +847,7 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 8.png::CompressedTexture2D::6784423643103756103::1570817574::1681878624::1::::<><>::
 9.png::CompressedTexture2D::431580190706326255::1570817574::1681878624::1::::<><>::
 10.png::CompressedTexture2D::3886128369650875399::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/10-Big Chain/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/10-Big Chain/::1681878624
 1.png::CompressedTexture2D::4263000190791980364::1570817570::1681878624::1::::<><>::
 2.png::CompressedTexture2D::6117922085152084393::1570817570::1681878624::1::::<><>::
 3.png::CompressedTexture2D::3815525402579329132::1570817570::1681878624::1::::<><>::
@@ -858,10 +858,10 @@ settings_view.tscn::PackedScene::5839841081119266502::1681788220::0::1::::<><>::
 8.png::CompressedTexture2D::5010346247925884759::1570817570::1681878624::1::::<><>::
 9.png::CompressedTexture2D::6231907078843343817::1570817570::1681878624::1::::<><>::
 10.png::CompressedTexture2D::3140800949663769492::1570817570::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/11-Health Bar/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/11-Health Bar/::1681878624
 Health Bar.png::CompressedTexture2D::1583655478983293534::1570817570::1681878624::1::::<><>::
 Heart.png::CompressedTexture2D::8373892771419592333::1570817570::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/12-Other Objects/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/12-Other Objects/::1681878624
 Barrel.png::CompressedTexture2D::2235196303109995178::1570817570::1681878624::1::::<><>::
 Blue Bottle.png::CompressedTexture2D::4284167038963879768::1570817572::1681878624::1::::<><>::
 Chair.png::CompressedTexture2D::6323257570299500701::1570817572::1681878624::1::::<><>::
@@ -870,21 +870,21 @@ Red Bottle.png::CompressedTexture2D::2789050021115819873::1570817572::1681878624
 Skull.png::CompressedTexture2D::5126480638350669438::1570817572::1681878624::1::::<><>::
 Table.png::CompressedTexture2D::1242941741667806467::1570817572::1681878624::1::::<><>::
 Windows.png::CompressedTexture2D::7626037610139871986::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/13-Run Particles/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/13-Run Particles/::1681878624
 1.png::CompressedTexture2D::3603902120500309860::1570817572::1681878624::1::::<><>::
 2.png::CompressedTexture2D::6182226027928095216::1570817572::1681878624::1::::<><>::
 3.png::CompressedTexture2D::211397433024875238::1570817572::1681878624::1::::<><>::
 4.png::CompressedTexture2D::647825448552772665::1570817572::1681878624::1::::<><>::
 5.png::CompressedTexture2D::7561026781371844055::1570817572::1681878624::1::::<><>::
 6.png::CompressedTexture2D::3839813565805569915::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/14-Jump Particles/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/14-Jump Particles/::1681878624
 1.png::CompressedTexture2D::5224442911599116131::1570817572::1681878624::1::::<><>::
 2.png::CompressedTexture2D::260962257155311443::1570817572::1681878624::1::::<><>::
 3.png::CompressedTexture2D::6767981744689648429::1570817572::1681878624::1::::<><>::
 4.png::CompressedTexture2D::1125248373931758756::1570817572::1681878624::1::::<><>::
 5.png::CompressedTexture2D::7944493944229173110::1570817572::1681878624::1::::<><>::
 6.png::CompressedTexture2D::3553556865666440733::1570817572::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/15-Fall Particles/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/15-Fall Particles/::1681878624
 1.png::CompressedTexture2D::1469721397663109265::1570817572::1681878624::1::::<><>::
 2.png::CompressedTexture2D::1000062815980251913::1570817572::1681878624::1::::<><>::
 3.png::CompressedTexture2D::9086270907747561515::1570817572::1681878624::1::::<><>::
@@ -892,9 +892,9 @@ Windows.png::CompressedTexture2D::7626037610139871986::1570817572::1681878624::1
 5.png::CompressedTexture2D::4314266882713170041::1570817572::1681878624::1::::<><>::
 6.png::CompressedTexture2D::6856372440757116126::1570817572::1681878624::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/::1570817592
-::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/1-Idle/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/1-Idle/::1681878624
 1.png::CompressedTexture2D::7513734024608947445::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/2-Attack/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/2-Attack/::1681878624
 1.png::CompressedTexture2D::3005189061741421314::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::1646084646756600603::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::1488789362584678495::1570817574::1681878624::1::::<><>::
@@ -904,10 +904,10 @@ Windows.png::CompressedTexture2D::7626037610139871986::1570817572::1681878624::1
 7.png::CompressedTexture2D::4325977944154327688::1570817574::1681878624::1::::<><>::
 8.png::CompressedTexture2D::3834792567779519921::1570817574::1681878624::1::::<><>::
 9.png::CompressedTexture2D::6825090533443153387::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/3-Cannon Ball/::1570817592
+::res://Assets/Pirate Bomb/Sprites/7-Objects/16-Enemy-Cannon/3-Cannon Ball/::1681878624
 1.png::CompressedTexture2D::6595457534981414791::1570817574::1681878624::1::::<><>::
 ::res://Assets/Pirate Bomb/Sprites/7-Objects/17-Heart/::1570817594
-::res://Assets/Pirate Bomb/Sprites/7-Objects/17-Heart/1-Idle/::1570817594
+::res://Assets/Pirate Bomb/Sprites/7-Objects/17-Heart/1-Idle/::1681878624
 1.png::CompressedTexture2D::3093315964576793839::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::1936057625546433170::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::1555370710497679848::1570817574::1681878624::1::::<><>::
@@ -930,14 +930,14 @@ Windows.png::CompressedTexture2D::7626037610139871986::1570817572::1681878624::1
 20.png::CompressedTexture2D::5413211119278615208::1570817574::1681878624::1::::<><>::
 21.png::CompressedTexture2D::5929918773301520027::1570817574::1681878624::1::::<><>::
 22.png::CompressedTexture2D::6141628400439381561::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/7-Objects/17-Heart/2-Live+1/::1570817594
+::res://Assets/Pirate Bomb/Sprites/7-Objects/17-Heart/2-Live+1/::1681878624
 1.png::CompressedTexture2D::3506579110040607457::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::8160474958841697030::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::4221381653869593374::1570817574::1681878624::1::::<><>::
 4.png::CompressedTexture2D::6623404171002487803::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/8-Tile-Sets/::1570817592
+::res://Assets/Pirate Bomb/Sprites/8-Tile-Sets/::1681878624
 Tile-Sets (64-64).png::CompressedTexture2D::8089740968179962281::1570817574::1681878624::1::::<><>::
-::res://Assets/Pirate Bomb/Sprites/8-Tile-Sets/Variations/::1570817592
+::res://Assets/Pirate Bomb/Sprites/8-Tile-Sets/Variations/::1681878624
 1.png::CompressedTexture2D::5597186667985489395::1570817574::1681878624::1::::<><>::
 2.png::CompressedTexture2D::7947586281246976567::1570817574::1681878624::1::::<><>::
 3.png::CompressedTexture2D::4771378482066856398::1570817574::1681878624::1::::<><>::
@@ -2418,37 +2418,41 @@ HealthComponent.tscn::PackedScene::2563266658402569673::1681599158::0::1::::<><>
 HitboxComponent.gd::GDScript::-1::1681530792::0::1::::HitboxComponent<>Area2D<>::
 HitboxComponent.tscn::PackedScene::2351338228591371149::1681599158::0::1::::<><>::res://Components/HitboxComponent.gd
 PlayerCoponent.tscn::PackedScene::8250215075318539050::1681530959::0::1::::<><>::
-::res://GameScenes/::1681877859
-Global.gd::GDScript::-1::1681875255::0::1::::<>Node<>::
-Land.gd::GDScript::-1::1681874382::0::1::::<>Node2D<>::
-Land.tscn::PackedScene::7206707673869563128::1681877859::0::1::::<><>::uid://stm2mdf2ip0i<>res://GameScenes/Land.gd<>uid://b6mbwu3gfgt0t<>uid://v0kuqutvh8bo<>uid://bkw4vx5wbtqpw<>uid://clfrb1s8s0frf<>uid://b20u1mll2bavx<>uid://cdk4u3hpjplca<>uid://dxnpb7iv5b3q4<>uid://bwtqwvqptnpv3<>uid://yag6lflu0j8r<>uid://dip8ud33rj63w
-::res://GameScenes/Characters/::1681877859
-Crab.gd::GDScript::-1::1681873265::0::1::::<>CharacterBody2D<>::
-Crab.tscn::PackedScene::3135524980507837500::1681877859::0::1::::<><>::res://GameScenes/Characters/Crab.gd<>uid://domlq0i6vrlic<>uid://c2j2rm1srmq5w<>uid://cc0wno7dq80au<>uid://dpahb66xyoep3<>uid://bavo8470mu6g3<>uid://bvl76iwbbxo4m<>uid://fqk3g1m0idh1<>uid://c0j4d6pprbl0a<>uid://daiav0u2hvv0v<>uid://bi5kn2dqvh1pr<>uid://burolbfhunn5e<>uid://dvuglilfki6j4<>uid://c6h81nq1nia4o<>uid://d3brnqt8tdh2y<>uid://cpic26vuxoi00<>uid://dmi18uvgw734x<>uid://e4g76hdjblul<>uid://b0shcfeacaidf<>uid://doefhhe3qme6k<>uid://c4bcifohye0a6<>uid://c617gfgwkpjf7<>uid://3gy8lmhq2ec8<>uid://c1sr0hjbomkck<>uid://kgn1v8ahmbrp<>uid://dkqww66c8pc8k<>uid://b6uujhphxjn76<>uid://b8g1c0gfwqywp<>uid://wym5oxya06i4<>uid://bmd1dqnmplh6f
+::res://GameScenes/::1681964212
+Global.gd::GDScript::-1::1681948297::0::1::::<>Node<>::
+Land.gd::GDScript::-1::1681947304::0::1::::<>Node2D<>::
+Land.tscn::PackedScene::7206707673869563128::1681964212::0::1::::<><>::uid://stm2mdf2ip0i<>res://GameScenes/Land.gd<>uid://b6mbwu3gfgt0t<>uid://v0kuqutvh8bo<>uid://bkw4vx5wbtqpw<>uid://clfrb1s8s0frf<>uid://b20u1mll2bavx<>uid://cdk4u3hpjplca<>uid://dxnpb7iv5b3q4<>uid://bwtqwvqptnpv3<>uid://dnrvru78h0gr0<>uid://yag6lflu0j8r<>uid://dip8ud33rj63w<>uid://cgtrn1jaondjn<>uid://dvgb7du761i1q<>uid://dudspwhqcnv40<>uid://s8wfa8b4kuaf<>uid://cxfrosgm4pntv<>uid://cnpwp13c6lcwp<>uid://cxblpfagb35jm<>uid://b8uvb6ujjbthg<>uid://cjdl1j50gx1ok<>uid://c1a7thfudbcmi<>uid://cb8ewea1srqm7
+::res://GameScenes/Characters/::1681964114
+Crab.gd::GDScript::-1::1681937939::0::1::::<>CharacterBody2D<>::
+Crab.tscn::PackedScene::3135524980507837500::1681964114::0::1::::<><>::res://GameScenes/Characters/Crab.gd<>uid://domlq0i6vrlic<>uid://c2j2rm1srmq5w<>uid://b20u1mll2bavx<>uid://cc0wno7dq80au<>uid://dpahb66xyoep3<>uid://bavo8470mu6g3<>uid://bvl76iwbbxo4m<>uid://fqk3g1m0idh1<>uid://c0j4d6pprbl0a<>uid://daiav0u2hvv0v<>uid://bi5kn2dqvh1pr<>uid://burolbfhunn5e<>uid://dvuglilfki6j4<>uid://c6h81nq1nia4o<>uid://d3brnqt8tdh2y<>uid://cpic26vuxoi00<>uid://dmi18uvgw734x<>uid://e4g76hdjblul<>uid://b0shcfeacaidf<>uid://doefhhe3qme6k<>uid://c4bcifohye0a6<>uid://c617gfgwkpjf7<>uid://3gy8lmhq2ec8<>uid://c1sr0hjbomkck<>uid://kgn1v8ahmbrp<>uid://dkqww66c8pc8k<>uid://b6uujhphxjn76<>uid://b8g1c0gfwqywp<>uid://wym5oxya06i4<>uid://bmd1dqnmplh6f
 Player.gd::GDScript::-1::1681792343::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::4587148467980575857::1681877859::0::1::::<><>::uid://c4d4etx7m0dc3<>res://GameScenes/Characters/Player.gd<>uid://dwsmj00eoru5i<>uid://de5e24elcx1lj<>uid://6xcq7pbu0seb<>uid://cmxi7b0hmycae<>uid://d31ov2jnuwuuj<>uid://c2f53yosht3gf<>uid://t4pfbekufyr4<>uid://dfepjygckoxt8<>uid://dbts5peacbp23<>uid://0gf2hxtkcwc8<>uid://d0c0me3epuebn<>uid://bnpcltjbnkotr<>uid://c6b53fh3jpghx<>uid://dudbilha1plvf<>uid://cd1jnfydndi37<>uid://um827thoyi6m<>uid://dw56nqx7tjkgp<>uid://ccq6fb168a2np<>uid://bhdtigx78krnm<>uid://bfhpcgudsdo6n
-::res://GameScenes/CutScenes/::1681878394
-OpeningScene.gd::GDScript::-1::1681877854::0::1::::<>Node2D<>::
-OpeningScene.tscn::PackedScene::6418928790182145709::1681878394::0::1::::<><>::res://GameScenes/CutScenes/OpeningScene.gd<>uid://df0k34mg4ks74<>uid://t4pfbekufyr4<>uid://dfepjygckoxt8<>uid://dbts5peacbp23<>uid://0gf2hxtkcwc8<>uid://d0c0me3epuebn
-::res://GameScenes/Dialogs/::1681877859
-Actionable.gd::GDScript::-1::1681873265::0::1::::<>Area2D<>::
-actionable.tscn::PackedScene::5556275905783787235::1681877859::0::1::::<><>::res://GameScenes/Dialogs/Actionable.gd
-Crab.dialogue::Resource::4334390324077287481::1681875322::1681875322::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-OpeningScene.dialogue::Resource::7562474427304549637::1681877209::1681877209::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Player.tscn::PackedScene::4587148467980575857::1681960205::0::1::::<><>::uid://c4d4etx7m0dc3<>res://GameScenes/Characters/Player.gd<>uid://dwsmj00eoru5i<>uid://de5e24elcx1lj<>uid://6xcq7pbu0seb<>uid://cmxi7b0hmycae<>uid://d31ov2jnuwuuj<>uid://c2f53yosht3gf<>uid://t4pfbekufyr4<>uid://dfepjygckoxt8<>uid://dbts5peacbp23<>uid://0gf2hxtkcwc8<>uid://d0c0me3epuebn<>uid://bnpcltjbnkotr<>uid://c6b53fh3jpghx<>uid://dudbilha1plvf<>uid://cd1jnfydndi37<>uid://um827thoyi6m<>uid://dw56nqx7tjkgp<>uid://ccq6fb168a2np<>uid://bhdtigx78krnm<>uid://bfhpcgudsdo6n
+shark.gd::GDScript::-1::1681962428::0::1::::<>CharacterBody2D<>::
+shark.tscn::PackedScene::8108117956947677003::1681964114::0::1::::<><>::uid://di8v2rdqjw1h2<>res://GameScenes/Characters/shark.gd<>uid://ctgpupr4iwdvg<>uid://bpjbjb0bldk3g<>uid://bbbarh3yuuqpd<>uid://b04so6vexnowk<>uid://bjcg4wg8f3eyk<>uid://cux0q4vrjp130<>uid://citwatlcs2ba8<>uid://d073urmajhvly<>uid://cjc2d3tk5sm84<>uid://b1dyepn3v41ly<>uid://domnnqnwlo7xc<>uid://sf0m5r7celjr<>uid://dfi8n0kchwoym<>uid://deuce0wiw7cyr<>uid://dy82thgw7oq3k<>uid://ncsn5xlworbh
+::res://GameScenes/CutScenes/::1681964114
+OpeningScene.gd::GDScript::-1::1681935213::0::1::::<>Node2D<>::
+OpeningScene.tscn::PackedScene::6418928790182145709::1681964114::0::1::::<><>::res://GameScenes/CutScenes/OpeningScene.gd<>uid://df0k34mg4ks74<>uid://t4pfbekufyr4<>uid://dfepjygckoxt8<>uid://dbts5peacbp23<>uid://0gf2hxtkcwc8<>uid://d0c0me3epuebn<>uid://82sjw7mqh2mm<>uid://u773j87kjsvy<>uid://cfq43dfnqebwm<>uid://vqt1p0aj38jf<>uid://c14ssgfbygs46<>uid://cm1j3wlwlo4lv<>uid://ct2wkueem4mbf<>uid://jsrnp55bvdb0<>uid://8bw84gp1n5mn<>uid://djc2l6fh82w7y<>uid://bs0d145eul5qc<>uid://cqlwek0swumnt
+::res://GameScenes/Dialogs/::1681964253
+Actionable.gd::GDScript::-1::1681963495::0::1::::<>Area2D<>::
+actionable.tscn::PackedScene::5556275905783787235::1681940124::0::1::::<><>::res://GameScenes/Dialogs/Actionable.gd
+Crab.dialogue::Resource::4334390324077287481::1681939919::1681939919::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Flag.dialogue::Resource::5117122245202451496::1681943681::1681943682::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+OpeningScene.dialogue::Resource::7562474427304549637::1681947928::1681947928::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Shark.dialogue::Resource::5844308140927130862::1681964368::1681964368::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://GameScenes/Environment/::1681874104
 DayAndNight.gd::GDScript::-1::1681874104::0::1::::<>StaticBody2D<>::
 DayAndNight.tscn::PackedScene::3970810308821794842::1681873588::0::1::::<><>::res://GameScenes/Environment/DayAndNight.gd
-::res://GameScenes/HUD/::1681877943
-hud.gd::GDScript::-1::1681874780::0::1::::<>CanvasLayer<>::
-hud.tscn::PackedScene::8801356600342173109::1681877858::0::1::::<><>::res://GameScenes/HUD/hud.gd<>uid://b4ppv4ormedlc<>uid://cjdvnkwjrnmcx
+::res://GameScenes/HUD/::1681964114
+hud.gd::GDScript::-1::1681939378::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::8801356600342173109::1681964113::0::1::::<><>::res://GameScenes/HUD/hud.gd<>uid://b4ppv4ormedlc<>uid://cjdvnkwjrnmcx
 PauseMenu.gd::GDScript::-1::1681865606::0::1::::<>CanvasLayer<>::
 PauseMenu.tscn::PackedScene::1684952494888811967::1681868006::0::1::::<><>::res://GameScenes/HUD/PauseMenu.gd<>uid://q4e8hxrbikh8
 StartMenu.gd::GDScript::-1::1681877943::0::1::::<>Control<>::
-StartMenu.tscn::PackedScene::8939797364983347400::1681877861::0::1::::<><>::res://GameScenes/HUD/StartMenu.gd
-::res://GameScenes/Objects/::1681789126
+StartMenu.tscn::PackedScene::8939797364983347400::1681964114::0::1::::<><>::res://GameScenes/HUD/StartMenu.gd
+::res://GameScenes/Objects/::1681963495
 Chain.gd::GDScript::-1::1681612914::0::1::::<>Area2D<>::
 Chain.tscn::PackedScene::5005849666670818072::1681775102::0::1::::<><>::res://GameScenes/Objects/Chain.gd
-chainsTile.tres::AnimatedTexture::1526218918217277084::1681789126::0::1::::<><>::uid://8w1uptasy1tb<>uid://bu3uhxtuv37ne<>uid://dggbeq3bhpl1p<>uid://cy6048tofcmje<>uid://borg0ky3sft58<>uid://df5xojd2cqy2<>uid://2a53i5ne68k0<>uid://dsosn543vtdmy
+chainsTile.tres::AnimatedTexture::1526218918217277084::1681963495::0::1::::<><>::uid://8w1uptasy1tb<>uid://bu3uhxtuv37ne<>uid://dggbeq3bhpl1p<>uid://cy6048tofcmje<>uid://borg0ky3sft58<>uid://df5xojd2cqy2<>uid://2a53i5ne68k0<>uid://dsosn543vtdmy
 collectable.gd::GDScript::-1::1681777451::0::1::::collectables<>Area2D<>::
 collectable.tscn::PackedScene::8281820926881222623::1681775102::0::1::::<><>::res://GameScenes/Objects/collectable.gd
 ::res://GameScenes/Objects/Collectables/::1681868004
@@ -2456,6 +2460,8 @@ BlueDiamond.gd::GDScript::-1::1681868004::0::1::::<>AnimatedSprite2D<>::
 BlueDiamond.tscn::PackedScene::8409823453058716823::1681867249::0::1::::<><>::uid://cggo25cdoobpm<>uid://b1mvhjhf3ud6v<>uid://cccd74lsc1tdw<>uid://yj3l4axpico8<>res://GameScenes/Objects/Collectables/BlueDiamond.gd<>res://GameScenes/Objects/collectable.gd
 RedDiamond.gd::GDScript::-1::1681868004::0::1::::<>AnimatedSprite2D<>::
 RedDiamond.tscn::PackedScene::3489605347188379441::1681777835::0::1::::<><>::uid://cg68t4cixhqp6<>res://GameScenes/Objects/collectable.gd<>uid://bbplhj37qsfwa<>uid://y3lynbhdahrx<>uid://chvbyowp5f50m<>res://GameScenes/Objects/Collectables/RedDiamond.gd
-::res://GameScenes/Objects/Interactable/::1681877859
-Flag.gd::GDScript::-1::1681873265::0::1::::<>AnimatedSprite2D<>::
-Flag.tscn::PackedScene::7753778045253724322::1681877859::0::1::::<><>::uid://bfyxtm38phc2x<>uid://dfn6th5i1g6we<>uid://cii3nygfk52vq<>uid://bb2amuco53nvt<>uid://cgg2umgj7fh6t<>uid://bfihpmgh3s6j4<>uid://y3im58sbwp5m<>uid://c10kdgd77ufsb<>uid://cfqrfsg2s0kjw<>res://GameScenes/Objects/Interactable/Flag.gd<>uid://d2w5mj81v6qdg
+::res://GameScenes/Objects/Interactable/::1681960205
+Door.gd::GDScript::-1::1681952765::0::1::::<>StaticBody2D<>::
+Door.tscn::PackedScene::5717625970735315467::1681960205::0::1::::<><>::uid://cw16oqmdlvl5x<>res://GameScenes/Objects/Interactable/Door.gd<>uid://bsd4c1wxasi38<>uid://ba70posrpyk8a<>uid://hih2wtwapvon<>uid://djjefspghygly<>uid://bhepr6m77kyba<>uid://cbm3tet1owttp<>uid://bcfaeijhx235h<>uid://dg7bke3e21lur<>uid://ce7wnm5ekeilm<>uid://c73eu0wgwwsm5
+Flag.gd::GDScript::-1::1681943242::0::1::::<>AnimatedSprite2D<>::
+Flag.tscn::PackedScene::7753778045253724322::1681960205::0::1::::<><>::uid://bfyxtm38phc2x<>uid://dfn6th5i1g6we<>uid://cii3nygfk52vq<>uid://bb2amuco53nvt<>uid://cgg2umgj7fh6t<>uid://bfihpmgh3s6j4<>uid://y3im58sbwp5m<>uid://c10kdgd77ufsb<>uid://cfqrfsg2s0kjw<>res://GameScenes/Objects/Interactable/Flag.gd<>uid://d2w5mj81v6qdg<>uid://ce51ixwkbsjmm

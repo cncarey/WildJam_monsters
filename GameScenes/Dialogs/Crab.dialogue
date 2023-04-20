@@ -1,4 +1,4 @@
-~ Find_Crab
+~ Start
 do pauseTimer()
 if Global.quests.Crab.QuestStarted == false
 	=> Pre_Quest
@@ -14,6 +14,7 @@ Player:
 	=> Start_Quest
 - Are you okay?
 	Crab: No
+	set Global.quests.Morality += 1
 	=> Start_Quest
 - End the conversation 
 	do restartTimer()
@@ -54,7 +55,10 @@ else
 ~ Flag_Stop
 - Send Crab back to the sea
 	Crab: Thanks for helping me
+	set Global.currentQuest = "Quest2"
 - Let Crab stay on the island
-	Crab: Are you sure I think all the town people will be mad if i stay
+	Crab: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
+	set Global.quests.Morality += 1
+	set Global.currentQuest = "Quest2"
 - Come back later
 => END!

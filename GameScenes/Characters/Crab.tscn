@@ -1,8 +1,9 @@
-[gd_scene load_steps=34 format=3 uid="uid://bkw4vx5wbtqpw"]
+[gd_scene load_steps=35 format=3 uid="uid://bkw4vx5wbtqpw"]
 
 [ext_resource type="Script" path="res://GameScenes/Characters/Crab.gd" id="1_hhhbs"]
 [ext_resource type="Texture2D" uid="uid://domlq0i6vrlic" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 01.png" id="1_vxh5c"]
 [ext_resource type="Texture2D" uid="uid://c2j2rm1srmq5w" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 02.png" id="2_2bjhh"]
+[ext_resource type="Resource" uid="uid://b20u1mll2bavx" path="res://GameScenes/Dialogs/Crab.dialogue" id="2_nx2lc"]
 [ext_resource type="Texture2D" uid="uid://cc0wno7dq80au" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 03.png" id="3_543pe"]
 [ext_resource type="Texture2D" uid="uid://dpahb66xyoep3" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 04.png" id="4_gwr4i"]
 [ext_resource type="Texture2D" uid="uid://bavo8470mu6g3" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/04-Fall/Fall 01.png" id="5_wvxjt"]
@@ -164,6 +165,7 @@ size = Vector2(57, 20)
 
 [node name="Crab" type="CharacterBody2D" groups=["Climbers"]]
 script = ExtResource("1_hhhbs")
+dialogueResourse = ExtResource("2_nx2lc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3eng3")

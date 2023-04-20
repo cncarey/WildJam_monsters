@@ -1,4 +1,4 @@
-~ start
+~ Quest1
 # first quest to find crab
 #do walkIntoBar()
 #do wait(0.5)
@@ -16,23 +16,26 @@ Player: Wait. What do you need me to do?
 Towns Person 1: There's a Giant Crab at the bottom of the cavern that has been causing a lot of trouble in the area.
 Towns Person 1: If you get rid of them I can get you part of the map, but we are leaving in 5 days, so you have to be back by then
 - What's so bad about this crab
-#do enter town person 2
-	=>< TP2Enters
+	#do TP2WalksIn
+	Towns Person 2: Well..
+	set Global.quests.Morality += 1
 	Towns Person 2 : It seems pretty harmless during the day...[wait=1]but night it thrashes about
+	Player: I'll be back just you wait.
+	=> END
 - Sure this shouldn't be too bad
-	=>< TP2Enters
+	#do TP2WalksIn
+	Towns Person 2: Well..
+	set Global.quests.Morality += 1
 	Towns Person 2 : Not too bad...that thing is crazy. Expecially at night
+	Player: I'll be back just you wait.
+	=> END
 - This may have been way move then I want to sign up for
-	=>< TP2Enters
+	#do TP2WalksIn
 	Towns Person 2 : Well take your ship and get out of here
 	=> END
 
-Player: I'll be back just you wait.
-=> END
 
-~ TP2Enters
-#do TP2WalksIn
-Towns Person 2: Well..
+
 
 ~ Quest2
 # second quest to find shark
@@ -51,16 +54,18 @@ Towns Person 2 : Why not? You just did.
 Towns Person 1 : ...
 Towns Person 2: Go show that big lub whose boss cause there's not much to do besides coming to the bar.
 Towns Person 2: By the way I'm Redd and this is my brother Jett.
+Player: 
 - Sure, but how did you get these map pieces in the first place.
-Jett : You take care of that shark an I'll tell you
-Redd : Our plans changed so we'll be around for 10 more days
-=> END!
+	Jett : You take care of that shark an I'll tell you
+	Redd : Our plans changed so we'll be around for 10 more days
+	=> END!
 - Sure. I like fishing too. Maybe we can fish together when the shark leaves
-Redd : I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for 10 more days
-=> END!
-- First a giant crab and now a giant shark?!...[wait=2]This may have been way move then I want to sign up for
-Redd : Well it was nice meeting you. I guess I'll never fish again 
-=> END!
+	Redd : I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for 10 more days
+	=> END!
+- This may have been way move then I want to sign up for
+	Player: First a giant crab and now a giant shark?!
+	Redd : Well it was nice meeting you. I guess I'll never fish again 
+	=> END!
 
 ~ Quest3
 # find the missing pets
@@ -80,25 +85,29 @@ Bruno: My map piece is mine...I knew you would try to take it from me
 Jett : Player has been able to free the island of two monster. They are way more worthy of the finding the treasure then we will ever be.
 Bruno : Fine you get all our pets back and you can have my map piece
 - I'll get your pets back, but you have to agree to make up
-Bruno: What?!
-Jett: I thought you wanted treasure. Now your trying to fix out family problems too?!
-Redd : And if we don't. 
-Player : I guess your will enjoy their new homes
-Bruno : Fine we'll work on it while you are away. They can only be out there for 10 days before they starve.
+	set Global.quests.Morality += 2
+	Bruno: What?!
+	Jett: I thought you wanted treasure. Now your trying to fix out family problems too?!
+	Redd : And if we don't. 
+	Player : I guess your pets will enjoy their new homes
+	Bruno : Fine we'll work on it while you are away. They can only be out there for 10 days before they starve.
+	=> END!
 - I'll get your pets back. You all are nuts
-Jett : Hey
-Redd : Hey
-Bruno: Sounds about right...You need to get them back here in the next 10 days or they will starve
-=> END!
-- Do I look like Animal Control Services?!...[wait=2]This may have been way move then I want to sign up for
-Redd : You're just going to let Scalawag die out there 
-Bruno : And Fluffy
-Jett : And Puppuccino
-=> END!
+	Jett : Hey
+	Redd : Hey
+	Bruno: Sounds about right...You need to get them back here in the next 10 days or they will starve
+	=> END!
+- This may have been way move then I want to sign up for
+	player : Do I look like Animal Control Services?!
+	Redd : You're just going to let Scalawag die out there 
+	Bruno : And Fluffy
+	Jett : And Puppuccino
+	=> END!
 
 
-~ Quest 4
+~ Quest4
 # TODO Branch on goodness score
 Towns Person 4: Thanks for helping the brothers. I never thought they would talk to each other again after not being able to open the cave of treasures.
 Towns Person 4: Only the worthy can open the cave's doors
 Player : Well I still have to find the last piece 
+Towns Person 4:  Here I want you to have it. I'm Sterling, the fourth brother. I'm so happy you have brought peace back to the island

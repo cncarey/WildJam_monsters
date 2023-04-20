@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dip8ud33rj63w"]
+[gd_scene load_steps=15 format=3 uid="uid://dip8ud33rj63w"]
 
 [ext_resource type="Texture2D" uid="uid://bfyxtm38phc2x" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_ruccw"]
 [ext_resource type="Texture2D" uid="uid://dfn6th5i1g6we" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_m2r2a"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cfqrfsg2s0kjw" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_l28nw"]
 [ext_resource type="Script" path="res://GameScenes/Objects/Interactable/Flag.gd" id="10_dex8o"]
 [ext_resource type="Texture2D" uid="uid://d2w5mj81v6qdg" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Platform.png" id="10_v0u62"]
+[ext_resource type="Resource" uid="uid://ce51ixwkbsjmm" path="res://GameScenes/Dialogs/Flag.dialogue" id="11_t618k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5xcct"]
 animations = [{
@@ -55,6 +56,7 @@ height = 118.0
 sprite_frames = SubResource("SpriteFrames_5xcct")
 animation = &"flying"
 script = ExtResource("10_dex8o")
+dialogueResourse = ExtResource("11_t618k")
 
 [node name="Platform" type="Sprite2D" parent="."]
 position = Vector2(-15, 54)

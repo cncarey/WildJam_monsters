@@ -1,0 +1,78 @@
+~ FindTarget
+do pauseTimer()
+if Global.currentQuest == "Quest1" or Global.currentQuest == "Crab"
+	=> CrabFlagStart 
+elif Global.currentQuest == "Quest2" or Global.currentQuest == "Shark"
+	=> SharkFlagStart
+elif Global.currentQuest == "Quest3" or Global.currentQuest == "Pets"
+	=> PetsFlagStart
+else
+	Debug("idk how we got here")	
+	=> END
+
+
+~ CrabFlagStart
+if Global.quests.Crab.QuestStarted == false
+	Find the Giant Crab
+elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount 
+	=> CrabFlagStop
+else
+	You don't have enough items to send crab back to the sea
+=> END
+
+~ CrabFlagStop
+- Send Crab back to the sea
+	Crab: Thanks for helping me
+	set Global.quests.Crab.QuestComplete = true
+	set Global.previousQuest = Global.currentQuest
+	set Global.currentQuest = "Quest2"
+- Let Crab stay on the island
+	Crab: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
+	set Global.quests.Morality += 1
+	set Global.quests.Crab.QuestComplete = true
+	set Global.previousQuest = Global.currentQuest
+	set Global.currentQuest = "Quest2"
+- Come back later
+=> END!
+
+~ SharkFlagStart
+if Global.quests.Shark.QuestStarted == false
+	Go find the Giant Shark
+elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount 
+	=> SharkFlagStop
+else
+	You don't have enough items to send shark back to the sea
+=> END
+
+~ SharkFlagStop
+- Send Shark back to the sea
+	Shark: Thanks for helping me
+	set Global.quests.Shark.QuestComplete = true
+	set Global.currentQuest = "Quest3"
+- Let Crab stay on the island
+	Shark: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
+	set Global.quests.Morality += 1
+	set Global.quests.Shark.QuestComplete = true
+	set Global.currentQuest = "Quest3"
+- Come back later
+=> END!
+
+~ PetsFlagStart
+if Global.quests.Pets.CurrQuestItemCount >= Global.quests.Pets.RequiredItemCount 
+	=> PetsFlagStop
+else
+	You don't have everyones pets
+=> END
+
+~ PetsFlagStop
+- Return to the bar with the pets
+	Shark: Thanks for helping me
+	set Global.quests.Morality += 1
+	set Global.quests.Quest3.QuestComplete = true
+	set Global.currentQuest = "Quest4"
+- Let the pets stay on the island
+	Pets: I guess everyone will be sad if I leave you out here. Let's go.
+	set Global.quests.Quest3.QuestComplete = true
+	set Global.currentQuest = "Quest4"
+- Come back later
+=> END!

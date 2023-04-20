@@ -1,0 +1,98 @@
+[gd_scene load_steps=16 format=3 uid="uid://cnpwp13c6lcwp"]
+
+[ext_resource type="Texture2D" uid="uid://cw16oqmdlvl5x" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/1-Closed/1.png" id="1_bb0f6"]
+[ext_resource type="Script" path="res://GameScenes/Objects/Interactable/Door.gd" id="1_gb273"]
+[ext_resource type="Texture2D" uid="uid://bsd4c1wxasi38" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/1.png" id="2_xvaa5"]
+[ext_resource type="Texture2D" uid="uid://ba70posrpyk8a" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/2.png" id="3_dwgu0"]
+[ext_resource type="Texture2D" uid="uid://hih2wtwapvon" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/3.png" id="4_cmmdm"]
+[ext_resource type="Texture2D" uid="uid://djjefspghygly" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/4.png" id="5_04dur"]
+[ext_resource type="Texture2D" uid="uid://bhepr6m77kyba" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/3-Closing/5.png" id="6_6vkk5"]
+[ext_resource type="Texture2D" uid="uid://cbm3tet1owttp" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/1.png" id="7_12hqh"]
+[ext_resource type="Texture2D" uid="uid://bcfaeijhx235h" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/2.png" id="8_56s2t"]
+[ext_resource type="Texture2D" uid="uid://dg7bke3e21lur" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/3.png" id="9_p500i"]
+[ext_resource type="Texture2D" uid="uid://ce7wnm5ekeilm" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/4.png" id="10_10c3t"]
+[ext_resource type="Texture2D" uid="uid://c73eu0wgwwsm5" path="res://Assets/Pirate Bomb/Sprites/7-Objects/2-Door/2-Opening/5.png" id="11_13q4b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gy24k"]
+size = Vector2(74, 101)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8gyi0"]
+size = Vector2(69, 87)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dwi8x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bb0f6")
+}],
+"loop": true,
+"name": &"Closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xvaa5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dwgu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cmmdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_04dur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6vkk5")
+}],
+"loop": true,
+"name": &"Closing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_13q4b")
+}],
+"loop": true,
+"name": &"Open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_12hqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_56s2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_p500i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_10c3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_13q4b")
+}],
+"loop": true,
+"name": &"Opening",
+"speed": 5.0
+}]
+
+[node name="Door" type="StaticBody2D"]
+script = ExtResource("1_gb273")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_gy24k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -0.5)
+shape = SubResource("RectangleShape2D_8gyi0")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dwi8x")
+animation = &"Closed"
+frame_progress = 0.974141

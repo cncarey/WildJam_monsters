@@ -1,10 +1,5 @@
 extends CharacterBody2D
 
-#TODO: figure out what the crab quest should be
-#The crab has been rooming the area and people are
-#affraid. He is looking for his lost ___ help him find them
-#and he will go back into the sea
-
 signal startQuest(type)
 
 var questStarted : bool = false
