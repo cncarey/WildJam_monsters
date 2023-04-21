@@ -10,8 +10,9 @@ func _on_body_entered(body):
 	if body.is_in_group("Collector"):
 		var p = get_parent()
 		if "collectionType" in p:
-			p.collection.collected.emit(p)
 			p.collection.removedFromMiniMap.emit(p)
+			p.collection.collected.emit(p)
+			
 			pass
 		else:
 			assert("collectable is missing Name")	

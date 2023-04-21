@@ -7,8 +7,8 @@ enum GameMode {Story, Endless}
 	"State" : TimeOfDay.Day,
 	"Day" : 0
 }
-@onready var currentQuest = "Quest2"
-@onready var previousQuest = "Crab"
+@onready var currentQuest = "Quest1"
+@onready var previousQuest = ""
 
 @onready var quests : Dictionary = {
 	"Morality" : 0,
@@ -80,8 +80,6 @@ enum GameMode {Story, Endless}
 	"GameDifficulty" : GameDifficulty.Easy,
 	"GameMode" : GameMode.Story
 }
-
-
 
 
 func resetGameValues():

@@ -25,7 +25,7 @@ var curDirction = 0
 @export var dialogueResourse : DialogueResource
 
 func _ready():
-	animation.play("idle")
+	animation.play("Idle")
 	# Make sure to not await during _ready.
 	call_deferred("actor_setup")
 
@@ -38,7 +38,7 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		animation.play("jump")
+		animation.play("Jump")
 	else:
 		curJumps = 0
 	
@@ -70,7 +70,7 @@ func startFollow(newWhatToFollow):
 	
 func stopFollow():
 	whatToFollow = null
-	animation.play("idle")
+	animation.play("Idle")
 	set_physics_process(false)
 
 func follow(delta):
@@ -82,9 +82,9 @@ func follow(delta):
 		var curFollowSpeed = FarFollowSpeed if (self.position.distance_to(whatToFollow.position) > followDistance * 2) else CloseFollowSpeed 
 		var desiredVelocity = curFollowSpeed * distance.normalized()
 		if distance.x == 0:
-			animation.play("idle")
+			animation.play("Idle")
 		else:
-			animation.play("run")
+			animation.play("Run")
 			if  distance.x < 0 :
 				animation.flip_h = true
 			elif distance.x > 0:
@@ -92,7 +92,7 @@ func follow(delta):
 		
 		
 		if climbing:
-			animation.play("idle")
+			animation.play("Idle")
 			velocity.y = 0
 			if distance.y < 0:
 				velocity.y = -speed / (curFollowSpeed /8)
@@ -103,7 +103,7 @@ func follow(delta):
 		
 		if canJump():
 			velocity.y = jumpVolocity
-			animation.play("jump")
+			animation.play("Jump")
 		
 		
 		var steering = (desiredVelocity - velocity) * delta *2.5

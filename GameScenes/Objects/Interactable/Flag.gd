@@ -25,8 +25,10 @@ func Talk():
 	pass
 	
 func _on_dialogue_ended(_resource: DialogueResource):
-	await get_tree().create_timer(0.4).timeout
-	var curQuest = Global.quests[Global.previousQuest]
-	if(curQuest && "QuestComplete" in curQuest):
-		if curQuest.QuestComplete:
-			changeScene.emit()
+	DialogueManager.dialogue_ended.disconnect(_on_dialogue_ended)
+	if Global.previousQuest && Global.previousQuest != "":
+		await get_tree().create_timer(0.4).timeout
+		var curQuest = Global.quests[Global.previousQuest]
+		if(curQuest && "QuestComplete" in curQuest):
+			if curQuest.QuestComplete:
+				changeScene.emit()

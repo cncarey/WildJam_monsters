@@ -10,5 +10,6 @@ func _ready():
 	pass
 	
 func _on_dialogue_ended(_resource: DialogueResource):
+	DialogueManager.dialogue_ended.disconnect(_on_dialogue_ended)
 	await get_tree().create_timer(0.4).timeout
 	get_tree().change_scene_to_file("res://GameScenes/Land.tscn")

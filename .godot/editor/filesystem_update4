@@ -18,3 +18,7 @@ res://GameScenes/Objects/Interactable/chest.gd
 res://GameScenes/Objects/Interactable/Flag.tscn
 res://GameScenes/Objects/Interactable/Flag.gd
 res://GameScenes/Objects/collectable.gd
+res://GameScenes/Global.gd
+res://GameScenes/Characters/shark.tscn
+res://GameScenes/Characters/shark.gd
+res://GameScenes/CutScenes/OpeningScene.gd

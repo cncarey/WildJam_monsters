@@ -1,8 +1,4 @@
 ~ Start
-do pauseTimer()
-do startQuest(Global.quests.Shark.QuestItem, "Shark")
-do restartTimer()
-=> END
 if Global.quests.Shark.QuestStarted == false
 	=> Pre_Quest
 else
