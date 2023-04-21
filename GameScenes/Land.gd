@@ -76,6 +76,7 @@ func startQuest(type : StringName, questName: StringName):
 					print(cP.name)
 					print(spawn)
 					add_child(spawn)
+					spawn.provideKey.connect(provideKey)
 				#TODO connect to open chest script
 			
 	if "easyCollectablePoints" in curQuest:
@@ -123,27 +124,22 @@ func _on_player_signal_followers(player, curTouching, isStarting):
 func onItemCollected(itemCollected):
 	print(itemCollected.collectionType)
 	var curQuest = Global.quests[Global.currentQuest]
-	if !itemCollected.removing:
-		if Global.collectables.has(itemCollected.collectionType):
-			Global.collectables[itemCollected.collectionType] += 1
-			
-			if(curQuest):
-				curQuest.CurrQuestItemCount += 1
-				pass
-			
-			HUD.updateItemCount(Global.collectables[itemCollected.collectionType])
+	if !itemCollected.removing && curQuest:
+		if itemCollected.collectionType == curQuest.QuestItem:
+			curQuest.CurrQuestItemCount += 1
+			HUD.updateItemCount(curQuest.CurrQuestItemCount)
 			
 			itemCollected.removing = true
 			remove_child(itemCollected)
 			pass
 		
-		elif itemCollected.collectionType == "Key":
-			if curQuest:
-				curQuest.CurrQuestKeyCount += 1
-				HUD.updateKeyCount(curQuest.CurrQuestKeyCount)
-				itemCollected.removing = true
-				remove_child(itemCollected)
-			pass
+		elif itemCollected.collectionType == "Key":			
+			curQuest.CurrQuestKeyCount += 1
+			HUD.updateKeyCount(curQuest.CurrQuestKeyCount)
+			
+			itemCollected.removing = true
+			remove_child(itemCollected)
+			
 	#TODO if it is a key grab it and update the HUD
 	pass # Replace with function body.
 
@@ -160,3 +156,14 @@ func restartTimer():
 
 func toCutScene():
 	get_tree().change_scene_to_file("res://GameScenes/CutScenes/OpeningScene.tscn")
+
+func provideKey(chest):
+	var curQuest = Global.quests[Global.currentQuest]
+	if curQuest && curQuest.CurrQuestKeyCount && curQuest.CurrQuestKeyCount >= 1:
+		if chest.tryOpenBox(true):
+			curQuest.CurrQuestKeyCount -= 1
+			HUD.updateKeyCount(curQuest.CurrQuestKeyCount)
+			
+			curQuest.CurrQuestItemCount += 1
+			HUD.updateItemCount(curQuest.CurrQuestItemCount)
+	pass

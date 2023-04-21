@@ -969,6 +969,8 @@ stretch_mode = 1
 [connection signal="signalFollowers" from="Player" to="." method="_on_player_signal_followers"]
 [connection signal="startQuest" from="Crab" to="." method="startQuest"]
 [connection signal="startQuest" from="Shark" to="." method="startQuest"]
+[connection signal="day" from="HUD/DayAndNight" to="HUD" method="isDay"]
 [connection signal="nextDay" from="HUD/DayAndNight" to="." method="set_Next_Day"]
+[connection signal="night" from="HUD/DayAndNight" to="HUD" method="isNight"]
 [connection signal="timeout" from="CurQuestTimer" to="PauseMenu" method="gameOver"]
 [connection signal="changeScene" from="Flag" to="." method="toCutScene"]

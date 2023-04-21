@@ -1,20 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dxnpb7iv5b3q4"]
+[gd_scene load_steps=6 format=3 uid="uid://dxnpb7iv5b3q4"]
 
 [ext_resource type="Script" path="res://GameScenes/HUD/hud.gd" id="1_21n4f"]
 [ext_resource type="Texture2D" uid="uid://b4ppv4ormedlc" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Yellow Board/16.png" id="2_1acro"]
+[ext_resource type="Texture2D" uid="uid://chmcavxpv6aeg" path="res://Assets/BootStrapIcons/moon-fill.svg" id="3_mlsoo"]
+[ext_resource type="Texture2D" uid="uid://bn0xo235tfl63" path="res://Assets/BootStrapIcons/brightness-high.svg" id="4_15n0m"]
 [ext_resource type="Texture2D" uid="uid://cjdvnkwjrnmcx" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Small Banner/4.png" id="4_vw321"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_21n4f")
-
-[node name="DayCount" type="Label" parent="."]
-z_index = 1
-offset_left = 56.0
-offset_top = 40.0
-offset_right = 124.0
-offset_bottom = 67.0
-theme_override_font_sizes/font_size = 11
-text = "0"
 
 [node name="CurQuestName" type="Label" parent="."]
 anchors_preset = 1
@@ -51,15 +44,6 @@ offset_top = 11.0
 offset_right = 124.0
 offset_bottom = 51.0
 
-[node name="DayLabel" type="Label" parent="."]
-z_index = 1
-offset_left = 30.2327
-offset_top = 38.9251
-offset_right = 65.2327
-offset_bottom = 66.9251
-theme_override_font_sizes/font_size = 11
-text = "Day"
-
 [node name="CurQuestItemCount" type="Label" parent="."]
 z_index = 1
 offset_left = 117.0
@@ -70,16 +54,45 @@ theme_override_font_sizes/font_size = 11
 text = "0"
 
 [node name="DayHolder" type="NinePatchRect" parent="."]
-modulate = Color(1, 1, 1, 0.764706)
+modulate = Color(1, 1, 1, 0.933333)
 offset_left = 10.0
 offset_top = 8.0
-offset_right = 94.0
-offset_bottom = 68.0
+offset_right = 90.0
+offset_bottom = 70.0
 texture = ExtResource("2_1acro")
-patch_margin_left = 2
-patch_margin_top = 2
-patch_margin_right = 2
-patch_margin_bottom = 2
+region_rect = Rect2(1.51405, -0.263195, 28.9712, 32.3951)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 6
+
+[node name="DayLabel" type="Label" parent="DayHolder"]
+z_index = 1
+offset_left = 17.2327
+offset_top = 33.9251
+offset_right = 52.2327
+offset_bottom = 61.9251
+theme_override_font_sizes/font_size = 11
+text = "Day"
+
+[node name="Moon-fill" type="Sprite2D" parent="DayHolder"]
+position = Vector2(40.5, 25.5)
+scale = Vector2(1.4375, 1.4375)
+texture = ExtResource("3_mlsoo")
+
+[node name="Brightness-high" type="Sprite2D" parent="DayHolder"]
+position = Vector2(40.5, 25.5)
+scale = Vector2(1.5625, 1.4375)
+texture = ExtResource("4_15n0m")
+
+[node name="DayCount" type="Label" parent="DayHolder"]
+z_index = 1
+offset_left = 46.0
+offset_top = 35.0
+offset_right = 114.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 11
+text = "0"
 
 [node name="Banner" type="Sprite2D" parent="."]
 position = Vector2(144, 33.5)

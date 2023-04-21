@@ -17,3 +17,5 @@ res://GameScenes/Characters/Crab.gd
 res://GameScenes/Characters/Player.tscn
 res://GameScenes/Objects/Interactable/chest.tscn
 res://GameScenes/Objects/Interactable/chest.gd
+res://GameScenes/Environment/DayAndNight.gd
+res://GameScenes/Environment/DayAndNight.tscn

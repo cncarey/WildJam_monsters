@@ -4,13 +4,15 @@ var state = Global.TimeOfDay.Day
 
 var ChangeState = false
 
-@export var LenghtOfDay = 15
-@export var LenghtOfNight = 8
+@export var LenghtOfDay = 45
+@export var LenghtOfNight = 15
 
 @onready var animation = $AnimationPlayer
 @onready var timer = $Timer
 
 signal nextDay()
+signal day()
+signal night()
 
 func _ready():
 	if state == Global.TimeOfDay.Day:
@@ -46,11 +48,13 @@ func _process(delta):
 func changeToDay():
 	animation.play("NightToDay")
 	timer.start(LenghtOfDay)
+	day.emit()
 	#TODO emit update day
 	
 func changeToNight():
 	animation.play("DayToNight")
 	timer.start(LenghtOfNight)
+	night.emit()
 
 func pauseTimer():
 	timer.paused = true
