@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xqsqq"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_pqdxh"]
 
 [resource]
-script = ExtResource("1_xqsqq")
+script = ExtResource("1_pqdxh")
 titles = {
 "Flag_Stop": "60",
 "Pre_Quest": "11",
@@ -423,7 +423,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "43",
@@ -481,7 +481,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }, {
 "type": "operator",
 "value": "/"
@@ -516,9 +516,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "47",
 "parent_id": "45",
-"text": "Let's find my rubies.",
+"text": "Let's find my totalItems.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Let's find my rubies.",
+"translation_key": "Let's find my totalItems.",
 "type": "dialogue"
 },
 "47": {
@@ -631,7 +631,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "55",

@@ -51,9 +51,9 @@ func canJump():
 	else:
 		return false
 
-var FarFollowSpeed = 55
+var FarFollowSpeed = 175
 var CloseFollowSpeed = 25
-var followDistance = 25
+var followDistance = 50
 var followStopDistance = 70
 var whatToFollow = null
 

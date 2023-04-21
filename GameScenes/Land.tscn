@@ -744,7 +744,7 @@ position = Vector2(-103.904, 123.786)
 [node name="Crab" parent="." instance=ExtResource("4_3a6g4")]
 position = Vector2(807.25, 448.5)
 
-[node name="Shark" parent="." instance=ExtResource("8_w3q1q")]
+[node name="Shark" parent="." groups=["Climbers"] instance=ExtResource("8_w3q1q")]
 position = Vector2(123.102, 19.107)
 
 [node name="Ladder" parent="." instance=ExtResource("6_thwaq")]
@@ -851,51 +851,68 @@ texture = ExtResource("17_r84kg")
 position = Vector2(-124, -178)
 scale = Vector2(0.6, 0.6)
 
+[node name="ChestPositions" type="Node2D" parent="."]
+
+[node name="_k1" type="Marker2D" parent="ChestPositions"]
+position = Vector2(-2211, -178)
+
+[node name="_k2" type="Marker2D" parent="ChestPositions"]
+position = Vector2(720, -320)
+
+[node name="_k3" type="Marker2D" parent="ChestPositions"]
+position = Vector2(-2123.27, -1686.02)
+
+[node name="_k4" type="Marker2D" parent="ChestPositions"]
+position = Vector2(-1452.93, -1508.97)
+
+[node name="_k5" type="Marker2D" parent="ChestPositions"]
+position = Vector2(-2663.5, 217.82)
+
+[node name="_k6" type="Marker2D" parent="ChestPositions"]
+position = Vector2(1271.41, -388.441)
+
+[node name="_k7" type="Marker2D" parent="ChestPositions"]
+position = Vector2(-1116.8, -1507.4)
+
+[node name="_k8" type="Marker2D" parent="ChestPositions"]
+position = Vector2(773.199, -323)
+
+[node name="_k9" type="Marker2D" parent="ChestPositions"]
+position = Vector2(651.199, -324)
+
+[node name="_k10" type="Marker2D" parent="ChestPositions"]
+position = Vector2(591.199, -324)
+
 [node name="KeyCollectionPair" type="Node2D" parent="."]
 
-[node name="Marker2D" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k1" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-3031, -380)
 
-[node name="Marker2D" type="Marker2D" parent="KeyCollectionPair/Marker2D"]
-position = Vector2(820, 160)
-
-[node name="Marker2D2" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k2" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-3031, -380)
 
-[node name="Marker2D3" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k3" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(202, -1260)
 
-[node name="Marker2D" type="Marker2D" parent="KeyCollectionPair/Marker2D3"]
-position = Vector2(-2325.27, -441.021)
-
-[node name="Marker2D4" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k4" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-2622, -743)
 
-[node name="Marker2D" type="Marker2D" parent="KeyCollectionPair/Marker2D4"]
-position = Vector2(1169.07, -783.972)
-
-[node name="Marker2D5" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k5" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-2194, -1328)
 
-[node name="Marker2D" type="Marker2D" parent="KeyCollectionPair/Marker2D5"]
-position = Vector2(-469.499, 1527.82)
-
-[node name="Marker2D6" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k6" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-792, -222)
 
-[node name="Marker2D" type="Marker2D" parent="KeyCollectionPair/Marker2D6"]
-position = Vector2(2063.41, -189.441)
-
-[node name="Marker2D7" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k7" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-1133, -1363)
 
-[node name="Marker2D8" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k8" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-1432, -848)
 
-[node name="Marker2D9" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k9" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-1618, -1042)
 
-[node name="Marker2D10" type="Marker2D" parent="KeyCollectionPair"]
+[node name="k10" type="Marker2D" parent="KeyCollectionPair"]
 position = Vector2(-1770, -661)
 
 [node name="StandAloneCollectables" type="Node2D" parent="."]

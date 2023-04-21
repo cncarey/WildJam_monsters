@@ -3,10 +3,12 @@ extends Node2D
 var blueDiamond = preload("res://GameScenes/Objects/Collectables/BlueDiamond.tscn")
 var redDiamond = preload("res://GameScenes/Objects/Collectables/RedDiamond.tscn")
 var key = preload("res://GameScenes/Objects/Collectables/key.tscn")
+var chest = preload("res://GameScenes/Objects/Interactable/chest.tscn")
 
 @onready var easyCollectablePoints = $EasyCollectables
 @onready var standAlonePoint = $StandAloneCollectables
 @onready var keyPoints = $KeyCollectionPair
+@onready var chestPoints = $ChestPositions
 
 @onready var HUD = $HUD
 @onready var HUDDayNight = $HUD/DayAndNight
@@ -39,15 +41,18 @@ func startQuest(type : StringName, questName: StringName):
 	#TODO return the number of easy items and keyed items so the monster can tell us in the chat
 	Global.previousQuest = Global.currentQuest
 	Global.currentQuest = questName
-	HUD.updateHUDQuest()
 	
 	var curQuest = Global.quests[Global.currentQuest]
+	
 	if(curQuest && "MaxDays" in curQuest):
 		var questTime = (HUDDayNight.LenghtOfDay + HUDDayNight.LenghtOfNight) * curQuest.MaxDays
 		questTimer.start(questTime)
 		pass
 	
+	var TotalCount = 0;
+	
 	if "StandAloneItemCount" in curQuest:
+		TotalCount += curQuest.StandAloneItemCount
 		var standAlone = pick_rand_number(standAlonePoint.get_children(), curQuest.StandAloneItemCount)
 		for saP in standAlone :
 			match curQuest.QuestItem:
@@ -59,13 +64,22 @@ func startQuest(type : StringName, questName: StringName):
 					assert("do not have a collectabnle of passed type preloaded")
 					
 	if "KeyedItemCount" in curQuest:
+		TotalCount += curQuest.KeyedItemCount
 		var keyedPoints = pick_rand_number(keyPoints.get_children(), curQuest.KeyedItemCount)
 		for kP in keyedPoints :
-			spawnCollectable(key.instantiate(), kP)
 			print(kP.name)
-			print(kP.get_child_count())
+			spawnCollectable(key.instantiate(), kP)
+			for cP in chestPoints.get_children():
+				if cP.name == "_" + kP.name:
+					var spawn = chest.instantiate();
+					spawn.position = cP.position
+					print(cP.name)
+					print(spawn)
+					add_child(spawn)
+				#TODO connect to open chest script
 			
 	if "easyCollectablePoints" in curQuest:
+		TotalCount += easyCollectablePoints.get_child_count()
 		for p in easyCollectablePoints.get_children():
 			match type:
 				"Blue Diamond":
@@ -75,6 +89,8 @@ func startQuest(type : StringName, questName: StringName):
 				_:
 					assert("do not have a collectabnle of passed type preloaded")
 		pass
+	curQuest.QuestInstructions = curQuest.QuestInstructions.replace("___", str(TotalCount))
+	HUD.updateHUDQuest()
 
 func pick_rand_number(list: Array, amount: int) -> Array:
 	randomize()
@@ -106,18 +122,29 @@ func _on_player_signal_followers(player, curTouching, isStarting):
 
 func onItemCollected(itemCollected):
 	print(itemCollected.collectionType)
-	if Global.collectables.has(itemCollected.collectionType) && !itemCollected.removing:
-		Global.collectables[itemCollected.collectionType] += 1
-		var curQuest = Global.quests[Global.currentQuest]
-		if(curQuest):
-			curQuest.CurrQuestItemCount += 1
+	var curQuest = Global.quests[Global.currentQuest]
+	if !itemCollected.removing:
+		if Global.collectables.has(itemCollected.collectionType):
+			Global.collectables[itemCollected.collectionType] += 1
+			
+			if(curQuest):
+				curQuest.CurrQuestItemCount += 1
+				pass
+			
+			HUD.updateItemCount(Global.collectables[itemCollected.collectionType])
+			
+			itemCollected.removing = true
+			remove_child(itemCollected)
 			pass
 		
-		HUD.updateItemCount(Global.collectables[itemCollected.collectionType])
-		
-		itemCollected.removing = true
-		remove_child(itemCollected)
-		pass
+		elif itemCollected.collectionType == "Key":
+			if curQuest:
+				curQuest.CurrQuestKeyCount += 1
+				HUD.updateKeyCount(curQuest.CurrQuestKeyCount)
+				itemCollected.removing = true
+				remove_child(itemCollected)
+			pass
+	#TODO if it is a key grab it and update the HUD
 	pass # Replace with function body.
 
 func set_Next_Day():

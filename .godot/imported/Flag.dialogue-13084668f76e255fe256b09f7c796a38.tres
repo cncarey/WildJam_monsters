@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vg44c"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_21y5f"]
 
 [resource]
-script = ExtResource("1_vg44c")
+script = ExtResource("1_21y5f")
 titles = {
 "CrabFlagStart": "15",
 "CrabFlagStop": "24",
@@ -125,7 +125,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "19",
@@ -549,7 +549,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "43",
@@ -865,7 +865,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "63",

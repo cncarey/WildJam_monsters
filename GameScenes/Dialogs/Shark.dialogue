@@ -38,19 +38,19 @@ do restartTimer()
 
 
 ~ Update_Quest
-if  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount 
+if  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems 
 	Shark: You got all my diamonds. Let's find the flag!
-elif Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount/2
+elif Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems/2
 	Shark: Yeah we don't have to many more to find
 else
-	Shark: Let's find my rubies.
+	Shark: Let's find my totalItems.
 do restartTimer()
 => END!
 
 ~ Start_Flag
 if Global.quests.Shark.QuestStarted == false
 	You don't have an active quest
-elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount 
+elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems 
 	=> Flag_Stop
 else
 	You don't have enough items to send the giant shark back to the sea

@@ -5,6 +5,7 @@ extends CanvasLayer
 @onready var DayCount = $DayCount
 @onready var Banner = $Banner
 @onready var CurQuestItemCount = $CurQuestItemCount
+@onready var curKeyCount = $Label2
 
 @onready var QuestName = $CurQuestName
 @onready var QuestInstructions = $CurQuestInstuctions
@@ -37,6 +38,9 @@ func updateHUDQuest():
 
 func updateItemCount(score):
 	QuestItemCount.text = str(score)
+	
+func updateKeyCount(keysCount):
+	curKeyCount.text = str(keysCount)
 	
 func updateDayCount(day):
 	DayCount.text = str(day)

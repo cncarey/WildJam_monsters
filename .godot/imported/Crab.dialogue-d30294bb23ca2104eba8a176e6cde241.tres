@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6ousk"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_tgyp1"]
 
 [resource]
-script = ExtResource("1_6ousk")
+script = ExtResource("1_tgyp1")
 titles = {
 "Flag_Stop": "56",
 "Pre_Quest": "9",
@@ -377,7 +377,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "39",
@@ -435,7 +435,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }, {
 "type": "operator",
 "value": "/"
@@ -585,7 +585,7 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "RequiredItemCount"
+"value": "totalItems"
 }])
 },
 "next_conditional_id": "51",

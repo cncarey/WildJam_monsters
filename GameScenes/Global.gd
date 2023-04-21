@@ -33,11 +33,12 @@ enum GameMode {Story, Endless}
 	"Crab" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Lost Rubies",
-		"QuestInstructions" : "Find all the Giant Crab's rubies",
+		"QuestInstructions" : "Find all ___ the Giant Crab's rubies",
 		"QuestItem" : "Red Diamond",
 		"CurrQuestItemCount" : 0,
 		#TODO set this based on the difficulty	
 		"easyCollectablePoints" : 5, 
+		"totalItems" : 5,
 		"QuestComplete": false,
 		"QuestCurDay": 0
 	},
@@ -45,18 +46,20 @@ enum GameMode {Story, Endless}
 		"QuestStarted" :  false,
 		"QuestName" : "Find the Giant Shark",
 		"QuestInstructions" : "Find the Shark by the lake",
-		"MaxDays": 5,
+		"MaxDays": 20,
 		"QuestComplete": false
 	},
 	"Shark" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Lost Diamonds",
-		"QuestInstructions" : "Find all the Giant Shark's diamonds",
+		"QuestInstructions" : "Find all ___ of the Giant Shark's diamonds",
 		"QuestItem" : "Blue Diamond",
 		"CurrQuestItemCount" : 0,
+		"CurrQuestKeyCount" : 0,
 		#TODO set this based on the difficulty	
 		"StandAloneItemCount" : 5, 
-		"KeyedItemCount" : 1,
+		"KeyedItemCount" : 2,
+		"totalItems" : 7,
 		"QuestComplete": false,
 		"QuestCurDay": 0
 	},
@@ -66,8 +69,9 @@ enum GameMode {Story, Endless}
 		"QuestInstructions" : "Find the Crab down below",
 		"QuestItem" : "Pets",
 		"CurrQuestItemCount" : 0,
-		"StandAloneItemCount" : 5, 
-		"KeyedItemCount" : 0,
+		"CurrQuestKeyCount" : 0,
+		"StandAloneItemCount" : 3, 
+		"totalItems" : 3,
 		"MaxDays": 10,
 		"QuestComplete": false,
 		"QuestCurDay": 0

@@ -14,7 +14,7 @@ else
 ~ CrabFlagStart
 if Global.quests.Crab.QuestStarted == false
 	Find the Giant Crab
-elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount 
+elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems 
 	=> CrabFlagStop
 else
 	You don't have enough items to send crab back to the sea
@@ -38,7 +38,7 @@ else
 ~ SharkFlagStart
 if Global.quests.Shark.QuestStarted == false
 	Go find the Giant Shark
-elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount 
+elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems 
 	=> SharkFlagStop
 else
 	You don't have enough items to send shark back to the sea
@@ -58,7 +58,7 @@ else
 => END!
 
 ~ PetsFlagStart
-if Global.quests.Pets.CurrQuestItemCount >= Global.quests.Pets.RequiredItemCount 
+if Global.quests.Pets.CurrQuestItemCount >= Global.quests.Pets.totalItems 
 	=> PetsFlagStop
 else
 	You don't have everyones pets

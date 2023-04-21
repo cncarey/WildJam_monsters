@@ -34,9 +34,9 @@ do restartTimer()
 => END
 
 ~ Update_Quest
-if  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount 
+if  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems 
 	Crab: You got all my rubies. Let's find the flag!
-elif Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount/2
+elif Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems/2
 	Crab: Yeah we don't have to many more to find
 else
 	Crab: Let's find my rubies.
@@ -46,7 +46,7 @@ do restartTimer()
 ~ Start_Flag
 if Global.quests.Crab.QuestStarted == false
 	You don't have an active quest
-elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.RequiredItemCount 
+elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems 
 	=> Flag_Stop
 else
 	You don't have enough items to send crab back to the sea
