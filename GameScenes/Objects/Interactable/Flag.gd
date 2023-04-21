@@ -3,6 +3,8 @@ extends AnimatedSprite2D
 @onready var actionFinder = $ActionFinder
 @export var dialogueResourse : DialogueResource
 
+const interactableType = "Flag"
+
 signal changeScene()
 
 func _ready():

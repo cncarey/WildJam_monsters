@@ -5,6 +5,8 @@ extends StaticBody2D
 
 @onready var animate = $AnimatedSprite2D
 
+const interactableType = "Chest"
+
 signal provideKey(this)
 
 func _ready():

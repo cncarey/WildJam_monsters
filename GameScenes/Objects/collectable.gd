@@ -3,6 +3,7 @@ extends Area2D
 
 @export var removing :bool = false
 signal collected(itemCollected)
+signal removedFromMiniMap(itemCollected)
 
 
 func _on_body_entered(body):
@@ -10,6 +11,7 @@ func _on_body_entered(body):
 		var p = get_parent()
 		if "collectionType" in p:
 			p.collection.collected.emit(p)
+			p.collection.removedFromMiniMap.emit(p)
 			pass
 		else:
 			assert("collectable is missing Name")	

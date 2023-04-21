@@ -71,14 +71,12 @@ func startQuest(type : StringName, questName: StringName):
 		TotalCount += curQuest.KeyedItemCount
 		var keyedPoints = pick_rand_number(keyPoints.get_children(), curQuest.KeyedItemCount)
 		for kP in keyedPoints :
-			print(kP.name)
 			spawnCollectable(key.instantiate(), kP)
 			for cP in chestPoints.get_children():
 				if cP.name == "_" + kP.name:
 					var spawn = chest.instantiate();
 					spawn.position = cP.position
-					print(cP.name)
-					print(spawn)
+					
 					add_child(spawn)
 					spawn.provideKey.connect(provideKey)
 				#TODO connect to open chest script
@@ -96,6 +94,7 @@ func startQuest(type : StringName, questName: StringName):
 		pass
 	curQuest.QuestInstructions = curQuest.QuestInstructions.replace("___", str(TotalCount))
 	HUD.updateHUDQuest()
+	miniMap.updateMarkers()
 
 func pick_rand_number(list: Array, amount: int) -> Array:
 	randomize()
@@ -113,7 +112,6 @@ func spawnCollectable(spawn, parent):
 	spawn.position = parent.position
 	add_child(spawn)
 	spawn.collection.collected.connect(onItemCollected)
-		
 	pass
 
 func _on_player_signal_followers(player, curTouching, isStarting):
@@ -126,7 +124,6 @@ func _on_player_signal_followers(player, curTouching, isStarting):
 
 
 func onItemCollected(itemCollected):
-	print(itemCollected.collectionType)
 	var curQuest = Global.quests[Global.currentQuest]
 	if !itemCollected.removing && curQuest:
 		if itemCollected.collectionType == curQuest.QuestItem:

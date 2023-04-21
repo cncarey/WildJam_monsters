@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_pqdxh"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_30vio"]
 
 [resource]
-script = ExtResource("1_pqdxh")
+script = ExtResource("1_30vio")
 titles = {
-"Flag_Stop": "60",
-"Pre_Quest": "11",
+"Flag_Stop": "62",
+"Pre_Quest": "14",
 "Start": "2",
-"Start_Flag": "51",
-"Start_Quest": "27",
-"Update_Quest": "41"
+"Start_Flag": "53",
+"Start_Quest": "29",
+"Update_Quest": "43"
 }
 character_names = PackedStringArray("Shark", "Player:", "Player")
 first_title = "2"
@@ -20,83 +20,99 @@ lines = {
 "text": "Start",
 "type": "title"
 },
-"10": {
-"next_id": "11",
-"text": "Pre_Quest",
-"type": "title"
-},
 "11": {
-"character": "Shark",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "12",
-"text": "...",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "...",
-"type": "dialogue"
-},
-"12": {
-"character": "Player:",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "13",
-"text": "",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "",
-"type": "dialogue"
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 },
 "13": {
 "next_id": "14",
-"next_id_after": "27",
-"responses": PackedStringArray("13", "17", "22"),
-"text": "Why are you terrorizing to town?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Why are you terrorizing to town?",
-"type": "response"
+"text": "Pre_Quest",
+"type": "title"
 },
 "14": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "15",
-"parent_id": "13",
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": "dialogue"
+},
+"15": {
+"character": "Player:",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "16",
+"text": "",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "",
+"type": "dialogue"
+},
+"16": {
+"next_id": "17",
+"next_id_after": "29",
+"responses": PackedStringArray("16", "20", "24"),
+"text": "Why are you terrorizing to town?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Why are you terrorizing to town?",
+"type": "response"
+},
+"17": {
+"character": "Shark",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "18",
+"parent_id": "16",
 "text": "What are you talking about. What town?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "What are you talking about. What town?",
 "type": "dialogue"
 },
-"15": {
+"18": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "16",
-"parent_id": "13",
+"next_id": "19",
+"parent_id": "16",
 "text": "I've been here in the swell all week.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I've been here in the swell all week.",
 "type": "dialogue"
 },
-"16": {
+"19": {
 "is_snippet": false,
-"next_id": "27",
-"parent_id": "13",
+"next_id": "29",
+"parent_id": "16",
 "type": "goto"
 },
-"17": {
-"next_id": "18",
-"next_id_after": "27",
+"2": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "pauseTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "3",
+"type": "mutation"
+},
+"20": {
+"next_id": "21",
+"next_id_after": "29",
 "text": "Are you okay?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Are you okay?",
 "type": "response"
 },
-"18": {
+"21": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "19",
-"parent_id": "17",
+"next_id": "22",
+"parent_id": "20",
 "text": "No",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No",
 "type": "dialogue"
 },
-"19": {
+"22": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -119,62 +135,25 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "20",
-"parent_id": "17",
+"next_id": "23",
+"parent_id": "20",
 "type": "mutation"
 },
-"2": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"function": "pauseTimer",
-"type": "function",
-"value": Array[Array]([])
-}])
-},
-"next_id": "3",
-"type": "mutation"
-},
-"20": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "21",
-"parent_id": "17",
-"text": "debug({{Global.quests.Morality}})",
-"text_replacements": Array[Dictionary]([{
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "quests"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "Morality"
-}]),
-"value_in_text": "{{Global.quests.Morality}}"
-}]),
-"translation_key": "debug({{Global.quests.Morality}})",
-"type": "dialogue"
-},
-"21": {
+"23": {
 "is_snippet": false,
-"next_id": "27",
-"parent_id": "17",
+"next_id": "29",
+"parent_id": "20",
 "type": "goto"
 },
-"22": {
-"next_id": "23",
-"next_id_after": "27",
+"24": {
+"next_id": "25",
+"next_id_after": "29",
 "text": "End the conversation",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "End the conversation",
 "type": "response"
 },
-"23": {
+"25": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "restartTimer",
@@ -182,149 +161,31 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "24",
-"parent_id": "22",
+"next_id": "26",
+"parent_id": "24",
 "type": "mutation"
 },
-"24": {
+"26": {
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "22",
+"parent_id": "24",
 "type": "goto"
 },
-"26": {
-"next_id": "27",
+"28": {
+"next_id": "29",
 "text": "Start_Quest",
 "type": "title"
-},
-"27": {
-"character": "Shark",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "28",
-"text": "I was surfing a HUGE wave...maybe a bit too huge",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I was surfing a HUGE wave...maybe a bit too huge",
-"type": "dialogue"
-},
-"28": {
-"character": "Shark",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "29",
-"text": "...When I lost controll and landed up here.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "...When I lost controll and landed up here.",
-"type": "dialogue"
 },
 "29": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "30",
-"text": "I dropped all my blue diamonds and I need help finidng them",
+"text": "I was surfing a HUGE wave...maybe a bit too huge",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "I dropped all my blue diamonds and I need help finidng them",
+"translation_key": "I was surfing a HUGE wave...maybe a bit too huge",
 "type": "dialogue"
 },
 "3": {
-"condition": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "quests"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "Shark"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "QuestStarted"
-}, {
-"type": "comparison",
-"value": "=="
-}, {
-"type": "bool",
-"value": false
-}])
-},
-"next_conditional_id": "5",
-"next_id": "4",
-"next_id_after": "8",
-"type": "condition"
-},
-"30": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "31",
-"text": "I can help you with that.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I can help you with that.",
-"type": "dialogue"
-},
-"31": {
-"character": "Shark",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "32",
-"text": "Really. I'm missing 5 blue diamonds throught the map.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Really. I'm missing 5 blue diamonds throught the map.",
-"type": "dialogue"
-},
-"32": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "33",
-"text": "So if I find your 5 blue diamonds you'll head back to the sea",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "So if I find your 5 blue diamonds you'll head back to the sea",
-"type": "dialogue"
-},
-"33": {
-"character": "Shark",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "34",
-"text": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
-"type": "dialogue"
-},
-"34": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "quests"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "Shark"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "QuestStarted"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "bool",
-"value": true
-}])
-},
-"next_id": "35",
-"type": "mutation"
-},
-"35": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "startQuest",
@@ -353,10 +214,127 @@ lines = {
 }])])
 }])
 },
-"next_id": "36",
+"next_id": "4",
 "type": "mutation"
 },
+"30": {
+"character": "Shark",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "31",
+"text": "...When I lost controll and landed up here.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...When I lost controll and landed up here.",
+"type": "dialogue"
+},
+"31": {
+"character": "Shark",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "32",
+"text": "I dropped all my blue diamonds and I need help finidng them",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I dropped all my blue diamonds and I need help finidng them",
+"type": "dialogue"
+},
+"32": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "33",
+"text": "I can help you with that.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I can help you with that.",
+"type": "dialogue"
+},
+"33": {
+"character": "Shark",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "34",
+"text": "Really. I'm missing 5 blue diamonds throught the map.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Really. I'm missing 5 blue diamonds throught the map.",
+"type": "dialogue"
+},
+"34": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "35",
+"text": "So if I find your 5 blue diamonds you'll head back to the sea",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "So if I find your 5 blue diamonds you'll head back to the sea",
+"type": "dialogue"
+},
+"35": {
+"character": "Shark",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "36",
+"text": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
+"type": "dialogue"
+},
 "36": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestStarted"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+}])
+},
+"next_id": "37",
+"type": "mutation"
+},
+"37": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "startQuest",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestItem"
+}]), Array[Dictionary]([{
+"type": "string",
+"value": "Shark"
+}])])
+}])
+},
+"next_id": "38",
+"type": "mutation"
+},
+"38": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "restartTimer",
@@ -364,26 +342,31 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "37",
+"next_id": "39",
 "type": "mutation"
 },
-"37": {
+"39": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
 "4": {
-"is_snippet": false,
-"next_id": "11",
-"parent_id": "3",
-"type": "goto"
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "restartTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
 },
-"40": {
-"next_id": "41",
+"next_id": "5",
+"type": "mutation"
+},
+"42": {
+"next_id": "43",
 "text": "Update_Quest",
 "type": "title"
 },
-"41": {
+"43": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -426,22 +409,22 @@ lines = {
 "value": "totalItems"
 }])
 },
-"next_conditional_id": "43",
-"next_id": "42",
-"next_id_after": "47",
+"next_conditional_id": "45",
+"next_id": "44",
+"next_id_after": "49",
 "type": "condition"
 },
-"42": {
+"44": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "47",
-"parent_id": "41",
+"next_id": "49",
+"parent_id": "43",
 "text": "You got all my diamonds. Let's find the flag!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You got all my diamonds. Let's find the flag!",
 "type": "dialogue"
 },
-"43": {
+"45": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -490,38 +473,38 @@ lines = {
 "value": 2
 }])
 },
-"next_conditional_id": "45",
-"next_id": "44",
-"next_id_after": "47",
-"type": "condition"
-},
-"44": {
-"character": "Shark",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "47",
-"parent_id": "43",
-"text": "Yeah we don't have to many more to find",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah we don't have to many more to find",
-"type": "dialogue"
-},
-"45": {
 "next_conditional_id": "47",
 "next_id": "46",
-"next_id_after": "47",
+"next_id_after": "49",
 "type": "condition"
 },
 "46": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "47",
+"next_id": "49",
 "parent_id": "45",
+"text": "Yeah we don't have to many more to find",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yeah we don't have to many more to find",
+"type": "dialogue"
+},
+"47": {
+"next_conditional_id": "49",
+"next_id": "48",
+"next_id_after": "49",
+"type": "condition"
+},
+"48": {
+"character": "Shark",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "49",
+"parent_id": "47",
 "text": "Let's find my totalItems.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Let's find my totalItems.",
 "type": "dialogue"
 },
-"47": {
+"49": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "restartTimer",
@@ -529,26 +512,25 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "48",
+"next_id": "50",
 "type": "mutation"
 },
-"48": {
+"5": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"50": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
 },
-"5": {
-"next_conditional_id": "8",
-"next_id": "6",
-"next_id_after": "8",
-"type": "condition"
-},
-"50": {
-"next_id": "51",
+"52": {
+"next_id": "53",
 "text": "Start_Flag",
 "type": "title"
 },
-"51": {
+"53": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -576,22 +558,22 @@ lines = {
 "value": false
 }])
 },
-"next_conditional_id": "53",
-"next_id": "52",
-"next_id_after": "57",
+"next_conditional_id": "55",
+"next_id": "54",
+"next_id_after": "59",
 "type": "condition"
 },
-"52": {
+"54": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "57",
-"parent_id": "51",
+"next_id": "59",
+"parent_id": "53",
 "text": "You don't have an active quest",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You don't have an active quest",
 "type": "dialogue"
 },
-"53": {
+"55": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -634,69 +616,96 @@ lines = {
 "value": "totalItems"
 }])
 },
-"next_conditional_id": "55",
-"next_id": "54",
-"next_id_after": "57",
-"type": "condition"
-},
-"54": {
-"is_snippet": false,
-"next_id": "60",
-"parent_id": "53",
-"type": "goto"
-},
-"55": {
 "next_conditional_id": "57",
 "next_id": "56",
-"next_id_after": "57",
+"next_id_after": "59",
 "type": "condition"
 },
 "56": {
+"is_snippet": false,
+"next_id": "62",
+"parent_id": "55",
+"type": "goto"
+},
+"57": {
+"next_conditional_id": "59",
+"next_id": "58",
+"next_id_after": "59",
+"type": "condition"
+},
+"58": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "57",
-"parent_id": "55",
+"next_id": "59",
+"parent_id": "57",
 "text": "You don't have enough items to send the giant shark back to the sea",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You don't have enough items to send the giant shark back to the sea",
 "type": "dialogue"
 },
-"57": {
+"59": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"59": {
-"next_id": "60",
+"6": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestStarted"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": false
+}])
+},
+"next_conditional_id": "8",
+"next_id": "7",
+"next_id_after": "11",
+"type": "condition"
+},
+"61": {
+"next_id": "62",
 "text": "Flag_Stop",
 "type": "title"
 },
-"6": {
-"is_snippet": false,
-"next_id": "41",
-"parent_id": "5",
-"type": "goto"
-},
-"60": {
-"next_id": "61",
-"next_id_after": "68",
-"responses": PackedStringArray("60", "63", "67"),
+"62": {
+"next_id": "63",
+"next_id_after": "70",
+"responses": PackedStringArray("62", "65", "69"),
 "text": "Send Shark back to the sea",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Send Shark back to the sea",
 "type": "response"
 },
-"61": {
+"63": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "62",
-"parent_id": "60",
+"next_id": "64",
+"parent_id": "62",
 "text": "Thanks for helping me",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Thanks for helping me",
 "type": "dialogue"
 },
-"62": {
+"64": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -714,29 +723,29 @@ lines = {
 "value": "Quest3"
 }])
 },
-"next_id": "68",
-"parent_id": "60",
+"next_id": "70",
+"parent_id": "62",
 "type": "mutation"
 },
-"63": {
-"next_id": "64",
-"next_id_after": "68",
+"65": {
+"next_id": "66",
+"next_id_after": "70",
 "text": "Let Shark stay on the island",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Let Shark stay on the island",
 "type": "response"
 },
-"64": {
+"66": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "65",
-"parent_id": "63",
+"next_id": "67",
+"parent_id": "65",
 "text": "Are you sure I think all the town people will be mad if I stay. Hopefully we meet again",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Are you sure I think all the town people will be mad if I stay. Hopefully we meet again",
 "type": "dialogue"
 },
-"65": {
+"67": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -759,11 +768,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "66",
-"parent_id": "63",
+"next_id": "68",
+"parent_id": "65",
 "type": "mutation"
 },
-"66": {
+"68": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -781,26 +790,39 @@ lines = {
 "value": "Quest3"
 }])
 },
-"next_id": "68",
-"parent_id": "63",
+"next_id": "70",
+"parent_id": "65",
 "type": "mutation"
 },
-"67": {
-"next_id": "68",
-"next_id_after": "68",
+"69": {
+"next_id": "70",
+"next_id_after": "70",
 "text": "Come back later",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Come back later",
 "type": "response"
 },
-"68": {
+"7": {
+"is_snippet": false,
+"next_id": "14",
+"parent_id": "6",
+"type": "goto"
+},
+"70": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
 },
 "8": {
+"next_conditional_id": "11",
+"next_id": "9",
+"next_id_after": "11",
+"type": "condition"
+},
+"9": {
 "is_snippet": false,
-"next_id": "end",
+"next_id": "43",
+"parent_id": "8",
 "type": "goto"
 }
 }

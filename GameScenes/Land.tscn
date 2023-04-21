@@ -907,6 +907,18 @@ offset_bottom = 29.0
 text = "Jump"
 metadata/_edit_use_anchors_ = true
 
+[node name="Up4" type="Sprite2D" parent="Tutorial"]
+position = Vector2(1470.11, 628.276)
+texture = ExtResource("15_8rmol")
+
+[node name="Climb" type="Label" parent="Tutorial"]
+offset_left = 1451.11
+offset_top = 586.276
+offset_right = 1508.11
+offset_bottom = 612.276
+text = "Climb"
+metadata/_edit_use_anchors_ = true
+
 [node name="Up2" type="Sprite2D" parent="Tutorial"]
 position = Vector2(1238, -170)
 texture = ExtResource("15_8rmol")

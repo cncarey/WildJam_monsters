@@ -29,7 +29,7 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i5u08"]
 
-[node name="BlueDiamond" type="AnimatedSprite2D"]
+[node name="BlueDiamond" type="AnimatedSprite2D" groups=["miniMap"]]
 sprite_frames = SubResource("SpriteFrames_d5ftm")
 frame = 2
 frame_progress = 0.578126

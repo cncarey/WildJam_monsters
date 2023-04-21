@@ -10,3 +10,11 @@ res://GameScenes/HUD/hud.tscn
 res://GameScenes/Characters/Player.tscn
 res://GameScenes/Environment/DayAndNight.tscn
 res://GameScenes/Land.gd
+res://GameScenes/Objects/Collectables/BlueDiamond.tscn
+res://GameScenes/Objects/Collectables/key.tscn
+res://GameScenes/Objects/Interactable/chest.tscn
+res://GameScenes/Objects/Collectables/RedDiamond.tscn
+res://GameScenes/Objects/Interactable/chest.gd
+res://GameScenes/Objects/Interactable/Flag.tscn
+res://GameScenes/Objects/Interactable/Flag.gd
+res://GameScenes/Objects/collectable.gd

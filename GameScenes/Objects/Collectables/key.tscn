@@ -46,7 +46,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jkrjb"]
 height = 24.0
 
-[node name="key" type="AnimatedSprite2D"]
+[node name="key" type="AnimatedSprite2D" groups=["miniMap"]]
 sprite_frames = SubResource("SpriteFrames_fwqtl")
 frame_progress = 0.79278
 script = ExtResource("9_impjc")

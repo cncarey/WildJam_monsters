@@ -52,7 +52,7 @@ animations = [{
 radius = 30.0
 height = 118.0
 
-[node name="Flag" type="AnimatedSprite2D"]
+[node name="Flag" type="AnimatedSprite2D" groups=["miniMap"]]
 sprite_frames = SubResource("SpriteFrames_5xcct")
 animation = &"flying"
 script = ExtResource("10_dex8o")

@@ -1,5 +1,8 @@
 ~ Start
 do pauseTimer()
+do startQuest(Global.quests.Shark.QuestItem, "Shark")
+do restartTimer()
+=> END
 if Global.quests.Shark.QuestStarted == false
 	=> Pre_Quest
 else
@@ -17,7 +20,6 @@ Player:
 - Are you okay?
 	Shark: No
 	set Global.quests.Morality += 1
-	debug({{Global.quests.Morality}})
 	=> Start_Quest
 - End the conversation 
 	do restartTimer()
