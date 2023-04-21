@@ -4,7 +4,8 @@ extends StaticBody2D
 @onready var isOpen = false
 
 @onready var _Animation = $Animation
-@onready var collider = $Area2D
+@onready var collider = $Area2D/CollisionShape2D
+@onready var collider2 = $CollisionShape2D
 
 func _ready():
 	setState()
@@ -27,13 +28,15 @@ func unlock(hasKey):
 func setState():
 	if isOpen:
 		_Animation.play("Open")
-		collider.hide()
+		collider.disabled = true
+		collider2.disabled = true
 	else: 
 		_Animation.play("Closed")
 		if !isLocked:
 			collider.hide()
 		else:
-			collider.show()
+			collider.disabled = false
+			collider2.disabled = false
 
 func _on_animation_finished():
 	if _Animation.animation == "Opening" || _Animation.animation == "Closing":

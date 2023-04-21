@@ -1,8 +1,10 @@
-res://GameScenes/Land.tscn
+res://GameScenes/Objects/Interactable/Door.tscn
 res://GameScenes/Dialogs/Actionable.gd
 res://GameScenes/Objects/chainsTile.tres
-res://GameScenes/Characters/shark.tscn
-res://GameScenes/HUD/hud.tscn
+res://GameScenes/Land.tscn
 res://GameScenes/Characters/Crab.tscn
 res://GameScenes/CutScenes/OpeningScene.tscn
 res://GameScenes/HUD/StartMenu.tscn
+res://GameScenes/Characters/shark.tscn
+res://GameScenes/Objects/Collectables/BlueDiamond.tscn
+res://GameScenes/Objects/Collectables/RedDiamond.tscn

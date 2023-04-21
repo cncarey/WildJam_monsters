@@ -1,7 +1,7 @@
-TextureRect
-AnimatedSprite2D
-AnimationPlayer
 CollisionShape2D
+AnimatedSprite2D
+TextureRect
+AnimationPlayer
 Area2D
 CharacterBody2D
 Marker2D

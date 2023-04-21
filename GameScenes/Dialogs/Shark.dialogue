@@ -1,22 +1,68 @@
 ~ Start
-
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => Start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+do pauseTimer()
+if Global.quests.Shark.QuestStarted == false
+	=> Pre_Quest
+else
+	=> Update_Quest
 
 => END
 
 ~ Pre_Quest
-Shark: TODO
+Shark: ...
+Player: 
+- Why are you terrorizing to town?
+	Shark: What are you talking about. What town?
+	Shark: I've been here in the swell all week.
+	=> Start_Quest
+- Are you okay?
+	Shark: No
+	set Global.quests.Morality += 1
+	debug({{Global.quests.Morality}})
+	=> Start_Quest
+- End the conversation 
+	do restartTimer()
+	=> END
 
 ~ Start_Quest
-Shark: TODO
+Shark: I was surfing a HUGE wave...maybe a bit too huge
+Shark: ...When I lost controll and landed up here.
+Shark: I dropped all my blue diamonds and I need help finidng them
+Player: I can help you with that.
+Shark: Really. I'm missing 5 blue diamonds throught the map.
+Player: So if I find your 5 blue diamonds you'll head back to the sea
+Shark: Yeah. And can you please take me there after you find them. I can get back from the big flag
+set Global.quests.Shark.QuestStarted = true
+do startQuest(Global.quests.Shark.QuestItem, "Shark")
+do restartTimer()
+=> END
+
 
 ~ Update_Quest
-Shark: TODO
+if  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount 
+	Shark: You got all my diamonds. Let's find the flag!
+elif Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount/2
+	Shark: Yeah we don't have to many more to find
+else
+	Shark: Let's find my rubies.
+do restartTimer()
+=> END!
+
+~ Start_Flag
+if Global.quests.Shark.QuestStarted == false
+	You don't have an active quest
+elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.RequiredItemCount 
+	=> Flag_Stop
+else
+	You don't have enough items to send the giant shark back to the sea
+=> END
+
+~ Flag_Stop
+- Send Shark back to the sea
+	Shark: Thanks for helping me
+	set Global.currentQuest = "Quest3"
+- Let Shark stay on the island
+	Shark: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
+	set Global.quests.Morality += 1
+	set Global.currentQuest = "Quest3"
+- Come back later
+=> END!

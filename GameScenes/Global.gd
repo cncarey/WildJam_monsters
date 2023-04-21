@@ -17,8 +17,8 @@ enum GameMode {Story, Endless}
 	"State" : TimeOfDay.Day,
 	"Day" : 0
 }
-@onready var currentQuest = "Quest1"
-@onready var previousQuest = ""
+@onready var currentQuest = "Quest2"
+@onready var previousQuest = "Crab"
 
 @onready var quests : Dictionary = {
 	"Morality" : 0,
@@ -37,7 +37,7 @@ enum GameMode {Story, Endless}
 		"QuestItem" : "Red Diamond",
 		"CurrQuestItemCount" : 0,
 		#TODO set this based on the difficulty	
-		"RequiredItemCount" : 5, 
+		"easyCollectablePoints" : 5, 
 		"QuestComplete": false,
 		"QuestCurDay": 0
 	},
@@ -55,7 +55,8 @@ enum GameMode {Story, Endless}
 		"QuestItem" : "Blue Diamond",
 		"CurrQuestItemCount" : 0,
 		#TODO set this based on the difficulty	
-		"RequiredItemCount" : 5, 
+		"StandAloneItemCount" : 5, 
+		"KeyedItemCount" : 1,
 		"QuestComplete": false,
 		"QuestCurDay": 0
 	},
@@ -65,6 +66,8 @@ enum GameMode {Story, Endless}
 		"QuestInstructions" : "Find the Crab down below",
 		"QuestItem" : "Pets",
 		"CurrQuestItemCount" : 0,
+		"StandAloneItemCount" : 5, 
+		"KeyedItemCount" : 0,
 		"MaxDays": 10,
 		"QuestComplete": false,
 		"QuestCurDay": 0
