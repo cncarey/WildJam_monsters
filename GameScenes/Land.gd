@@ -11,12 +11,14 @@ var chest = preload("res://GameScenes/Objects/Interactable/chest.tscn")
 @onready var chestPoints = $ChestPositions
 
 @onready var HUD = $HUD
+@onready var miniMap = $HUD/MiniMap
 @onready var HUDDayNight = $HUD/DayAndNight
 @onready var questTimer = $CurQuestTimer
 @onready var pauseMenu = $PauseMenu
 
 @onready var tutorial = $Tutorial
 @onready var door = $Door
+@onready var player = $Player
 
 func _ready():
 	if(Global.currentQuest == "Quest1" || Global.currentQuest == "Crab"):
@@ -32,6 +34,8 @@ func _ready():
 		var questTime = (HUDDayNight.LenghtOfDay + HUDDayNight.LenghtOfNight) * curQuest.MaxDays
 		questTimer.start(questTime)
 		pass
+	
+	miniMap.player = player
 	HUD.updateHUDQuest()
 	pass
 

@@ -1,3 +1,4 @@
+res://GameScenes/HUD
 res://GameScenes/Objects/Interactable
 res://GameScenes
 res://GameScenes/Characters
@@ -6,7 +7,6 @@ res://GameScenes/Dialogs
 res://GameScenes/Dialogs/
 res://GameScenes/Environment
 res://GameScenes/Objects/Collectables
-res://GameScenes/HUD
 res://GameScenes/Objects/
 res://GameScenes/Objects
 res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run

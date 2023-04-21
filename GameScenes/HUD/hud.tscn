@@ -68,6 +68,7 @@ patch_margin_bottom = 6
 
 [node name="DayLabel" type="Label" parent="DayHolder"]
 z_index = 1
+layout_mode = 0
 offset_left = 17.2327
 offset_top = 33.9251
 offset_right = 52.2327
@@ -87,6 +88,7 @@ texture = ExtResource("4_15n0m")
 
 [node name="DayCount" type="Label" parent="DayHolder"]
 z_index = 1
+layout_mode = 0
 offset_left = 46.0
 offset_top = 35.0
 offset_right = 114.0

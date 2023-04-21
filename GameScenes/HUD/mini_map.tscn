@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpqgxahbcul48"]
+
+[ext_resource type="Texture2D" uid="uid://bsaqj8f1rsenn" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Prefabs/9.png" id="1_c22dc"]
+[ext_resource type="Script" path="res://GameScenes/HUD/mini_map.gd" id="1_cnn4y"]
+[ext_resource type="Texture2D" uid="uid://xgm1npf17aob" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Yellow Paper/5.png" id="2_ebqvw"]
+[ext_resource type="Texture2D" uid="uid://d0nytrflcuv48" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Sliders/1.png" id="4_udtyy"]
+[ext_resource type="Texture2D" uid="uid://vqeg1ricu7t3" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/1.png" id="5_sqijc"]
+[ext_resource type="Texture2D" uid="uid://b6ike16cp0t80" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Exclamation/Exclamation In 03.png" id="6_nj8nc"]
+
+[node name="MiniMap" type="MarginContainer"]
+custom_minimum_size = Vector2(5, 5)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = -1575.0
+offset_bottom = -844.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cnn4y")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_c22dc")
+draw_center = false
+region_rect = Rect2(12.4074, 14.8148, 102.815, 98.3704)
+patch_margin_left = 6
+patch_margin_top = 7
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Paper" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_ebqvw")
+
+[node name="Player" type="Sprite2D" parent="MarginContainer/Paper"]
+position = Vector2(131, 88)
+rotation = 3.14159
+texture = ExtResource("4_udtyy")
+
+[node name="key" type="Sprite2D" parent="MarginContainer/Paper"]
+position = Vector2(93, 86)
+scale = Vector2(0.916667, 0.833333)
+texture = ExtResource("5_sqijc")
+
+[node name="item" type="Sprite2D" parent="MarginContainer/Paper"]
+position = Vector2(93, 110)
+texture = ExtResource("6_nj8nc")

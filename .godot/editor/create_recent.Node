@@ -1,3 +1,9 @@
+MarginContainer
+AspectRatioContainer
+Container
+Sprite2D
+TextureRect
+NinePatchRect
 Node2D
 Marker2D
 AnimatedSprite2D
@@ -6,11 +12,9 @@ Area2D
 StaticBody2D
 Label
 GridContainer
-TextureRect
 AnimationPlayer
 CharacterBody2D
 ShapeCast2D
-NinePatchRect
 Timer
 CanvasLayer
 ColorRect
@@ -21,12 +25,8 @@ RichTextLabel
 TextEdit
 TextureButton
 TileMap
-MarginContainer
 RayCast2D
 VisibleOnScreenNotifier2D
 Camera2D
 RemoteTransform2D
 HitboxComponent
-HealthComponent
-Sprite2D
-BulletGen
