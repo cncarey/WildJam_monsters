@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fxveu"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_w558l"]
 
 [resource]
-script = ExtResource("1_fxveu")
+script = ExtResource("1_w558l")
 titles = {
 "Quest1": "6",
 "Quest2": "42",
@@ -22,9 +22,9 @@ lines = {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "11",
-"text": "...I could use the gold",
+"text": "...I could use the gold.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "...I could use the gold",
+"translation_key": "...I could use the gold.",
 "type": "dialogue"
 },
 "100": {
@@ -135,9 +135,9 @@ lines = {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "13",
-"text": "Some of it...[wait=2] What am I suppose to do with some of it?",
+"text": "Some of it... What am I suppose to do with some of it?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Some of it...[wait=2] What am I suppose to do with some of it?",
+"translation_key": "Some of it... What am I suppose to do with some of it?",
 "type": "dialogue"
 },
 "13": {
@@ -589,9 +589,9 @@ lines = {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "9",
-"text": "Have you seen it",
+"text": "Have you seen it?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Have you seen it",
+"translation_key": "Have you seen it?",
 "type": "dialogue"
 },
 "70": {

@@ -26,8 +26,9 @@ func Talk():
 	
 func _on_dialogue_ended(_resource: DialogueResource):
 	DialogueManager.dialogue_ended.disconnect(_on_dialogue_ended)
-	if Global.previousQuest && Global.previousQuest != "":
-		await get_tree().create_timer(0.4).timeout
+	
+	await get_tree().create_timer(0.4).timeout
+	if Global.previousQuest && Global.previousQuest != "":		
 		var curQuest = Global.quests[Global.previousQuest]
 		if(curQuest && "QuestComplete" in curQuest):
 			if curQuest.QuestComplete:

@@ -46,6 +46,9 @@ func startQuest(type : StringName, questName: StringName):
 	Global.previousQuest = Global.currentQuest
 	Global.currentQuest = questName
 	
+	var prevQuest = Global.quests[Global.previousQuest]
+	prevQuest.QuestComplete = true;
+	
 	var curQuest = Global.quests[Global.currentQuest]
 	
 	if(curQuest && "MaxDays" in curQuest):
@@ -131,7 +134,7 @@ func onItemCollected(itemCollected):
 			HUD.updateItemCount(curQuest.CurrQuestItemCount)
 			
 			itemCollected.removing = true
-			remove_child(itemCollected)
+			itemCollected.hide()
 			pass
 		
 		elif itemCollected.collectionType == "Key":			
@@ -139,7 +142,7 @@ func onItemCollected(itemCollected):
 			HUD.updateKeyCount(curQuest.CurrQuestKeyCount)
 			
 			itemCollected.removing = true
-			remove_child(itemCollected)
+			itemCollected.hide()
 			
 	#TODO if it is a key grab it and update the HUD
 	pass # Replace with function body.

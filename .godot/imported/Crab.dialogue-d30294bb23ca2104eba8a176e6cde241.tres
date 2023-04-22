@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_tgyp1"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_gx845"]
 
 [resource]
-script = ExtResource("1_tgyp1")
+script = ExtResource("1_gx845")
 titles = {
 "Flag_Stop": "56",
 "Pre_Quest": "9",
@@ -197,18 +197,60 @@ lines = {
 "character": "Crab",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "29",
-"text": "Really. I'm missing 5 rubies throught the map.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Really. I'm missing 5 rubies throught the map.",
+"text": "Really. I'm missing _ {{Global.quests.Crab.totalItems}} _ rubies throught the map.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Crab"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "totalItems"
+}]),
+"value_in_text": "{{Global.quests.Crab.totalItems}}"
+}]),
+"translation_key": "Really. I'm missing _ {{Global.quests.Crab.totalItems}} _ rubies throught the map.",
 "type": "dialogue"
 },
 "29": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "30",
-"text": "So if I find your 5 rubies you'll head back to the sea",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "So if I find your 5 rubies you'll head back to the sea",
+"text": "So if I find your _ {{Global.quests.Crab.totalItems}}  _rubies you'll head back to the sea",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Crab"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "totalItems"
+}]),
+"value_in_text": "{{Global.quests.Crab.totalItems}}"
+}]),
+"translation_key": "So if I find your _ {{Global.quests.Crab.totalItems}}  _rubies you'll head back to the sea",
 "type": "dialogue"
 },
 "3": {
@@ -633,8 +675,8 @@ lines = {
 },
 "56": {
 "next_id": "57",
-"next_id_after": "64",
-"responses": PackedStringArray("56", "59", "63"),
+"next_id_after": "68",
+"responses": PackedStringArray("56", "61", "67"),
 "text": "Send Crab back to the sea",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Send Crab back to the sea",
@@ -659,6 +701,71 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Crab"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestComplete"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+}])
+},
+"next_id": "59",
+"parent_id": "56",
+"type": "mutation"
+},
+"59": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "previousQuest"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentQuest"
+}])
+},
+"next_id": "60",
+"parent_id": "56",
+"type": "mutation"
+},
+"6": {
+"is_snippet": false,
+"next_id": "37",
+"parent_id": "5",
+"type": "goto"
+},
+"60": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
 "value": "currentQuest"
 }, {
 "type": "assignment",
@@ -668,35 +775,29 @@ lines = {
 "value": "Quest2"
 }])
 },
-"next_id": "64",
+"next_id": "68",
 "parent_id": "56",
 "type": "mutation"
 },
-"59": {
-"next_id": "60",
-"next_id_after": "64",
+"61": {
+"next_id": "62",
+"next_id_after": "68",
 "text": "Let Crab stay on the island",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Let Crab stay on the island",
 "type": "response"
 },
-"6": {
-"is_snippet": false,
-"next_id": "37",
-"parent_id": "5",
-"type": "goto"
-},
-"60": {
+"62": {
 "character": "Crab",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "61",
-"parent_id": "59",
+"next_id": "63",
+"parent_id": "61",
 "text": "Are you sure I think all the town people will be mad if I stay. Hopefully we meet again",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Are you sure I think all the town people will be mad if I stay. Hopefully we meet again",
 "type": "dialogue"
 },
-"61": {
+"63": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -719,11 +820,70 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "62",
-"parent_id": "59",
+"next_id": "64",
+"parent_id": "61",
 "type": "mutation"
 },
-"62": {
+"64": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Crab"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestComplete"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+}])
+},
+"next_id": "65",
+"parent_id": "61",
+"type": "mutation"
+},
+"65": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "previousQuest"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentQuest"
+}])
+},
+"next_id": "66",
+"parent_id": "61",
+"type": "mutation"
+},
+"66": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -741,19 +901,19 @@ lines = {
 "value": "Quest2"
 }])
 },
-"next_id": "64",
-"parent_id": "59",
+"next_id": "68",
+"parent_id": "61",
 "type": "mutation"
 },
-"63": {
-"next_id": "64",
-"next_id_after": "64",
+"67": {
+"next_id": "68",
+"next_id_after": "68",
 "text": "Come back later",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Come back later",
 "type": "response"
 },
-"64": {
+"68": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"

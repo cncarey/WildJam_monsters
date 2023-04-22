@@ -4,12 +4,12 @@
 #do wait(0.5)
 #do add_portrait("player", 0)
 Player : Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town
-Player : Have you seen it
+Player : Have you seen it?
 #do add_portrait("TownsPerson1", 4)
 Towns Person 1: Why do you want to find that old thing?
-Player: ...I could use the gold
+Player: ...I could use the gold.
 Towns Person 1: I guess I could tell you were some of it is, but you have to do something for me first.
-Player: Some of it...[wait=2] What am I suppose to do with some of it?
+Player: Some of it... What am I suppose to do with some of it?
 Towns Person 1: Okay well I guess you can have none of it.
 #do TP1WalkAway
 Player: Wait. What do you need me to do?

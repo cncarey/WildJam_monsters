@@ -76,5 +76,5 @@ func _process(delta):
 
 func removeIcon(item):
 	if markers.has(item):
-		paper.remove_child(markers[item])
+		markers[item].hide()
 		markers.erase(item)
