@@ -55,12 +55,12 @@ else
 => END
 
 ~ Flag_Stop
-- Send Shark back to the sea
+- Send Giant Shark back to the sea
 	Shark: Thanks for helping me
 	set Global.quests.Shark.QuestComplete = true
 	set Global.previousQuest = Global.currentQuest
 	set Global.currentQuest = "Quest3"
-- Let Shark stay on the island
+- Let Giant Shark stay on the island
 	Shark: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
 	set Global.quests.Morality += 1
 	set Global.quests.Shark.QuestComplete = true

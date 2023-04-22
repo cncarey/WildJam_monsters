@@ -639,9 +639,9 @@ lines = {
 "next_id": "59",
 "next_id_after": "70",
 "responses": PackedStringArray("58", "63", "69"),
-"text": "Send Shark back to the sea",
+"text": "Send Giant Shark back to the sea",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Send Shark back to the sea",
+"translation_key": "Send Giant Shark back to the sea",
 "type": "response"
 },
 "59": {
@@ -738,9 +738,9 @@ lines = {
 "63": {
 "next_id": "64",
 "next_id_after": "70",
-"text": "Let Shark stay on the island",
+"text": "Let Giant Shark stay on the island",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Let Shark stay on the island",
+"translation_key": "Let Giant Shark stay on the island",
 "type": "response"
 },
 "64": {

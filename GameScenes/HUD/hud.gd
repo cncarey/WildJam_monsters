@@ -16,6 +16,7 @@ extends CanvasLayer
 
 var BlueDiamond = preload("res://Assets/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/01.png")
 var RedDiamond = preload("res://Assets/Treasure Hunters/Pirate Treasure/Sprites/Red Diamond/01.png")
+var Pets = preload("res://Assets/Free Street Animal Pixel Art/1 Dog/Icon.png")
 
 func _ready():
 	Banner.visible = false
@@ -37,6 +38,9 @@ func updateHUDQuest():
 				itemPic.texture = RedDiamond
 			"Blue Diamond":
 				itemPic.texture = BlueDiamond
+			"Pets":
+				itemPic.texture = Pets
+				itemPic.scale = Vector2(.75, .75)
 		
 	if "KeyedItemCount" in curQuest:
 		curKeyCount.visible = true

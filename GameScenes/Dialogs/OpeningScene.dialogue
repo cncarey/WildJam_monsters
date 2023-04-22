@@ -45,6 +45,7 @@ Player : That wasn't so bad. The crab was actually pretty nice. He lost some stu
 Towns Person 2 : Then why was he always making so much noise at night 
 Player : Probably because he couldn't see.
 Towns Person 1 : Well he's gone so here you go.
+set Global.quests.Maps.Q1 = true
 Player : You had the map piece all along. Can you tell me where to get more?
 Towns Person 1 : ...
 Towns Person 2 : ...I have a piece too. I'll give you mine if you clear a monster out for me too.
@@ -71,6 +72,8 @@ Player:
 ~ Quest3
 # find the missing pets
 Player : That shark is a pretty cool dude. He lost somethings just like the crab and was looking for them.
+Redd : Here you go
+set Global.quests.Maps.Q2 = true
 # enter TP3
 Towns Person 3: Has anyone seen my fluffy. I can't find him anywhere. 
 Towns Person 3: Oh...Jett and Redd. What are you doing here.
@@ -108,13 +111,18 @@ Bruno : Fine you get all our pets back and you can have my map piece
 
 ~ Quest4
 # TODO Branch on goodness score
+Bruno: You found them. Thank you so much.
+Redd & Jett: Thanks
+Bruno: As promised here you go
+set Global.quests.Maps.Q3 = true
+
 Towns Person 4: Thanks for helping the brothers. 
 if Global.quests.Morality >= 3
 	Towns Person 4: I never thought they would talk to each other again after not being able to open the cave of treasures.
 Towns Person 4: Only the worthy can open the cave's doors.
 Player : Well I still have to find the last piece.
 Towns Person 4:  Here I want you to have it. I'm Sterling, the fourth brother.
-
+set Global.quests.Maps.Q4 = true
 if Global.quests.Morality >= 3
 	Sterling: I'm so happy you have brought peace back to my family.
 else

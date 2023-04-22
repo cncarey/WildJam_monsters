@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://daw8omm8f2ohk"]
+[gd_scene load_steps=31 format=3 uid="uid://chqvaf0e2eki0"]
 
 [ext_resource type="Texture2D" uid="uid://stm2mdf2ip0i" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="1_oebpn"]
 [ext_resource type="Script" path="res://GameScenes/Land.gd" id="1_xi7pm"]
@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bkw4vx5wbtqpw" path="res://GameScenes/Characters/Crab.tscn" id="4_3a6g4"]
 [ext_resource type="PackedScene" uid="uid://clfrb1s8s0frf" path="res://GameScenes/Dialogs/actionable.tscn" id="5_ib04n"]
 [ext_resource type="Resource" uid="uid://b20u1mll2bavx" path="res://GameScenes/Dialogs/Crab.dialogue" id="6_p3p4j"]
-[ext_resource type="PackedScene" uid="uid://cdk4u3hpjplca" path="res://GameScenes/Objects/Chain.tscn" id="6_thwaq"]
+[ext_resource type="PackedScene" path="res://GameScenes/Objects/Chain.tscn" id="6_thwaq"]
 [ext_resource type="PackedScene" uid="uid://dxnpb7iv5b3q4" path="res://GameScenes/HUD/hud.tscn" id="7_i1wmi"]
 [ext_resource type="PackedScene" uid="uid://bwtqwvqptnpv3" path="res://GameScenes/Environment/DayAndNight.tscn" id="8_2gnul"]
 [ext_resource type="PackedScene" uid="uid://dnrvru78h0gr0" path="res://GameScenes/Characters/shark.tscn" id="8_w3q1q"]
@@ -831,13 +831,9 @@ position = Vector2(-103.904, 123.786)
 visible = false
 position = Vector2(807.25, 448.5)
 
-[node name="Shark" parent="." groups=["Climbers"] instance=ExtResource("8_w3q1q")]
+[node name="Shark" parent="." instance=ExtResource("8_w3q1q")]
 visible = false
 position = Vector2(-2430.8, -175.2)
-
-[node name="Ladder" parent="." instance=ExtResource("6_thwaq")]
-position = Vector2(1543, 206)
-scale = Vector2(2, 12)
 
 [node name="EasyCollectables" type="Node2D" parent="."]
 
@@ -1078,6 +1074,10 @@ offset_bottom = 2.17645
 texture = ExtResource("23_ptq8i")
 expand_mode = 1
 stretch_mode = 1
+
+[node name="Chains" parent="." instance=ExtResource("6_thwaq")]
+position = Vector2(1545.4, 224.2)
+scale = Vector2(2.3, 11.5)
 
 [connection signal="signalFollowers" from="Player" to="." method="_on_player_signal_followers"]
 [connection signal="startQuest" from="Crab" to="." method="startQuest"]

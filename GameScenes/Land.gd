@@ -25,6 +25,8 @@ var pet = preload("res://GameScenes/Objects/Collectables/Pets.tscn")
 @onready var shark = $Shark
 
 func _ready():
+	
+	
 	if(Global.currentQuest == "Quest1" || Global.currentQuest == "Crab"):
 		tutorial.visible = true
 	else:
@@ -50,6 +52,7 @@ func _ready():
 	
 	miniMap.player = player
 	HUD.updateHUDQuest()
+	miniMap.updateMarkers()
 	if Global.currentQuest == "Quest3" :
 		startQuest("Pets", "Quest3")
 	pass

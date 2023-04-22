@@ -1,0 +1,409 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bg210"]
+
+[resource]
+script = ExtResource("1_bg210")
+titles = {
+"Flag_Stop": "12",
+"Start_Flag": "3"
+}
+character_names = PackedStringArray("Pets", "Player")
+first_title = "3"
+lines = {
+"11": {
+"next_id": "12",
+"text": "Flag_Stop",
+"type": "title"
+},
+"12": {
+"next_id": "13",
+"next_id_after": "25",
+"responses": PackedStringArray("12", "18", "24"),
+"text": "Return the pets to the brothers",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Return the pets to the brothers",
+"type": "response"
+},
+"13": {
+"character": "Pets",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "14",
+"parent_id": "12",
+"text": "Meow...Woof",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Meow...Woof",
+"type": "dialogue"
+},
+"14": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Morality"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "15",
+"parent_id": "12",
+"type": "mutation"
+},
+"15": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Pets"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestComplete"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+}])
+},
+"next_id": "16",
+"parent_id": "12",
+"type": "mutation"
+},
+"16": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "previousQuest"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentQuest"
+}])
+},
+"next_id": "17",
+"parent_id": "12",
+"type": "mutation"
+},
+"17": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentQuest"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "string",
+"value": "Quest4"
+}])
+},
+"next_id": "25",
+"parent_id": "12",
+"type": "mutation"
+},
+"18": {
+"next_id": "19",
+"next_id_after": "25",
+"text": "Let pets stay on the island",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Let pets stay on the island",
+"type": "response"
+},
+"19": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Morality"
+}, {
+"type": "assignment",
+"value": "-="
+}, {
+"type": "number",
+"value": 1
+}])
+},
+"next_id": "20",
+"parent_id": "18",
+"type": "mutation"
+},
+"2": {
+"next_id": "3",
+"text": "Start_Flag",
+"type": "title"
+},
+"20": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "21",
+"parent_id": "18",
+"text": "The brothers will be so mad at me. I'll take them back",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "The brothers will be so mad at me. I'll take them back",
+"type": "dialogue"
+},
+"21": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Pets"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestComplete"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+}])
+},
+"next_id": "22",
+"parent_id": "18",
+"type": "mutation"
+},
+"22": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "previousQuest"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentQuest"
+}])
+},
+"next_id": "23",
+"parent_id": "18",
+"type": "mutation"
+},
+"23": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "currentQuest"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "string",
+"value": "Quest4"
+}])
+},
+"next_id": "25",
+"parent_id": "18",
+"type": "mutation"
+},
+"24": {
+"next_id": "25",
+"next_id_after": "25",
+"text": "Come back later",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Come back later",
+"type": "response"
+},
+"25": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
+},
+"3": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Pets"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestStarted"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": false
+}])
+},
+"next_conditional_id": "5",
+"next_id": "4",
+"next_id_after": "9",
+"type": "condition"
+},
+"4": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"parent_id": "3",
+"text": "You don't have an active quest.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You don't have an active quest.",
+"type": "dialogue"
+},
+"5": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Pets"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "CurrQuestItemCount"
+}, {
+"type": "comparison",
+"value": ">="
+}, {
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Pets"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "totalItems"
+}])
+},
+"next_conditional_id": "7",
+"next_id": "6",
+"next_id_after": "9",
+"type": "condition"
+},
+"6": {
+"is_snippet": false,
+"next_id": "12",
+"parent_id": "5",
+"type": "goto"
+},
+"7": {
+"next_conditional_id": "9",
+"next_id": "8",
+"next_id_after": "9",
+"type": "condition"
+},
+"8": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "9",
+"parent_id": "7",
+"text": "You don't have all the pets.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You don't have all the pets.",
+"type": "dialogue"
+},
+"9": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "2.15.2"

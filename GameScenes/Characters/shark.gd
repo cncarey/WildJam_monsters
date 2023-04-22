@@ -7,6 +7,8 @@ var questFinished : bool = false
 
 var climbing = false
 
+var CharcterName = "Shark"
+
 const speed = 300;
 const jumpVolocity = -400
 const maxJumps = 2

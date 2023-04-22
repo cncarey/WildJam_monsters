@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://cbi4rbb2y6i3o"
+path="res://.godot/imported/Pets.dialogue-eae02c09a3f27511dc6bf6b28e982e61.tres"
+
+[deps]
+
+source_file="res://GameScenes/Dialogs/Pets.dialogue"
+dest_files=["res://.godot/imported/Pets.dialogue-eae02c09a3f27511dc6bf6b28e982e61.tres"]
+
+[params]
+

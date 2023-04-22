@@ -1,0 +1,25 @@
+
+~ Start_Flag
+if Global.quests.Pets.QuestStarted == false
+	You don't have an active quest.
+elif  Global.quests.Pets.CurrQuestItemCount >= Global.quests.Pets.totalItems 
+	=> Flag_Stop
+else
+	You don't have all the pets.
+=> END
+
+~ Flag_Stop
+- Return the pets to the brothers
+	Pets: Meow...Woof
+	set Global.quests.Morality += 1
+	set Global.quests.Pets.QuestComplete = true
+	set Global.previousQuest = Global.currentQuest
+	set Global.currentQuest = "Quest4"
+- Let pets stay on the island
+	set Global.quests.Morality -= 1
+	Player: The brothers will be so mad at me. I'll take them back	
+	set Global.quests.Pets.QuestComplete = true
+	set Global.previousQuest = Global.currentQuest
+	set Global.currentQuest = "Quest4"
+- Come back later
+=> END!

@@ -100,7 +100,7 @@ height = 28.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c4jyu"]
 size = Vector2(49, 23)
 
-[node name="Shark" type="CharacterBody2D"]
+[node name="Shark" type="CharacterBody2D" groups=["Climbers", "miniMap"]]
 script = ExtResource("1_un5o8")
 dialogueResourse = ExtResource("2_fue4m")
 

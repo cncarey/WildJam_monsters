@@ -8,6 +8,8 @@ extends MarginContainer
 @onready var key = $MarginContainer/Paper/key
 @onready var item = $MarginContainer/Paper/item
 @onready var flag = $MarginContainer/Paper/Flag
+@onready var crab = $MarginContainer/Paper/Crab
+@onready var shark = $MarginContainer/Paper/Shark
 
 var paperScale 
 
@@ -21,7 +23,9 @@ func _ready():
 	"Red Diamond" : item,
 	"Chest" : item,
 	"Flag" : flag,
-	"Pets" : item
+	"Pets" : item,
+	"Crab" : crab,
+	"Shark": shark
 	}
 	playerMarker.position.x = (self.size.x/2) - (playerMarker.texture.get_width()/2)
 	playerMarker.position.y = (self.size.y/2) - (playerMarker.texture.get_height()/2)
@@ -45,7 +49,10 @@ func updateMarkers():
 			elif "interactableType" in mmItem:
 				print(mmItem.interactableType)
 				newMarker = icons[mmItem.interactableType].duplicate()
-			
+			elif "CharcterName" in mmItem && mmItem.visible:
+				print (mmItem.CharcterName)
+				newMarker = icons[mmItem.CharcterName].duplicate()
+				
 			if newMarker:
 				paper.add_child(newMarker)
 				newMarker.show()

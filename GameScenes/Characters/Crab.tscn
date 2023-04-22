@@ -163,7 +163,7 @@ height = 24.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vtmb"]
 size = Vector2(57, 20)
 
-[node name="Crab" type="CharacterBody2D" groups=["Climbers"]]
+[node name="Crab" type="CharacterBody2D" groups=["Climbers", "miniMap"]]
 script = ExtResource("1_hhhbs")
 dialogueResourse = ExtResource("2_nx2lc")
 

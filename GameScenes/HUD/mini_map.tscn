@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://dpqgxahbcul48"]
+[gd_scene load_steps=10 format=3 uid="uid://dpqgxahbcul48"]
 
 [ext_resource type="Texture2D" uid="uid://bsaqj8f1rsenn" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Prefabs/9.png" id="1_c22dc"]
 [ext_resource type="Script" path="res://GameScenes/HUD/mini_map.gd" id="1_cnn4y"]
 [ext_resource type="Texture2D" uid="uid://xgm1npf17aob" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Yellow Paper/5.png" id="2_ebqvw"]
 [ext_resource type="Texture2D" uid="uid://d0nytrflcuv48" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Sliders/1.png" id="4_udtyy"]
 [ext_resource type="Texture2D" uid="uid://vqeg1ricu7t3" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/1.png" id="5_sqijc"]
+[ext_resource type="Texture2D" uid="uid://dvuglilfki6j4" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="6_dd382"]
 [ext_resource type="Texture2D" uid="uid://b6ike16cp0t80" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Exclamation/Exclamation In 03.png" id="6_nj8nc"]
 [ext_resource type="Texture2D" uid="uid://bfyxtm38phc2x" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="7_gi4o6"]
+[ext_resource type="Texture2D" uid="uid://di8v2rdqjw1h2" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 01.png" id="9_lbgsj"]
 
 [node name="MiniMap" type="MarginContainer"]
 custom_minimum_size = Vector2(5, 5)
@@ -52,14 +54,27 @@ position = Vector2(93, 86)
 scale = Vector2(0.916667, 0.833333)
 texture = ExtResource("5_sqijc")
 
+[node name="Crab" type="Sprite2D" parent="MarginContainer/Paper"]
+visible = false
+position = Vector2(43.5, 120)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("6_dd382")
+
 [node name="item" type="Sprite2D" parent="MarginContainer/Paper"]
 visible = false
 position = Vector2(93, 110)
 texture = ExtResource("6_nj8nc")
 
 [node name="Flag" type="Sprite2D" parent="MarginContainer/Paper"]
+visible = false
 position = Vector2(78.7, 209.75)
 scale = Vector2(0.38, 0.38)
 texture = ExtResource("7_gi4o6")
 region_enabled = true
 region_rect = Rect2(4, 1, 30, 25)
+
+[node name="Shark" type="Sprite2D" parent="MarginContainer/Paper"]
+visible = false
+position = Vector2(-7.93333, -7)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("9_lbgsj")

@@ -11,6 +11,12 @@ enum GameMode {Story, Endless}
 @onready var previousQuest = ""
 
 @onready var quests : Dictionary = {
+	"Maps" : {
+		"Q1" : false,
+		"Q2" : false,
+		"Q3" : false,
+		"Q4" : false
+	},
 	"Morality" : 0,
 	"Quest1" :{
 		"QuestStarted" :  false,

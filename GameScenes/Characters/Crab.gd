@@ -7,6 +7,7 @@ extends CharacterBody2D
 
 signal startQuest(type)
 
+var CharcterName = "Crab"
 var questStarted : bool = false
 var questFinished : bool = false
 
