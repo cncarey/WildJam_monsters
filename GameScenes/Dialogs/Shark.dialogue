@@ -44,27 +44,3 @@ else
 	Shark: Let's find my totalItems.
 do restartTimer()
 => END!
-
-~ Start_Flag
-if Global.quests.Shark.QuestStarted == false
-	You don't have an active quest
-elif  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems 
-	=> Flag_Stop
-else
-	You don't have enough items to send the giant shark back to the sea
-=> END
-
-~ Flag_Stop
-- Send Giant Shark back to the sea
-	Shark: Thanks for helping me
-	set Global.quests.Shark.QuestComplete = true
-	set Global.previousQuest = Global.currentQuest
-	set Global.currentQuest = "Quest3"
-- Let Giant Shark stay on the island
-	Shark: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
-	set Global.quests.Morality += 1
-	set Global.quests.Shark.QuestComplete = true
-	set Global.previousQuest = Global.currentQuest
-	set Global.currentQuest = "Quest3"
-- Come back later
-=> END!

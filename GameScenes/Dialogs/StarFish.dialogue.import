@@ -1,0 +1,14 @@
+[remap]
+
+importer="dialogue_manager_compiler_8"
+type="Resource"
+uid="uid://civvcee8tiedg"
+path="res://.godot/imported/StarFish.dialogue-1102b32b6e34cb8983c041e367269754.tres"
+
+[deps]
+
+source_file="res://GameScenes/Dialogs/StarFish.dialogue"
+dest_files=["res://.godot/imported/StarFish.dialogue-1102b32b6e34cb8983c041e367269754.tres"]
+
+[params]
+

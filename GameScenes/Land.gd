@@ -23,9 +23,9 @@ var pet = preload("res://GameScenes/Objects/Collectables/Pets.tscn")
 
 @onready var crab = $Crab
 @onready var shark = $Shark
+@onready var starfish = $Starfish
 
 func _ready():
-	
 	
 	if(Global.currentQuest == "Quest1" || Global.currentQuest == "Crab"):
 		tutorial.visible = true
@@ -39,6 +39,8 @@ func _ready():
 			crab.visible = true
 		"Quest2", "Shark":
 			shark.visible = true
+		"Quest4", "StarFish":
+			starfish.visible = true
 		_:
 			pass
 			
@@ -191,4 +193,8 @@ func provideKey(chest):
 			
 			curQuest.CurrQuestItemCount += 1
 			HUD.updateItemCount(curQuest.CurrQuestItemCount)
+	pass
+	
+func dontAcceptQuest():
+	pauseMenu.gameOver()
 	pass

@@ -10,6 +10,7 @@ extends MarginContainer
 @onready var flag = $MarginContainer/Paper/Flag
 @onready var crab = $MarginContainer/Paper/Crab
 @onready var shark = $MarginContainer/Paper/Shark
+@onready var starfish = $MarginContainer/Paper/Starfish
 
 var paperScale 
 
@@ -25,7 +26,8 @@ func _ready():
 	"Flag" : flag,
 	"Pets" : item,
 	"Crab" : crab,
-	"Shark": shark
+	"Shark": shark,
+	"StarFish" : starfish
 	}
 	playerMarker.position.x = (self.size.x/2) - (playerMarker.texture.get_width()/2)
 	playerMarker.position.y = (self.size.y/2) - (playerMarker.texture.get_height()/2)

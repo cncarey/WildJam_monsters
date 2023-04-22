@@ -1,0 +1,48 @@
+~ Start
+do pauseTimer()
+if Global.quests.StarFish.QuestStarted == false
+	=> Pre_Quest
+else
+	=> Update_Quest
+
+~ Pre_Quest
+Starfish: ...
+Player: Do you know where I can find the cave of treasures?
+Starfish: Yes, but why should I tell you?
+- I want to help the village get back on their feet
+	set Global.quests.Morality += 1
+- I've been looking for it
+- I know you know where it is just tell me
+	set Global.quests.Morality -= 1
+
+if Global.quests.Morality < 3
+	set Global.quests.StarFish.MaxDays = 2
+
+Starfish: If you are worthy you will find my {{Global.quests.StarFish.totalItems}} _items_ within {{Global.quests.StarFish.MaxDays}} days
+Player:
+- I'll find them
+	=> Start_Quest
+if Global.quests.Morality < 3
+	- Why so little time?
+	Starfish: Either you're worthy or your not
+	=> Start_Quest
+- End the conversation 
+	do restartTimer()
+	=> END
+
+~ Start_Quest
+Starfish: Take them to the flag when you find them. Good luck.
+set Global.quests.StarFish.QuestStarted = true
+do startQuest(Global.quests.StarFish.QuestItem, "StarFish")
+do restartTimer()
+=> END
+
+~ Update_Quest
+if  Global.quests.StarFish.CurrQuestItemCount >= Global.quests.StarFish.totalItems 
+	Starfish: You got all my _. Go find the flag!
+elif Global.quests.StarFish.CurrQuestItemCount >= Global.quests.StarFish.totalItems/2
+	Starfish: You don't have too many more to find.
+else
+	Starfish: Go find my _.
+do restartTimer()
+=> END!

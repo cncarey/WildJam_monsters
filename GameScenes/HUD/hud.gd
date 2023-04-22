@@ -10,6 +10,7 @@ extends CanvasLayer
 
 @onready var QuestName = $CurQuestName
 @onready var QuestInstructions = $CurQuestInstuctions
+@onready var FlagInstructions = $FlagInstuctions
 
 @onready var sun = $"DayHolder/Brightness-high"
 @onready var moon = $"DayHolder/Moon-fill"
@@ -51,6 +52,12 @@ func updateHUDQuest():
 
 func updateItemCount(score):
 	QuestItemCount.text = str(score)
+	var curQuest = Global.quests[Global.currentQuest]
+	
+	if "CurrQuestItemCount" in curQuest && "totalItems" in curQuest:
+		if curQuest.CurrQuestItemCount >= curQuest.totalItems:
+			FlagInstructions.visible = true
+		pass
 	
 func updateKeyCount(keysCount):
 	curKeyCount.text = str(keysCount)

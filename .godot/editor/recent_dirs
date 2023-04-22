@@ -1,3 +1,4 @@
+res://GameScenes/Characters
 res://Assets/Free Street Animal Pixel Art/6 Rat 2
 res://Assets/Free Street Animal Pixel Art/5 Rat
 res://Assets/Free Street Animal Pixel Art/4 Cat 2
@@ -8,7 +9,6 @@ res://GameScenes/Objects/Collectables
 res://GameScenes
 res://GameScenes/HUD
 res://GameScenes/Objects/Interactable
-res://GameScenes/Characters
 res://GameScenes/CutScenes
 res://GameScenes/Dialogs
 res://GameScenes/Dialogs/

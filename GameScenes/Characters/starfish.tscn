@@ -1,0 +1,114 @@
+[gd_scene load_steps=23 format=3 uid="uid://blrgwx765nna"]
+
+[ext_resource type="Script" path="res://GameScenes/Characters/starfish.gd" id="1_rc8h8"]
+[ext_resource type="Texture2D" uid="uid://ffcoorukxru7" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="2_cw7ej"]
+[ext_resource type="Resource" uid="uid://civvcee8tiedg" path="res://GameScenes/Dialogs/StarFish.dialogue" id="2_woe1n"]
+[ext_resource type="Texture2D" uid="uid://c75lkvxlxdsw3" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 02.png" id="3_svmog"]
+[ext_resource type="Texture2D" uid="uid://dniets600wvff" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 03.png" id="4_ipu7v"]
+[ext_resource type="Texture2D" uid="uid://llwgje4dgebu" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 04.png" id="5_mnpti"]
+[ext_resource type="Texture2D" uid="uid://ixtj38wlht5c" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 05.png" id="6_ngr6w"]
+[ext_resource type="Texture2D" uid="uid://mohyuiqyop6h" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 06.png" id="7_t6mmd"]
+[ext_resource type="Texture2D" uid="uid://dh11355b7oa7c" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 07.png" id="8_r8e75"]
+[ext_resource type="Texture2D" uid="uid://bs2cc1i18h5yo" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 08.png" id="9_rsio7"]
+[ext_resource type="Texture2D" uid="uid://c6isnpmm2ssxd" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 01.png" id="10_5mpew"]
+[ext_resource type="Texture2D" uid="uid://bykx1augqdsjw" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 02.png" id="11_spod3"]
+[ext_resource type="Texture2D" uid="uid://cuiqaal4i0t56" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/03-Jump/Jump 03.png" id="12_p3po5"]
+[ext_resource type="Texture2D" uid="uid://dj3asqanyv7gc" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 01.png" id="13_pqj0t"]
+[ext_resource type="Texture2D" uid="uid://dugt4wviav8ak" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 02.png" id="14_t2ok7"]
+[ext_resource type="Texture2D" uid="uid://mxw5cldjql11" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 03.png" id="15_kwt65"]
+[ext_resource type="Texture2D" uid="uid://c20tfydfbts7a" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 04.png" id="16_cngy5"]
+[ext_resource type="Texture2D" uid="uid://dn6id4xonjynv" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 05.png" id="17_wk5fi"]
+[ext_resource type="Texture2D" uid="uid://cwuphdji0aoxp" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 06.png" id="18_vpmnq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nkxov"]
+radius = 13.0
+height = 32.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bwg6c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cw7ej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_svmog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ipu7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mnpti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ngr6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t6mmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r8e75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_rsio7")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_5mpew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_spod3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_p3po5")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_pqj0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_t2ok7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kwt65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cngy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wk5fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vpmnq")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrlgr"]
+size = Vector2(59, 26)
+
+[node name="Starfish" type="CharacterBody2D" groups=["Climbers", "miniMap"]]
+script = ExtResource("1_rc8h8")
+dialogueResourse = ExtResource("2_woe1n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_nkxov")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bwg6c")
+animation = &"jump"
+
+[node name="ActionFinder" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActionFinder"]
+position = Vector2(-0.5, -3)
+shape = SubResource("RectangleShape2D_lrlgr")

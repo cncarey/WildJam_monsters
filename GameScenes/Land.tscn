@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://chqvaf0e2eki0"]
+[gd_scene load_steps=32 format=3 uid="uid://chqvaf0e2eki0"]
 
 [ext_resource type="Texture2D" uid="uid://stm2mdf2ip0i" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="1_oebpn"]
 [ext_resource type="Script" path="res://GameScenes/Land.gd" id="1_xi7pm"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" path="res://GameScenes/Objects/Chain.tscn" id="6_thwaq"]
 [ext_resource type="PackedScene" uid="uid://dxnpb7iv5b3q4" path="res://GameScenes/HUD/hud.tscn" id="7_i1wmi"]
 [ext_resource type="PackedScene" uid="uid://bwtqwvqptnpv3" path="res://GameScenes/Environment/DayAndNight.tscn" id="8_2gnul"]
+[ext_resource type="PackedScene" uid="uid://blrgwx765nna" path="res://GameScenes/Characters/starfish.tscn" id="8_ngip4"]
 [ext_resource type="PackedScene" uid="uid://dnrvru78h0gr0" path="res://GameScenes/Characters/shark.tscn" id="8_w3q1q"]
 [ext_resource type="PackedScene" uid="uid://yag6lflu0j8r" path="res://GameScenes/HUD/PauseMenu.tscn" id="11_b7f8w"]
 [ext_resource type="PackedScene" uid="uid://dip8ud33rj63w" path="res://GameScenes/Objects/Interactable/Flag.tscn" id="12_00kbp"]
@@ -831,6 +832,10 @@ position = Vector2(-103.904, 123.786)
 visible = false
 position = Vector2(807.25, 448.5)
 
+[node name="Starfish" parent="." instance=ExtResource("8_ngip4")]
+visible = false
+position = Vector2(-1950.1, -1629.3)
+
 [node name="Shark" parent="." instance=ExtResource("8_w3q1q")]
 visible = false
 position = Vector2(-2430.8, -175.2)
@@ -1081,6 +1086,7 @@ scale = Vector2(2.3, 11.5)
 
 [connection signal="signalFollowers" from="Player" to="." method="_on_player_signal_followers"]
 [connection signal="startQuest" from="Crab" to="." method="startQuest"]
+[connection signal="startQuest" from="Starfish" to="." method="startQuest"]
 [connection signal="startQuest" from="Shark" to="." method="startQuest"]
 [connection signal="day" from="HUD/DayAndNight" to="HUD" method="isDay"]
 [connection signal="nextDay" from="HUD/DayAndNight" to="." method="set_Next_Day"]

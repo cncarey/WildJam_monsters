@@ -88,7 +88,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 0.5,
+"duration": 1.0,
 "texture": ExtResource("12_4htgn")
 }, {
 "duration": 1.0,
@@ -170,7 +170,6 @@ dialogueResourse = ExtResource("2_nx2lc")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3eng3")
 animation = &"idle"
-frame_progress = 0.0499342
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_oemc0")

@@ -25,8 +25,8 @@ Crab: I was surfing a HUGE wave...maybe a bit too huge
 Crab: ...When I lost controll and landed up here.
 Crab: I dropped all my rubies and I need help finidng them
 Player: I can help you with that.
-Crab: Really. I'm missing _ {{Global.quests.Crab.totalItems}} _ rubies throught the map.
-Player: So if I find your _ {{Global.quests.Crab.totalItems}}  _rubies you'll head back to the sea
+Crab: Really. I'm missing {{Global.quests.Crab.totalItems}} rubies throught the map.
+Player: So if I find your {{Global.quests.Crab.totalItems}} rubies you'll head back to the sea
 Crab: Yeah. And can you please take me there after you find them. I can get back from the big flag
 set Global.quests.Crab.QuestStarted = true
 do startQuest(Global.quests.Crab.QuestItem, "Crab")
@@ -41,28 +41,4 @@ elif Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems/2
 else
 	Crab: Let's find my rubies.
 do restartTimer()
-=> END!
-
-~ Start_Flag
-if Global.quests.Crab.QuestStarted == false
-	You don't have an active quest
-elif  Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems 
-	=> Flag_Stop
-else
-	You don't have enough items to send crab back to the sea
-=> END
-
-~ Flag_Stop
-- Send Crab back to the sea
-	Crab: Thanks for helping me
-	set Global.quests.Crab.QuestComplete = true
-	set Global.previousQuest = Global.currentQuest
-	set Global.currentQuest = "Quest2"
-- Let Crab stay on the island
-	Crab: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
-	set Global.quests.Morality += 1
-	set Global.quests.Crab.QuestComplete = true
-	set Global.previousQuest = Global.currentQuest
-	set Global.currentQuest = "Quest2"
-- Come back later
 => END!

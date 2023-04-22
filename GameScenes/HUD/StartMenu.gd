@@ -2,6 +2,7 @@ extends Control
 
 
 func _on_new_game_pressed():
+	Global.resetGameValues()
 	get_tree().change_scene_to_file("res://GameScenes/CutScenes/OpeningScene.tscn")
 	pass # Replace with function body.
 

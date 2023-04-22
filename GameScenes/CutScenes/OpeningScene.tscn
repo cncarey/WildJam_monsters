@@ -144,3 +144,13 @@ frame_progress = 0.512945
 position = Vector2(-113, -9)
 sprite_frames = SubResource("SpriteFrames_7jjs8")
 frame_progress = 0.685769
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="YouWin" type="Label" parent="."]
+visible = false
+offset_left = -138.0
+offset_top = -97.0
+offset_right = 40.0
+offset_bottom = -48.0
+text = "You have found the tresure"

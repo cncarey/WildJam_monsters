@@ -19,3 +19,9 @@ res://GameScenes/Characters/shark.tscn
 res://GameScenes/HUD/PauseMenu.tscn
 res://GameScenes/HUD/PauseMenu.gd
 res://GameScenes/Objects/chainsTile.tres
+res://GameScenes/Characters/starfish.tscn
+res://GameScenes/Characters/starfish.gd
+res://GameScenes/HUD/StartMenu.gd
+res://GameScenes/Objects/Interactable/Flag.tscn
+res://GameScenes/CutScenes/OpeningScene.tscn
+res://GameScenes/CutScenes/OpeningScene.gd

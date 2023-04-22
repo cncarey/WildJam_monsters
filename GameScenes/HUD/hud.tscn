@@ -34,7 +34,24 @@ offset_bottom = 50.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 theme_override_font_sizes/font_size = 10
-text = "Find the Crab down below"
+text = "Find the Crab down below
+"
+horizontal_alignment = 2
+
+[node name="FlagInstuctions" type="Label" parent="."]
+visible = false
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -239.0
+offset_top = 44.0
+offset_right = -3.0
+offset_bottom = 70.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 10
+text = "Go to the flag
+"
 horizontal_alignment = 2
 
 [node name="TextureHolder" type="TextureRect" parent="."]

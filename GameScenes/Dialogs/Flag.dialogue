@@ -6,6 +6,8 @@ elif Global.currentQuest == "Quest2" or Global.currentQuest == "Shark"
 	=> SharkFlagStart
 elif Global.currentQuest == "Quest3" or Global.currentQuest == "Pets"
 	=> PetsFlagStart
+elif Global.currentQuest == "Quest4" or Global.currentQuest == "StarFish"
+	=> StarFishStart
 else
 	Debug("idk how we got here")	
 	=> END
@@ -49,7 +51,7 @@ else
 	Shark: Thanks for helping me
 	set Global.quests.Shark.QuestComplete = true
 	set Global.currentQuest = "Quest3"
-- Let Crab stay on the island
+- Let Shark stay on the island
 	Shark: Are you sure I think all the town people will be mad if I stay. Hopefully we meet again
 	set Global.quests.Morality += 1
 	set Global.quests.Shark.QuestComplete = true
@@ -58,7 +60,7 @@ else
 => END!
 
 ~ PetsFlagStart
-if Global.quests.Pets.CurrQuestItemCount >= Global.quests.Pets.totalItems 
+if Global.quests.Quest3.CurrQuestItemCount >= Global.quests.Quest3.totalItems 
 	=> PetsFlagStop
 else
 	You don't have everyones pets
@@ -74,5 +76,21 @@ else
 	Pets: I guess everyone will be sad if I leave you out here. Let's go.
 	set Global.quests.Quest3.QuestComplete = true
 	set Global.currentQuest = "Quest4"
+- Come back later
+=> END!
+
+~ StarFishStart
+if Global.quests.StarFish.QuestStarted == false
+	You don't have an active quest
+elif  Global.quests.StarFish.CurrQuestItemCount >= Global.quests.StarFish.totalItems 
+	=> StarFishFlagStop
+else
+	You don't have enough items to give to the star fish
+=> END
+
+~ StarFishFlagStop
+Starfish: You have been found worthy
+set Global.quests.StarFish.QuestComplete = true
+set Global.quests.Complete = true
 - Come back later
 => END!
