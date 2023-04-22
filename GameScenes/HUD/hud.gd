@@ -5,7 +5,8 @@ extends CanvasLayer
 @onready var DayCount = $DayHolder/DayCount
 @onready var Banner = $Banner
 @onready var CurQuestItemCount = $CurQuestItemCount
-@onready var curKeyCount = $Label2
+@onready var curKeyCount = $KeyCount
+@onready var keyLabel = $KeyLabel
 
 @onready var QuestName = $CurQuestName
 @onready var QuestInstructions = $CurQuestInstuctions
@@ -36,6 +37,10 @@ func updateHUDQuest():
 				itemPic.texture = RedDiamond
 			"Blue Diamond":
 				itemPic.texture = BlueDiamond
+		
+	if "KeyedItemCount" in curQuest:
+		curKeyCount.visible = true
+		keyLabel.visible = true
 		
 	QuestInstructions.text =  curQuest.QuestInstructions
 	QuestName.text = curQuest.QuestName

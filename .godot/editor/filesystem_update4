@@ -6,3 +6,9 @@ res://GameScenes/HUD/StartMenu.tscn
 res://GameScenes/Land.gd
 res://GameScenes/HUD/mini_map.gd
 res://GameScenes/Objects/Interactable/Flag.gd
+res://GameScenes/Global.gd
+res://GameScenes/HUD/hud.gd
+res://GameScenes/Objects/Collectables/Pets.tscn
+res://GameScenes/Objects/Collectables/Pets.gd
+res://GameScenes/Objects/collectable.gd
+res://GameScenes/Objects/Collectables/BlueDiamond.tscn

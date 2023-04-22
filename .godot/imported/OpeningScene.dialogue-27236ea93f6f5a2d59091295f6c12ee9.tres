@@ -6,11 +6,11 @@
 script = ExtResource("1_w558l")
 titles = {
 "Quest1": "6",
-"Quest2": "42",
-"Quest3": "72",
-"Quest4": "110"
+"Quest2": "43",
+"Quest3": "73",
+"Quest4": "111"
 }
-character_names = PackedStringArray("Player", "Towns Person 1", "Towns Person 2", "Player:", "Jett", "Redd", "Towns Person 3", "Bruno", "player", "Towns Person 4")
+character_names = PackedStringArray("Player", "Towns Person 1", "Towns Person 2", "Player:", "Jett", "Redd", "Towns Person 3", "Bruno", "Towns Person 4", "Sterling")
 first_title = "6"
 lines = {
 "1": {
@@ -28,61 +28,67 @@ lines = {
 "type": "dialogue"
 },
 "100": {
-"next_id": "101",
-"next_id_after": "110",
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "96",
+"type": "goto"
+},
+"101": {
+"next_id": "102",
+"next_id_after": "111",
 "text": "This may have been way move then I want to sign up for",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "This may have been way move then I want to sign up for",
 "type": "response"
 },
-"101": {
-"character": "player",
+"102": {
+"character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "102",
-"parent_id": "100",
+"next_id": "103",
+"parent_id": "101",
 "text": "Do I look like Animal Control Services?!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Do I look like Animal Control Services?!",
 "type": "dialogue"
 },
-"102": {
+"103": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "103",
-"parent_id": "100",
+"next_id": "104",
+"parent_id": "101",
 "text": "You're just going to let Scalawag die out there",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You're just going to let Scalawag die out there",
 "type": "dialogue"
 },
-"103": {
+"104": {
 "character": "Bruno",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "104",
-"parent_id": "100",
+"next_id": "105",
+"parent_id": "101",
 "text": "And Fluffy",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "And Fluffy",
 "type": "dialogue"
 },
-"104": {
+"105": {
 "character": "Jett",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "105",
-"parent_id": "100",
+"next_id": "106",
+"parent_id": "101",
 "text": "And Puppuccino",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "And Puppuccino",
 "type": "dialogue"
 },
-"105": {
+"106": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "100",
+"parent_id": "101",
 "type": "goto"
 },
-"108": {
-"next_id": "110",
+"109": {
+"next_id": "111",
 "text": "Quest4",
 "type": "title"
 },
@@ -95,40 +101,116 @@ lines = {
 "translation_key": "I guess I could tell you were some of it is, but you have to do something for me first.",
 "type": "dialogue"
 },
-"110": {
-"character": "Towns Person 4",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "111",
-"text": "Thanks for helping the brothers. I never thought they would talk to each other again after not being able to open the cave of treasures.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Thanks for helping the brothers. I never thought they would talk to each other again after not being able to open the cave of treasures.",
-"type": "dialogue"
-},
 "111": {
 "character": "Towns Person 4",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "112",
-"text": "Only the worthy can open the cave's doors",
+"text": "Thanks for helping the brothers.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Only the worthy can open the cave's doors",
+"translation_key": "Thanks for helping the brothers.",
 "type": "dialogue"
 },
 "112": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Morality"
+}, {
+"type": "comparison",
+"value": ">="
+}, {
+"type": "number",
+"value": 3
+}])
+},
+"next_conditional_id": "114",
 "next_id": "113",
-"text": "Well I still have to find the last piece",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Well I still have to find the last piece",
-"type": "dialogue"
+"next_id_after": "114",
+"type": "condition"
 },
 "113": {
 "character": "Towns Person 4",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "",
-"text": "Here I want you to have it. I'm Sterling, the fourth brother. I'm so happy you have brought peace back to the island",
+"next_id": "114",
+"parent_id": "112",
+"text": "I never thought they would talk to each other again after not being able to open the cave of treasures.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Here I want you to have it. I'm Sterling, the fourth brother. I'm so happy you have brought peace back to the island",
+"translation_key": "I never thought they would talk to each other again after not being able to open the cave of treasures.",
+"type": "dialogue"
+},
+"114": {
+"character": "Towns Person 4",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "115",
+"text": "Only the worthy can open the cave's doors.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Only the worthy can open the cave's doors.",
+"type": "dialogue"
+},
+"115": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "116",
+"text": "Well I still have to find the last piece.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Well I still have to find the last piece.",
+"type": "dialogue"
+},
+"116": {
+"character": "Towns Person 4",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "118",
+"text": "Here I want you to have it. I'm Sterling, the fourth brother.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Here I want you to have it. I'm Sterling, the fourth brother.",
+"type": "dialogue"
+},
+"118": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Morality"
+}, {
+"type": "comparison",
+"value": ">="
+}, {
+"type": "number",
+"value": 3
+}])
+},
+"next_conditional_id": "120",
+"next_id": "119",
+"next_id_after": "123",
+"type": "condition"
+},
+"119": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "123",
+"parent_id": "118",
+"text": "I'm so happy you have brought peace back to my family.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'm so happy you have brought peace back to my family.",
 "type": "dialogue"
 },
 "12": {
@@ -140,6 +222,104 @@ lines = {
 "translation_key": "Some of it... What am I suppose to do with some of it?",
 "type": "dialogue"
 },
+"120": {
+"next_conditional_id": "123",
+"next_id": "121",
+"next_id_after": "123",
+"type": "condition"
+},
+"121": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "123",
+"parent_id": "120",
+"text": "I'm so happy you have brought peace back to the island.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I'm so happy you have brought peace back to the island.",
+"type": "dialogue"
+},
+"123": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "124",
+"text": "It's the last peice...but you are brothers...why didn't you get the treasure together?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "It's the last peice...but you are brothers...why didn't you get the treasure together?",
+"type": "dialogue"
+},
+"124": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "125",
+"text": "There's a giant pink fish that guards the treauser and only let's those worthy in.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There's a giant pink fish that guards the treauser and only let's those worthy in.",
+"type": "dialogue"
+},
+"125": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "126",
+"text": "We weren't found worthy and my brothers have been bickering with each other ever since.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "We weren't found worthy and my brothers have been bickering with each other ever since.",
+"type": "dialogue"
+},
+"126": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "127",
+"text": "Oh...That why you don't talk to Bruno.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh...That why you don't talk to Bruno.",
+"type": "dialogue"
+},
+"127": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "128",
+"text": "I talk to him, just in secret.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I talk to him, just in secret.",
+"type": "dialogue"
+},
+"128": {
+"character": "Player:",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "129",
+"text": "",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "",
+"type": "dialogue"
+},
+"129": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Morality"
+}, {
+"type": "comparison",
+"value": ">="
+}, {
+"type": "number",
+"value": 3
+}])
+},
+"next_conditional_id": "131",
+"next_id": "130",
+"next_id_after": "131",
+"type": "condition"
+},
 "13": {
 "character": "Towns Person 1",
 "character_replacements": Array[Dictionary]([]),
@@ -148,6 +328,39 @@ lines = {
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Okay well I guess you can have none of it.",
 "type": "dialogue"
+},
+"130": {
+"next_id": "131",
+"next_id_after": "131",
+"parent_id": "129",
+"responses": PackedStringArray("130"),
+"text": "I think I'm worty",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I think I'm worty",
+"type": "response"
+},
+"131": {
+"next_id": "132",
+"next_id_after": "132",
+"responses": PackedStringArray("131"),
+"text": "Maybe I could have been nicer to the monsters on the island.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Maybe I could have been nicer to the monsters on the island.",
+"type": "response"
+},
+"132": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "133",
+"text": "Now go find that fish. He's way up high.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Now go find that fish. He's way up high.",
+"type": "dialogue"
+},
+"133": {
+"is_snippet": false,
+"next_id": "end!",
+"type": "goto"
 },
 "15": {
 "character": "Player",
@@ -171,31 +384,61 @@ lines = {
 "character": "Towns Person 1",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "18",
-"text": "If you get rid of them I can get you part of the map, but we are leaving in 5 days, so you have to be back by then",
+"text": "If you get rid of them I can get you part of the map",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "If you get rid of them I can get you part of the map, but we are leaving in 5 days, so you have to be back by then",
+"translation_key": "If you get rid of them I can get you part of the map",
 "type": "dialogue"
 },
 "18": {
-"next_id": "20",
-"next_id_after": "42",
-"responses": PackedStringArray("18", "25", "32"),
+"character": "Towns Person 2",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "19",
+"text": "But we are leaving in {{Global.quests.Quest1.MaxDays}} days, so you have to be back by then",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Quest1"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "MaxDays"
+}]),
+"value_in_text": "{{Global.quests.Quest1.MaxDays}}"
+}]),
+"translation_key": "But we are leaving in {{Global.quests.Quest1.MaxDays}} days, so you have to be back by then",
+"type": "dialogue"
+},
+"19": {
+"next_id": "21",
+"next_id_after": "43",
+"responses": PackedStringArray("19", "26", "33"),
 "text": "What's so bad about this crab",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "What's so bad about this crab",
 "type": "response"
 },
-"20": {
+"21": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "21",
-"parent_id": "18",
+"next_id": "22",
+"parent_id": "19",
 "text": "Well..",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well..",
 "type": "dialogue"
 },
-"21": {
+"22": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -218,55 +461,55 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "22",
-"parent_id": "18",
+"next_id": "23",
+"parent_id": "19",
 "type": "mutation"
 },
-"22": {
+"23": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "23",
-"parent_id": "18",
+"next_id": "24",
+"parent_id": "19",
 "text": "It seems pretty harmless during the day...[wait=1]but night it thrashes about",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "It seems pretty harmless during the day...[wait=1]but night it thrashes about",
 "type": "dialogue"
 },
-"23": {
+"24": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "24",
-"parent_id": "18",
+"next_id": "25",
+"parent_id": "19",
 "text": "I'll be back just you wait.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'll be back just you wait.",
 "type": "dialogue"
 },
-"24": {
+"25": {
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "18",
+"parent_id": "19",
 "type": "goto"
 },
-"25": {
-"next_id": "27",
-"next_id_after": "42",
+"26": {
+"next_id": "28",
+"next_id_after": "43",
 "text": "Sure this shouldn't be too bad",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Sure this shouldn't be too bad",
 "type": "response"
 },
-"27": {
+"28": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "28",
-"parent_id": "25",
+"next_id": "29",
+"parent_id": "26",
 "text": "Well..",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well..",
 "type": "dialogue"
 },
-"28": {
+"29": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -289,218 +532,208 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "29",
-"parent_id": "25",
+"next_id": "30",
+"parent_id": "26",
 "type": "mutation"
 },
-"29": {
+"30": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "30",
-"parent_id": "25",
+"next_id": "31",
+"parent_id": "26",
 "text": "Not too bad...that thing is crazy. Expecially at night",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Not too bad...that thing is crazy. Expecially at night",
 "type": "dialogue"
 },
-"30": {
+"31": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "31",
-"parent_id": "25",
+"next_id": "32",
+"parent_id": "26",
 "text": "I'll be back just you wait.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'll be back just you wait.",
 "type": "dialogue"
 },
-"31": {
+"32": {
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "25",
+"parent_id": "26",
 "type": "goto"
 },
-"32": {
-"next_id": "34",
-"next_id_after": "42",
+"33": {
+"next_id": "35",
+"next_id_after": "43",
 "text": "This may have been way move then I want to sign up for",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "This may have been way move then I want to sign up for",
 "type": "response"
 },
-"34": {
+"35": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "35",
-"parent_id": "32",
+"next_id": "36",
+"parent_id": "33",
 "text": "Well take your ship and get out of here",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well take your ship and get out of here",
 "type": "dialogue"
 },
-"35": {
+"36": {
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "32",
+"parent_id": "33",
 "type": "goto"
 },
-"40": {
-"next_id": "42",
+"41": {
+"next_id": "43",
 "text": "Quest2",
 "type": "title"
 },
-"42": {
+"43": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "44",
+"next_id": "45",
 "text": "That wasn't so bad. The crab was actually pretty nice. He lost some stuff and had been looking for it.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "That wasn't so bad. The crab was actually pretty nice. He lost some stuff and had been looking for it.",
 "type": "dialogue"
 },
-"44": {
+"45": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "45",
+"next_id": "46",
 "text": "Then why was he always making so much noise at night",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Then why was he always making so much noise at night",
 "type": "dialogue"
 },
-"45": {
+"46": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "46",
+"next_id": "47",
 "text": "Probably because he couldn't see.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Probably because he couldn't see.",
 "type": "dialogue"
 },
-"46": {
+"47": {
 "character": "Towns Person 1",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "47",
+"next_id": "48",
 "text": "Well he's gone so here you go.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well he's gone so here you go.",
 "type": "dialogue"
 },
-"47": {
+"48": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "48",
+"next_id": "49",
 "text": "You had the map piece all along. Can you tell me where to get more?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You had the map piece all along. Can you tell me where to get more?",
 "type": "dialogue"
 },
-"48": {
+"49": {
 "character": "Towns Person 1",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "49",
+"next_id": "50",
 "text": "...",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "...",
 "type": "dialogue"
 },
-"49": {
+"50": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "50",
+"next_id": "51",
 "text": "...I have a piece too. I'll give you mine if you clear a monster out for me too.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "...I have a piece too. I'll give you mine if you clear a monster out for me too.",
 "type": "dialogue"
 },
-"50": {
+"51": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "51",
+"next_id": "52",
 "text": "Wait you have one too?...[wait=1]Why didn't you say something earlier.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Wait you have one too?...[wait=1]Why didn't you say something earlier.",
 "type": "dialogue"
 },
-"51": {
+"52": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "52",
+"next_id": "53",
 "text": "I didn't need anything earlier, but now there's a shark that has taken over my favorites fishing spot.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I didn't need anything earlier, but now there's a shark that has taken over my favorites fishing spot.",
 "type": "dialogue"
 },
-"52": {
+"53": {
 "character": "Towns Person 1",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "53",
+"next_id": "54",
 "text": "Hey you can just give away your map piece like that!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Hey you can just give away your map piece like that!",
 "type": "dialogue"
 },
-"53": {
+"54": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "54",
+"next_id": "55",
 "text": "Why not? You just did.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why not? You just did.",
 "type": "dialogue"
 },
-"54": {
+"55": {
 "character": "Towns Person 1",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "55",
+"next_id": "56",
 "text": "...",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "...",
-"type": "dialogue"
-},
-"55": {
-"character": "Towns Person 2",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "56",
-"text": "Go show that big lub whose boss cause there's not much to do besides coming to the bar.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Go show that big lub whose boss cause there's not much to do besides coming to the bar.",
 "type": "dialogue"
 },
 "56": {
 "character": "Towns Person 2",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "57",
+"text": "Go show that big lub whose boss cause there's not much to do besides coming to the bar.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Go show that big lub whose boss cause there's not much to do besides coming to the bar.",
+"type": "dialogue"
+},
+"57": {
+"character": "Towns Person 2",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "58",
 "text": "By the way I'm Redd and this is my brother Jett.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "By the way I'm Redd and this is my brother Jett.",
 "type": "dialogue"
 },
-"57": {
+"58": {
 "character": "Player:",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "58",
+"next_id": "59",
 "text": "",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "",
 "type": "dialogue"
 },
-"58": {
-"next_id": "59",
-"next_id_after": "72",
-"responses": PackedStringArray("58", "62", "65"),
+"59": {
+"next_id": "60",
+"next_id_after": "73",
+"responses": PackedStringArray("59", "63", "66"),
 "text": "Sure, but how did you get these map pieces in the first place.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Sure, but how did you get these map pieces in the first place.",
 "type": "response"
-},
-"59": {
-"character": "Jett",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "60",
-"parent_id": "58",
-"text": "You take care of that shark an I'll tell you",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You take care of that shark an I'll tell you",
-"type": "dialogue"
 },
 "6": {
 "character": "Player",
@@ -512,77 +745,129 @@ lines = {
 "type": "dialogue"
 },
 "60": {
-"character": "Redd",
+"character": "Jett",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "61",
-"parent_id": "58",
-"text": "Our plans changed so we'll be around for 10 more days",
+"parent_id": "59",
+"text": "You take care of that shark an I'll tell you",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Our plans changed so we'll be around for 10 more days",
+"translation_key": "You take care of that shark an I'll tell you",
 "type": "dialogue"
 },
 "61": {
-"is_snippet": false,
-"next_id": "end!",
-"parent_id": "58",
-"type": "goto"
+"character": "Redd",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "62",
+"parent_id": "59",
+"text": "Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Quest2"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "MaxDays"
+}]),
+"value_in_text": "{{Global.quests.Quest2.MaxDays}}"
+}]),
+"translation_key": "Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days",
+"type": "dialogue"
 },
 "62": {
-"next_id": "63",
-"next_id_after": "72",
+"is_snippet": false,
+"next_id": "end!",
+"parent_id": "59",
+"type": "goto"
+},
+"63": {
+"next_id": "64",
+"next_id_after": "73",
 "text": "Sure. I like fishing too. Maybe we can fish together when the shark leaves",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Sure. I like fishing too. Maybe we can fish together when the shark leaves",
 "type": "response"
 },
-"63": {
+"64": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "64",
-"parent_id": "62",
-"text": "I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for 10 more days",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for 10 more days",
+"next_id": "65",
+"parent_id": "63",
+"text": "I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Quest2"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "MaxDays"
+}]),
+"value_in_text": "{{Global.quests.Quest2.MaxDays}}"
+}]),
+"translation_key": "I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days",
 "type": "dialogue"
 },
-"64": {
+"65": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "62",
+"parent_id": "63",
 "type": "goto"
 },
-"65": {
-"next_id": "66",
-"next_id_after": "72",
+"66": {
+"next_id": "67",
+"next_id_after": "73",
 "text": "This may have been way move then I want to sign up for",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "This may have been way move then I want to sign up for",
 "type": "response"
 },
-"66": {
+"67": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "67",
-"parent_id": "65",
+"next_id": "68",
+"parent_id": "66",
 "text": "First a giant crab and now a giant shark?!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "First a giant crab and now a giant shark?!",
 "type": "dialogue"
 },
-"67": {
+"68": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "68",
-"parent_id": "65",
+"next_id": "69",
+"parent_id": "66",
 "text": "Well it was nice meeting you. I guess I'll never fish again",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Well it was nice meeting you. I guess I'll never fish again",
 "type": "dialogue"
 },
-"68": {
+"69": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "65",
+"parent_id": "66",
 "type": "goto"
 },
 "7": {
@@ -594,147 +879,147 @@ lines = {
 "translation_key": "Have you seen it?",
 "type": "dialogue"
 },
-"70": {
-"next_id": "72",
+"71": {
+"next_id": "73",
 "text": "Quest3",
 "type": "title"
 },
-"72": {
+"73": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "74",
+"next_id": "75",
 "text": "That shark is a pretty cool dude. He lost somethings just like the crab and was looking for them.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "That shark is a pretty cool dude. He lost somethings just like the crab and was looking for them.",
-"type": "dialogue"
-},
-"74": {
-"character": "Towns Person 3",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "75",
-"text": "Has anyone seen my fluffy. I can't find him anywhere.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Has anyone seen my fluffy. I can't find him anywhere.",
 "type": "dialogue"
 },
 "75": {
 "character": "Towns Person 3",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "76",
+"text": "Has anyone seen my fluffy. I can't find him anywhere.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Has anyone seen my fluffy. I can't find him anywhere.",
+"type": "dialogue"
+},
+"76": {
+"character": "Towns Person 3",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "77",
 "text": "Oh...Jett and Redd. What are you doing here.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Oh...Jett and Redd. What are you doing here.",
 "type": "dialogue"
 },
-"76": {
+"77": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "77",
+"next_id": "78",
 "text": "Jett did you hear something.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Jett did you hear something.",
 "type": "dialogue"
 },
-"77": {
+"78": {
 "character": "Jett",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "78",
+"next_id": "79",
 "text": "Nope.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Nope.",
 "type": "dialogue"
 },
-"78": {
+"79": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "79",
+"next_id": "80",
 "text": "Are you guys okay?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Are you guys okay?",
 "type": "dialogue"
 },
-"79": {
+"80": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "80",
+"next_id": "81",
 "text": "This is our other brother Bruno",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "This is our other brother Bruno",
 "type": "dialogue"
 },
-"80": {
+"81": {
 "character": "Jett",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "81",
+"next_id": "82",
 "text": "We don't talk to or about Bruno",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We don't talk to or about Bruno",
 "type": "dialogue"
 },
-"81": {
+"82": {
 "character": "Bruno",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "82",
+"next_id": "83",
 "text": "I'm literally still here...[wait=1]And your pets are missing too",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'm literally still here...[wait=1]And your pets are missing too",
 "type": "dialogue"
 },
-"82": {
+"83": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "83",
+"next_id": "84",
 "text": "Not my Scalawag",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Not my Scalawag",
 "type": "dialogue"
 },
-"83": {
+"84": {
 "character": "Jett",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "84",
+"next_id": "85",
 "text": "Puppuccino?! You can have his map piece too, just find our pets.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Puppuccino?! You can have his map piece too, just find our pets.",
 "type": "dialogue"
 },
-"84": {
+"85": {
 "character": "Bruno",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "85",
+"next_id": "86",
 "text": "My map piece is mine...I knew you would try to take it from me",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "My map piece is mine...I knew you would try to take it from me",
 "type": "dialogue"
 },
-"85": {
+"86": {
 "character": "Jett",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "86",
+"next_id": "87",
 "text": "Player has been able to free the island of two monster. They are way more worthy of the finding the treasure then we will ever be.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Player has been able to free the island of two monster. They are way more worthy of the finding the treasure then we will ever be.",
 "type": "dialogue"
 },
-"86": {
+"87": {
 "character": "Bruno",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "87",
+"next_id": "88",
 "text": "Fine you get all our pets back and you can have my map piece",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Fine you get all our pets back and you can have my map piece",
 "type": "dialogue"
 },
-"87": {
-"next_id": "88",
-"next_id_after": "110",
-"responses": PackedStringArray("87", "95", "100"),
+"88": {
+"next_id": "89",
+"next_id_after": "111",
+"responses": PackedStringArray("88", "96", "101"),
 "text": "I'll get your pets back, but you have to agree to make up",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'll get your pets back, but you have to agree to make up",
 "type": "response"
 },
-"88": {
+"89": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -757,19 +1042,9 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "89",
-"parent_id": "87",
-"type": "mutation"
-},
-"89": {
-"character": "Bruno",
-"character_replacements": Array[Dictionary]([]),
 "next_id": "90",
-"parent_id": "87",
-"text": "What?!",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "What?!",
-"type": "dialogue"
+"parent_id": "88",
+"type": "mutation"
 },
 "9": {
 "character": "Towns Person 1",
@@ -781,94 +1056,140 @@ lines = {
 "type": "dialogue"
 },
 "90": {
-"character": "Jett",
+"character": "Bruno",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "91",
-"parent_id": "87",
+"parent_id": "88",
+"text": "What?!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "What?!",
+"type": "dialogue"
+},
+"91": {
+"character": "Jett",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "92",
+"parent_id": "88",
 "text": "I thought you wanted treasure. Now your trying to fix out family problems too?!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I thought you wanted treasure. Now your trying to fix out family problems too?!",
 "type": "dialogue"
 },
-"91": {
+"92": {
 "character": "Redd",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "92",
-"parent_id": "87",
+"next_id": "93",
+"parent_id": "88",
 "text": "And if we don't.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "And if we don't.",
 "type": "dialogue"
 },
-"92": {
+"93": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "93",
-"parent_id": "87",
+"next_id": "94",
+"parent_id": "88",
 "text": "I guess your pets will enjoy their new homes",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I guess your pets will enjoy their new homes",
 "type": "dialogue"
 },
-"93": {
+"94": {
 "character": "Bruno",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "94",
-"parent_id": "87",
-"text": "Fine we'll work on it while you are away. They can only be out there for 10 days before they starve.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Fine we'll work on it while you are away. They can only be out there for 10 days before they starve.",
+"next_id": "95",
+"parent_id": "88",
+"text": "Fine we'll work on it while you are away. They can only be out there for {{Global.quests.Quest3.MaxDays}} days before they starve.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Quest3"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "MaxDays"
+}]),
+"value_in_text": "{{Global.quests.Quest3.MaxDays}}"
+}]),
+"translation_key": "Fine we'll work on it while you are away. They can only be out there for {{Global.quests.Quest3.MaxDays}} days before they starve.",
 "type": "dialogue"
 },
-"94": {
+"95": {
 "is_snippet": false,
 "next_id": "end!",
-"parent_id": "87",
+"parent_id": "88",
 "type": "goto"
 },
-"95": {
-"next_id": "96",
-"next_id_after": "110",
+"96": {
+"next_id": "97",
+"next_id_after": "111",
 "text": "I'll get your pets back. You all are nuts",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'll get your pets back. You all are nuts",
 "type": "response"
 },
-"96": {
+"97": {
 "character": "Jett",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "97",
-"parent_id": "95",
-"text": "Hey",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Hey",
-"type": "dialogue"
-},
-"97": {
-"character": "Redd",
-"character_replacements": Array[Dictionary]([]),
 "next_id": "98",
-"parent_id": "95",
+"parent_id": "96",
 "text": "Hey",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Hey",
 "type": "dialogue"
 },
 "98": {
-"character": "Bruno",
+"character": "Redd",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "99",
-"parent_id": "95",
-"text": "Sounds about right...You need to get them back here in the next 10 days or they will starve",
+"parent_id": "96",
+"text": "Hey",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Sounds about right...You need to get them back here in the next 10 days or they will starve",
+"translation_key": "Hey",
 "type": "dialogue"
 },
 "99": {
-"is_snippet": false,
-"next_id": "end!",
-"parent_id": "95",
-"type": "goto"
+"character": "Bruno",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "100",
+"parent_id": "96",
+"text": "Sounds about right...You need to get them back here in the next {{Global.quests.Quest3.MaxDays}} days or they will starve",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Quest3"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "MaxDays"
+}]),
+"value_in_text": "{{Global.quests.Quest3.MaxDays}}"
+}]),
+"translation_key": "Sounds about right...You need to get them back here in the next {{Global.quests.Quest3.MaxDays}} days or they will starve",
+"type": "dialogue"
 }
 }
 metadata/dialogue_manager_version = "2.15.2"

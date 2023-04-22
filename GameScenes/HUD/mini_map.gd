@@ -20,7 +20,8 @@ func _ready():
 	"Blue Diamond" : item,
 	"Red Diamond" : item,
 	"Chest" : item,
-	"Flag" : flag
+	"Flag" : flag,
+	"Pets" : item
 	}
 	playerMarker.position.x = (self.size.x/2) - (playerMarker.texture.get_width()/2)
 	playerMarker.position.y = (self.size.y/2) - (playerMarker.texture.get_height()/2)

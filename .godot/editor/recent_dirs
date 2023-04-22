@@ -1,12 +1,18 @@
+res://Assets/Free Street Animal Pixel Art/6 Rat 2
+res://Assets/Free Street Animal Pixel Art/5 Rat
+res://Assets/Free Street Animal Pixel Art/4 Cat 2
+res://Assets/Free Street Animal Pixel Art/3 Cat
+res://Assets/Free Street Animal Pixel Art/2 Dog 2
+res://Assets/Free Street Animal Pixel Art/1 Dog
+res://GameScenes/Objects/Collectables
+res://GameScenes
 res://GameScenes/HUD
 res://GameScenes/Objects/Interactable
-res://GameScenes
 res://GameScenes/Characters
 res://GameScenes/CutScenes
 res://GameScenes/Dialogs
 res://GameScenes/Dialogs/
 res://GameScenes/Environment
-res://GameScenes/Objects/Collectables
 res://GameScenes/Objects/
 res://GameScenes/Objects
 res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run
@@ -14,4 +20,3 @@ res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Capt
 res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/04-Fall
 res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit
 res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump
-res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle

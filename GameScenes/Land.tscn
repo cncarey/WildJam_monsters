@@ -828,9 +828,11 @@ shape = SubResource("RectangleShape2D_oejdg")
 position = Vector2(-103.904, 123.786)
 
 [node name="Crab" parent="." instance=ExtResource("4_3a6g4")]
+visible = false
 position = Vector2(807.25, 448.5)
 
 [node name="Shark" parent="." groups=["Climbers"] instance=ExtResource("8_w3q1q")]
+visible = false
 position = Vector2(-2430.8, -175.2)
 
 [node name="Ladder" parent="." instance=ExtResource("6_thwaq")]

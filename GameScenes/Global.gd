@@ -132,7 +132,6 @@ func resetGameValues():
 		"QuestInstructions" : "Find the Crab down below",
 		"QuestItem" : "Pets",
 		"CurrQuestItemCount" : 0,
-		"CurrQuestKeyCount" : 0,
 		"StandAloneItemCount" : 3, 
 		"totalItems" : 3,
 		"MaxDays": 10,

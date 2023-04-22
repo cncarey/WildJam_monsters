@@ -4,6 +4,7 @@ var blueDiamond = preload("res://GameScenes/Objects/Collectables/BlueDiamond.tsc
 var redDiamond = preload("res://GameScenes/Objects/Collectables/RedDiamond.tscn")
 var key = preload("res://GameScenes/Objects/Collectables/key.tscn")
 var chest = preload("res://GameScenes/Objects/Interactable/chest.tscn")
+var pet = preload("res://GameScenes/Objects/Collectables/Pets.tscn")
 
 @onready var easyCollectablePoints = $EasyCollectables
 @onready var standAlonePoint = $StandAloneCollectables
@@ -20,6 +21,9 @@ var chest = preload("res://GameScenes/Objects/Interactable/chest.tscn")
 @onready var door = $Door
 @onready var player = $Player
 
+@onready var crab = $Crab
+@onready var shark = $Shark
+
 func _ready():
 	if(Global.currentQuest == "Quest1" || Global.currentQuest == "Crab"):
 		tutorial.visible = true
@@ -27,6 +31,15 @@ func _ready():
 		tutorial.visible = false
 		door.isLocked = false
 		door.unlock(false)
+		
+	match Global.currentQuest:
+		"Quest1", "Crab":
+			crab.visible = true
+		"Quest2", "Shark":
+			shark.visible = true
+		_:
+			pass
+			
 	
 	#get the current quest from globals and scyn the HUD
 	var curQuest = Global.quests[Global.currentQuest]
@@ -37,6 +50,8 @@ func _ready():
 	
 	miniMap.player = player
 	HUD.updateHUDQuest()
+	if Global.currentQuest == "Quest3" :
+		startQuest("Pets", "Quest3")
 	pass
 
 func startQuest(type : StringName, questName: StringName):
@@ -67,6 +82,9 @@ func startQuest(type : StringName, questName: StringName):
 					spawnCollectable(blueDiamond.instantiate(), saP)
 				"Red Diamond":
 					spawnCollectable(redDiamond.instantiate(), saP)
+				"Pets":
+					spawnCollectable(pet.instantiate(), saP)
+					pass
 				_:
 					assert("do not have a collectabnle of passed type preloaded")
 					
