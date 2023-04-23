@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jtpwe"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0d6np"]
 
 [resource]
-script = ExtResource("1_jtpwe")
+script = ExtResource("1_0d6np")
 titles = {
 "Pre_Quest": "9",
 "Start": "2",
 "Start_Quest": "34",
 "Update_Quest": "41"
 }
-character_names = PackedStringArray("Starfish", "Player")
+character_names = PackedStringArray("Starfish", "{{Global.playerName}}")
 first_title = "2"
 lines = {
 "1": {
@@ -19,8 +19,19 @@ lines = {
 "type": "title"
 },
 "10": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
+"character": "{{Global.playerName}}",
+"character_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
 "next_id": "11",
 "text": "Do you know where I can find the cave of treasures?",
 "text_replacements": Array[Dictionary]([]),
@@ -262,9 +273,20 @@ lines = {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "23",
-"text": "Player:",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Player:",
+"text": "{{Global.playerName}}:",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
+"translation_key": "{{Global.playerName}}:",
 "type": "dialogue"
 },
 "23": {

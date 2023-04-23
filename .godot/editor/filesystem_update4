@@ -12,3 +12,5 @@ res://GameScenes/Objects/Interactable/Flag.tscn
 res://GameScenes/CutScenes/OpeningScene.gd
 res://GameScenes/Global.gd
 res://GameScenes/HUD/StartMenu.tscn
+res://GameScenes/HUD/StartMenu.gd
+res://GameScenes/HUD/PlayerName.gd

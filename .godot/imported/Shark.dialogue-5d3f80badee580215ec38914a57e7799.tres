@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_sqoyt"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_w1ejs"]
 
 [resource]
-script = ExtResource("1_sqoyt")
+script = ExtResource("1_w1ejs")
 titles = {
 "Pre_Quest": "10",
 "Start": "2",
 "Start_Quest": "25",
 "Update_Quest": "39"
 }
-character_names = PackedStringArray("Shark", "Player:", "Player")
+character_names = PackedStringArray("Shark", "{{Global.playerName}}:", "{{Global.playerName}}")
 first_title = "2"
 lines = {
 "1": {
@@ -28,8 +28,19 @@ lines = {
 "type": "dialogue"
 },
 "11": {
-"character": "Player:",
-"character_replacements": Array[Dictionary]([]),
+"character": "{{Global.playerName}}:",
+"character_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
 "next_id": "12",
 "text": "",
 "text_replacements": Array[Dictionary]([]),
@@ -235,8 +246,19 @@ lines = {
 "type": "dialogue"
 },
 "28": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
+"character": "{{Global.playerName}}",
+"character_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
 "next_id": "29",
 "text": "I can help you with that.",
 "text_replacements": Array[Dictionary]([]),
@@ -301,8 +323,19 @@ lines = {
 "type": "goto"
 },
 "30": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
+"character": "{{Global.playerName}}",
+"character_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
 "next_id": "31",
 "text": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s you'll head back to the sea",
 "text_replacements": Array[Dictionary]([{
@@ -355,9 +388,9 @@ lines = {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "32",
-"text": "Yeah. Yeah. And can you please put them at the big flag after you find them?",
+"text": "Yeah. And can you please put them at the big flag after you find them?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah. Yeah. And can you please put them at the big flag after you find them?",
+"translation_key": "Yeah. And can you please put them at the big flag after you find them?",
 "type": "dialogue"
 },
 "32": {
@@ -567,9 +600,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "45",
 "parent_id": "41",
-"text": "Yeah we don't have to many more to find",
+"text": "Yeah! You don't have to many more to find.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah we don't have to many more to find",
+"translation_key": "Yeah! You don't have to many more to find.",
 "type": "dialogue"
 },
 "43": {
@@ -583,9 +616,30 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "next_id": "45",
 "parent_id": "43",
-"text": "Let's find my totalItems.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Let's find my totalItems.",
+"text": "Let's find my {{Global.quests.Shark.QuestItem}}s.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestItem"
+}]),
+"value_in_text": "{{Global.quests.Shark.QuestItem}}"
+}]),
+"translation_key": "Let's find my {{Global.quests.Shark.QuestItem}}s.",
 "type": "dialogue"
 },
 "45": {

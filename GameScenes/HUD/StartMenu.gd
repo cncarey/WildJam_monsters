@@ -1,5 +1,6 @@
 extends Control
 
+@onready var playerName = $MarginContainer/VBoxContainer/PlayerName
 
 func _on_new_game_pressed():
 	Global.resetGameValues()
@@ -10,4 +11,12 @@ func _on_new_game_pressed():
 
 func _on_quit_game_pressed():
 	get_tree().quit()
+	pass # Replace with function body.
+
+
+func nameChanged():
+	if playerName.text == "":
+		Global.playerName = "Player"
+	else:
+		Global.playerName = playerName.text
 	pass # Replace with function body.

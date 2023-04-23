@@ -7,7 +7,7 @@ else
 
 ~ Pre_Quest
 Starfish: ...
-Player: Do you know where I can find the cave of treasures?
+{{Global.playerName}}: Do you know where I can find the cave of treasures?
 Starfish: Yes, but why should I tell you?
 - I want to help the village get back on their feet
 	set Global.quests.Morality += 1
@@ -19,7 +19,7 @@ if Global.quests.Morality < 3
 	set Global.quests.StarFish.MaxDays = 2
 
 Starfish: If you are worthy you will find my {{Global.quests.StarFish.totalItems}} {{Global.quests.StarFish.QuestItem}}s within {{Global.quests.StarFish.MaxDays}} days
-Player:
+{{Global.playerName}}:
 - I'll find them
 	=> Start_Quest
 if Global.quests.Morality < 3

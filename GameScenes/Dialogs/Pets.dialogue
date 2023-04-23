@@ -17,7 +17,7 @@ else
 	set Global.currentQuest = "Quest4"
 - Let pets stay on the island
 	set Global.quests.Morality -= 1
-	Player: The brothers will be so mad at me. I'll take them back	
+	{{Global.playerName}}: The brothers will be so mad at me. I'll take them back	
 	set Global.quests.Pets.QuestComplete = true
 	set Global.previousQuest = Global.currentQuest
 	set Global.currentQuest = "Quest4"

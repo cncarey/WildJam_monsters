@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bg210"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_x8vag"]
 
 [resource]
-script = ExtResource("1_bg210")
+script = ExtResource("1_x8vag")
 titles = {
 "Flag_Stop": "12",
 "Start_Flag": "3"
 }
-character_names = PackedStringArray("Pets", "Player")
+character_names = PackedStringArray("Pets", "{{Global.playerName}}")
 first_title = "3"
 lines = {
 "11": {
@@ -184,8 +184,19 @@ lines = {
 "type": "title"
 },
 "20": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
+"character": "{{Global.playerName}}",
+"character_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
 "next_id": "21",
 "parent_id": "18",
 "text": "The brothers will be so mad at me. I'll take them back",
