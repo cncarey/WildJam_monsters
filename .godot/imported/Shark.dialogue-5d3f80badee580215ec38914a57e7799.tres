@@ -190,27 +190,48 @@ lines = {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "26",
-"text": "I was surfing a HUGE wave...maybe a bit too huge",
+"text": "I was swimming in this lake when a boat hit me.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "I was surfing a HUGE wave...maybe a bit too huge",
+"translation_key": "I was swimming in this lake when a boat hit me.",
 "type": "dialogue"
 },
 "26": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "27",
-"text": "...When I lost controll and landed up here.",
+"text": "...I was knocked out cold and woke up here.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "...When I lost controll and landed up here.",
+"translation_key": "...I was knocked out cold and woke up here.",
 "type": "dialogue"
 },
 "27": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "28",
-"text": "I dropped all my blue diamonds and I need help finidng them",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I dropped all my blue diamonds and I need help finidng them",
+"text": "I dropped all my {{Global.quests.Shark.QuestItem}}s and I need help finidng them.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestItem"
+}]),
+"value_in_text": "{{Global.quests.Shark.QuestItem}}"
+}]),
+"translation_key": "I dropped all my {{Global.quests.Shark.QuestItem}}s and I need help finidng them.",
 "type": "dialogue"
 },
 "28": {
@@ -226,7 +247,7 @@ lines = {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "30",
-"text": "Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} throught the map.",
+"text": "Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s throught the map.",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -270,7 +291,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.quests.Shark.QuestItem}}"
 }]),
-"translation_key": "Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} throught the map.",
+"translation_key": "Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s throught the map.",
 "type": "dialogue"
 },
 "3": {
@@ -283,7 +304,7 @@ lines = {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "31",
-"text": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} you'll head back to the sea",
+"text": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s you'll head back to the sea",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -327,16 +348,16 @@ lines = {
 }]),
 "value_in_text": "{{Global.quests.Shark.QuestItem}}"
 }]),
-"translation_key": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} you'll head back to the sea",
+"translation_key": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s you'll head back to the sea",
 "type": "dialogue"
 },
 "31": {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "32",
-"text": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
+"text": "Yeah. Yeah. And can you please put them at the big flag after you find them?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
+"translation_key": "Yeah. Yeah. And can you please put them at the big flag after you find them?",
 "type": "dialogue"
 },
 "32": {

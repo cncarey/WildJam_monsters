@@ -22,13 +22,13 @@ Player:
 	=> END
 
 ~ Start_Quest
-Shark: I was surfing a HUGE wave...maybe a bit too huge
-Shark: ...When I lost controll and landed up here.
-Shark: I dropped all my blue diamonds and I need help finidng them
+Shark: I was swimming in this lake when a boat hit me.
+Shark: ...I was knocked out cold and woke up here.
+Shark: I dropped all my {{Global.quests.Shark.QuestItem}}s and I need help finidng them.
 Player: I can help you with that.
-Shark: Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} throught the map.
-Player: So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} you'll head back to the sea
-Shark: Yeah. And can you please take me there after you find them. I can get back from the big flag
+Shark: Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s throught the map.
+Player: So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s you'll head back to the sea
+Shark: Yeah. Yeah. And can you please put them at the big flag after you find them?
 set Global.quests.Shark.QuestStarted = true
 do startQuest(Global.quests.Shark.QuestItem, "Shark")
 do restartTimer()

@@ -288,9 +288,9 @@ lines = {
 "character": "Crab",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "31",
-"text": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
+"text": "Yeah. And can you please put them at the big flag after you find them?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Yeah. And can you please take me there after you find them. I can get back from the big flag",
+"translation_key": "Yeah. And can you please put them at the big flag after you find them?",
 "type": "dialogue"
 },
 "31": {

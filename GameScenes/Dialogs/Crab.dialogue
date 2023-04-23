@@ -27,7 +27,7 @@ Crab: I dropped all my rubies and I need help finidng them
 Player: I can help you with that.
 Crab: Really. I'm missing {{Global.quests.Crab.totalItems}} rubies throught the map.
 Player: So if I find your {{Global.quests.Crab.totalItems}} rubies you'll head back to the sea
-Crab: Yeah. And can you please take me there after you find them. I can get back from the big flag
+Crab: Yeah. And can you please put them at the big flag after you find them?
 set Global.quests.Crab.QuestStarted = true
 do startQuest(Global.quests.Crab.QuestItem, "Crab")
 do restartTimer()
