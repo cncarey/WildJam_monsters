@@ -1,4 +1,5 @@
 ~ Start
+set Global.isTalking = true
 if Global.quests.Shark.QuestStarted == false
 	=> Pre_Quest
 else
@@ -18,6 +19,7 @@ Shark: ...
 	set Global.quests.Morality += 1
 	=> Start_Quest
 - End the conversation 
+	set Global.isTalking = false
 	do restartTimer()
 	=> END
 
@@ -31,6 +33,7 @@ Shark: Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Sh
 Shark: Yeah. And can you please put them at the big flag after you find them?
 set Global.quests.Shark.QuestStarted = true
 do startQuest(Global.quests.Shark.QuestItem, "Shark")
+set Global.isTalking = false
 do restartTimer()
 => END
 
@@ -42,5 +45,6 @@ elif Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems/2
 	Shark: Yeah! You don't have to many more to find.
 else
 	Shark: Let's find my {{Global.quests.Shark.QuestItem}}s.
+set Global.isTalking = false
 do restartTimer()
 => END!

@@ -5,37 +5,92 @@
 [resource]
 script = ExtResource("1_x8vag")
 titles = {
-"Flag_Stop": "12",
+"Flag_Stop": "17",
 "Start_Flag": "3"
 }
 character_names = PackedStringArray("Pets", "{{Global.playerName}}")
 first_title = "3"
 lines = {
+"10": {
+"next_conditional_id": "14",
+"next_id": "11",
+"next_id_after": "14",
+"type": "condition"
+},
 "11": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "12",
+"parent_id": "10",
+"text": "You don't have all the pets.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "You don't have all the pets.",
+"type": "dialogue"
+},
+"12": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isTalking"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": false
+}])
+},
+"next_id": "13",
+"parent_id": "10",
+"type": "mutation"
+},
+"13": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "restartTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "14",
+"parent_id": "10",
+"type": "mutation"
+},
+"14": {
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"16": {
+"next_id": "17",
 "text": "Flag_Stop",
 "type": "title"
 },
-"12": {
-"next_id": "13",
-"next_id_after": "25",
-"responses": PackedStringArray("12", "18", "24"),
+"17": {
+"next_id": "18",
+"next_id_after": "30",
+"responses": PackedStringArray("17", "23", "29"),
 "text": "Return the pets to the brothers",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Return the pets to the brothers",
 "type": "response"
 },
-"13": {
+"18": {
 "character": "Pets",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "14",
-"parent_id": "12",
+"next_id": "19",
+"parent_id": "17",
 "text": "Meow...Woof",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Meow...Woof",
 "type": "dialogue"
 },
-"14": {
+"19": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -58,11 +113,16 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "15",
-"parent_id": "12",
+"next_id": "20",
+"parent_id": "17",
 "type": "mutation"
 },
-"15": {
+"2": {
+"next_id": "3",
+"text": "Start_Flag",
+"type": "title"
+},
+"20": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -90,11 +150,11 @@ lines = {
 "value": true
 }])
 },
-"next_id": "16",
-"parent_id": "12",
+"next_id": "21",
+"parent_id": "17",
 "type": "mutation"
 },
-"16": {
+"21": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -117,11 +177,11 @@ lines = {
 "value": "currentQuest"
 }])
 },
-"next_id": "17",
-"parent_id": "12",
+"next_id": "22",
+"parent_id": "17",
 "type": "mutation"
 },
-"17": {
+"22": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -139,19 +199,19 @@ lines = {
 "value": "Quest4"
 }])
 },
-"next_id": "25",
-"parent_id": "12",
+"next_id": "30",
+"parent_id": "17",
 "type": "mutation"
 },
-"18": {
-"next_id": "19",
-"next_id_after": "25",
+"23": {
+"next_id": "24",
+"next_id_after": "30",
 "text": "Let pets stay on the island",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Let pets stay on the island",
 "type": "response"
 },
-"19": {
+"24": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -174,16 +234,11 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "20",
-"parent_id": "18",
+"next_id": "25",
+"parent_id": "23",
 "type": "mutation"
 },
-"2": {
-"next_id": "3",
-"text": "Start_Flag",
-"type": "title"
-},
-"20": {
+"25": {
 "character": "{{Global.playerName}}",
 "character_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
@@ -197,14 +252,14 @@ lines = {
 }]),
 "value_in_text": "{{Global.playerName}}"
 }]),
-"next_id": "21",
-"parent_id": "18",
+"next_id": "26",
+"parent_id": "23",
 "text": "The brothers will be so mad at me. I'll take them back",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "The brothers will be so mad at me. I'll take them back",
 "type": "dialogue"
 },
-"21": {
+"26": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -232,11 +287,11 @@ lines = {
 "value": true
 }])
 },
-"next_id": "22",
-"parent_id": "18",
+"next_id": "27",
+"parent_id": "23",
 "type": "mutation"
 },
-"22": {
+"27": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -259,11 +314,11 @@ lines = {
 "value": "currentQuest"
 }])
 },
-"next_id": "23",
-"parent_id": "18",
+"next_id": "28",
+"parent_id": "23",
 "type": "mutation"
 },
-"23": {
+"28": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -281,24 +336,77 @@ lines = {
 "value": "Quest4"
 }])
 },
-"next_id": "25",
-"parent_id": "18",
+"next_id": "30",
+"parent_id": "23",
 "type": "mutation"
 },
-"24": {
-"next_id": "25",
-"next_id_after": "25",
+"29": {
+"next_id": "30",
+"next_id_after": "30",
 "text": "Come back later",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Come back later",
 "type": "response"
 },
-"25": {
+"3": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isTalking"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+}])
+},
+"next_id": "4",
+"type": "mutation"
+},
+"30": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isTalking"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": false
+}])
+},
+"next_id": "31",
+"type": "mutation"
+},
+"31": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "restartTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "32",
+"type": "mutation"
+},
+"32": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
 },
-"3": {
+"4": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -326,22 +434,56 @@ lines = {
 "value": false
 }])
 },
-"next_conditional_id": "5",
-"next_id": "4",
-"next_id_after": "9",
+"next_conditional_id": "8",
+"next_id": "5",
+"next_id_after": "14",
 "type": "condition"
 },
-"4": {
+"5": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "9",
-"parent_id": "3",
+"next_id": "6",
+"parent_id": "4",
 "text": "You don't have an active quest.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You don't have an active quest.",
 "type": "dialogue"
 },
-"5": {
+"6": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isTalking"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": false
+}])
+},
+"next_id": "7",
+"parent_id": "4",
+"type": "mutation"
+},
+"7": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "restartTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "14",
+"parent_id": "4",
+"type": "mutation"
+},
+"8": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -384,36 +526,15 @@ lines = {
 "value": "totalItems"
 }])
 },
-"next_conditional_id": "7",
-"next_id": "6",
-"next_id_after": "9",
-"type": "condition"
-},
-"6": {
-"is_snippet": false,
-"next_id": "12",
-"parent_id": "5",
-"type": "goto"
-},
-"7": {
-"next_conditional_id": "9",
-"next_id": "8",
-"next_id_after": "9",
-"type": "condition"
-},
-"8": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
+"next_conditional_id": "10",
 "next_id": "9",
-"parent_id": "7",
-"text": "You don't have all the pets.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "You don't have all the pets.",
-"type": "dialogue"
+"next_id_after": "14",
+"type": "condition"
 },
 "9": {
 "is_snippet": false,
-"next_id": "end",
+"next_id": "17",
+"parent_id": "8",
 "type": "goto"
 }
 }

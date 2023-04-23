@@ -35,8 +35,10 @@ func _on_dialogue_ended(_resource: DialogueResource):
 	DialogueManager.dialogue_ended.disconnect(_on_dialogue_ended)
 	
 	await get_tree().create_timer(0.4).timeout
-	if Global.previousQuest && Global.previousQuest != "":		
+	if Global.previousQuest && Global.previousQuest != "" && Global.curLevelComplete:	
+			
 		var curQuest = Global.quests[Global.previousQuest]
 		if(curQuest && "QuestComplete" in curQuest):
 			if curQuest.QuestComplete:
+				Global.curLevelComplete = false
 				changeScene.emit()

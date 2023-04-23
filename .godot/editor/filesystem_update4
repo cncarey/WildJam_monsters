@@ -14,3 +14,6 @@ res://GameScenes/Global.gd
 res://GameScenes/HUD/StartMenu.tscn
 res://GameScenes/HUD/StartMenu.gd
 res://GameScenes/HUD/PlayerName.gd
+res://GameScenes/Characters/Player.tscn
+res://GameScenes/Characters/Player.gd
+res://GameScenes/Objects/Interactable/Flag.gd

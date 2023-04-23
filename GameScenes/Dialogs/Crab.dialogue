@@ -1,5 +1,6 @@
 ~ Start
 do pauseTimer()
+set Global.isTalking = true
 if Global.quests.Crab.QuestStarted == false
 	=> Pre_Quest
 else
@@ -17,6 +18,7 @@ Crab: ...
 	set Global.quests.Morality += 1
 	=> Start_Quest
 - End the conversation 
+	set Global.isTalking = false
 	do restartTimer()
 	=> END
 
@@ -30,6 +32,7 @@ Crab: Really. I'm missing {{Global.quests.Crab.totalItems}} rubies throught the 
 Crab: Yeah. And can you please put them at the big flag after you find them?
 set Global.quests.Crab.QuestStarted = true
 do startQuest(Global.quests.Crab.QuestItem, "Crab")
+set Global.isTalking = false
 do restartTimer()
 => END
 
@@ -40,5 +43,6 @@ elif Global.quests.Crab.CurrQuestItemCount >= Global.quests.Crab.totalItems/2
 	Crab: Yeah we don't have to many more to find
 else
 	Crab: Let's find my rubies.
+set Global.isTalking = false
 do restartTimer()
 => END!
