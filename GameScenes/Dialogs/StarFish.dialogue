@@ -18,7 +18,7 @@ Starfish: Yes, but why should I tell you?
 if Global.quests.Morality < 3
 	set Global.quests.StarFish.MaxDays = 2
 
-Starfish: If you are worthy you will find my {{Global.quests.StarFish.totalItems}} _items_ within {{Global.quests.StarFish.MaxDays}} days
+Starfish: If you are worthy you will find my {{Global.quests.StarFish.totalItems}} {{Global.quests.StarFish.QuestItem}}s within {{Global.quests.StarFish.MaxDays}} days
 Player:
 - I'll find them
 	=> Start_Quest

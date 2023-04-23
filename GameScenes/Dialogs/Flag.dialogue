@@ -92,5 +92,4 @@ else
 Starfish: You have been found worthy
 set Global.quests.StarFish.QuestComplete = true
 set Global.quests.Complete = true
-- Come back later
 => END!

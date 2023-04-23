@@ -321,10 +321,10 @@ lines = {
 "value": true
 }])
 },
-"next_id": "126",
+"next_id": "127",
 "type": "mutation"
 },
-"126": {
+"127": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -347,36 +347,26 @@ lines = {
 "value": 3
 }])
 },
-"next_conditional_id": "128",
-"next_id": "127",
-"next_id_after": "131",
+"next_conditional_id": "129",
+"next_id": "128",
+"next_id_after": "132",
 "type": "condition"
 },
-"127": {
+"128": {
 "character": "Sterling",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "131",
-"parent_id": "126",
+"next_id": "132",
+"parent_id": "127",
 "text": "I'm so happy you have brought peace back to my family.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'm so happy you have brought peace back to my family.",
 "type": "dialogue"
 },
-"128": {
-"next_conditional_id": "131",
-"next_id": "129",
-"next_id_after": "131",
-"type": "condition"
-},
 "129": {
-"character": "Sterling",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "131",
-"parent_id": "128",
-"text": "I'm so happy you have brought peace back to the island.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "I'm so happy you have brought peace back to the island.",
-"type": "dialogue"
+"next_conditional_id": "132",
+"next_id": "130",
+"next_id_after": "132",
+"type": "condition"
 },
 "13": {
 "character": "Towns Person 1",
@@ -387,61 +377,71 @@ lines = {
 "translation_key": "Okay well I guess you can have none of it.",
 "type": "dialogue"
 },
-"131": {
-"character": "Player",
+"130": {
+"character": "Sterling",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "132",
-"text": "It's the last peice...but you are brothers...why didn't you get the treasure together?",
+"parent_id": "129",
+"text": "I'm so happy you have brought peace back to the island.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "It's the last peice...but you are brothers...why didn't you get the treasure together?",
+"translation_key": "I'm so happy you have brought peace back to the island.",
 "type": "dialogue"
 },
 "132": {
-"character": "Sterling",
+"character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "133",
-"text": "There's a giant pink fish that guards the treauser and only let's those worthy in.",
+"text": "It's the last peice...but you are brothers...why didn't you get the treasure together?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "There's a giant pink fish that guards the treauser and only let's those worthy in.",
+"translation_key": "It's the last peice...but you are brothers...why didn't you get the treasure together?",
 "type": "dialogue"
 },
 "133": {
 "character": "Sterling",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "134",
+"text": "There's a giant pink fish that guards the treauser and only let's those worthy in.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "There's a giant pink fish that guards the treauser and only let's those worthy in.",
+"type": "dialogue"
+},
+"134": {
+"character": "Sterling",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "135",
 "text": "We weren't found worthy and my brothers have been bickering with each other ever since.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We weren't found worthy and my brothers have been bickering with each other ever since.",
 "type": "dialogue"
 },
-"134": {
+"135": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "135",
+"next_id": "136",
 "text": "Oh...That why you don't talk to Bruno.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Oh...That why you don't talk to Bruno.",
 "type": "dialogue"
 },
-"135": {
+"136": {
 "character": "Sterling",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "136",
+"next_id": "137",
 "text": "I talk to him, just in secret.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I talk to him, just in secret.",
 "type": "dialogue"
 },
-"136": {
+"137": {
 "character": "Player:",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "137",
+"next_id": "138",
 "text": "",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "",
 "type": "dialogue"
 },
-"137": {
+"138": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -464,25 +464,17 @@ lines = {
 "value": 3
 }])
 },
-"next_conditional_id": "139",
-"next_id": "138",
-"next_id_after": "139",
-"type": "condition"
-},
-"138": {
-"next_id": "139",
-"next_id_after": "139",
-"parent_id": "137",
-"responses": PackedStringArray("138"),
-"text": "I think I'm worty",
+"next_id": "140",
+"next_id_after": "140",
+"responses": PackedStringArray("138", "139"),
+"text": "I think I'm worthy",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "I think I'm worty",
+"translation_key": "I think I'm worthy",
 "type": "response"
 },
 "139": {
 "next_id": "140",
 "next_id_after": "140",
-"responses": PackedStringArray("139"),
 "text": "Maybe I could have been nicer to the monsters on the island.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Maybe I could have been nicer to the monsters on the island.",

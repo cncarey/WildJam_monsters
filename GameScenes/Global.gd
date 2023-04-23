@@ -31,7 +31,7 @@ func resetGameValues():
 	"Quest1" :{
 		"QuestStarted" :  false,
 		"QuestName" : "Find the Giant Crab",
-		"QuestInstructions" : "Find the Crab down below",
+		"QuestInstructions" : "-Find the Crab down below",
 		"MaxDays": 5,
 		"QuestComplete": false,
 		"QuestCurDay": 0
@@ -39,7 +39,7 @@ func resetGameValues():
 	"Crab" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Lost Rubies",
-		"QuestInstructions" : "Find all ___ the Giant Crab's rubies",
+		"QuestInstructions" : "-Find all ___ the Giant Crab's rubies",
 		"QuestItem" : "Red Diamond",
 		"CurrQuestItemCount" : 0,
 		#TODO set this based on the difficulty	
@@ -51,14 +51,14 @@ func resetGameValues():
 	"Quest2" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Find the Giant Shark",
-		"QuestInstructions" : "Find the Shark by the lake",
+		"QuestInstructions" : "-Find the Shark by the lake",
 		"MaxDays": 10,
 		"QuestComplete": false
 	},
 	"Shark" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Lost Diamonds",
-		"QuestInstructions" : "Find all ___ of the Giant Shark's diamonds",
+		"QuestInstructions" : "-Find all ___ of the Giant Shark's diamonds",
 		"QuestItem" : "Blue Diamond",
 		"CurrQuestItemCount" : 0,
 		"CurrQuestKeyCount" : 0,
@@ -72,7 +72,7 @@ func resetGameValues():
 	"Quest3" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Find the Pets",
-		"QuestInstructions" : "Find all the pets",
+		"QuestInstructions" : "-Find all the pets",
 		"QuestItem" : "Pets",
 		"CurrQuestItemCount" : 0,
 		"CurrQuestKeyCount" : 0,
@@ -85,14 +85,14 @@ func resetGameValues():
 	"Quest4" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Find the Cave of Treasure",
-		"QuestInstructions" : "Find the Cave of Treasure",	
+		"QuestInstructions" : "-Find the Cave of Treasure",	
 		"QuestComplete": false,
 		"QuestCurDay": 0
 	},
 	"StarFish" : {
 		"QuestStarted" :  false,
 		"QuestName" : "Lost Diamonds",
-		"QuestInstructions" : "Find all ___ of the Giant Starfish's diamonds",
+		"QuestInstructions" : "-Find all ___ of the Giant Starfish's diamonds",
 		"QuestItem" : "Blue Diamond",
 		"CurrQuestItemCount" : 0,
 		"CurrQuestKeyCount" : 0,

@@ -226,9 +226,51 @@ lines = {
 "character": "Shark",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "30",
-"text": "Really. I'm missing 5 blue diamonds throught the map.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Really. I'm missing 5 blue diamonds throught the map.",
+"text": "Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} throught the map.",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "totalItems"
+}]),
+"value_in_text": "{{Global.quests.Shark.totalItems}}"
+}, {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestItem"
+}]),
+"value_in_text": "{{Global.quests.Shark.QuestItem}}"
+}]),
+"translation_key": "Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} throught the map.",
 "type": "dialogue"
 },
 "3": {
@@ -241,9 +283,51 @@ lines = {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "31",
-"text": "So if I find your 5 blue diamonds you'll head back to the sea",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "So if I find your 5 blue diamonds you'll head back to the sea",
+"text": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} you'll head back to the sea",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "totalItems"
+}]),
+"value_in_text": "{{Global.quests.Shark.totalItems}}"
+}, {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Shark"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "QuestItem"
+}]),
+"value_in_text": "{{Global.quests.Shark.QuestItem}}"
+}]),
+"translation_key": "So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} you'll head back to the sea",
 "type": "dialogue"
 },
 "31": {

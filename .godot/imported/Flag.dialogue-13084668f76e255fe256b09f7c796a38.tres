@@ -1385,15 +1385,6 @@ lines = {
 "type": "mutation"
 },
 "95": {
-"next_id": "96",
-"next_id_after": "96",
-"responses": PackedStringArray("95"),
-"text": "Come back later",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Come back later",
-"type": "response"
-},
-"96": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"

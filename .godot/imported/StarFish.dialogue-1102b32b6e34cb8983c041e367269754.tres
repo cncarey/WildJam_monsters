@@ -190,7 +190,7 @@ lines = {
 "character": "Starfish",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "22",
-"text": "If you are worthy you will find my {{Global.quests.StarFish.totalItems}} _items_ within {{Global.quests.StarFish.MaxDays}} days",
+"text": "If you are worthy you will find my {{Global.quests.StarFish.totalItems}} {{Global.quests.StarFish.QuestItem}}s within {{Global.quests.StarFish.MaxDays}} days",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -230,11 +230,32 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
+"value": "QuestItem"
+}]),
+"value_in_text": "{{Global.quests.StarFish.QuestItem}}"
+}, {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "quests"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "StarFish"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
 "value": "MaxDays"
 }]),
 "value_in_text": "{{Global.quests.StarFish.MaxDays}}"
 }]),
-"translation_key": "If you are worthy you will find my {{Global.quests.StarFish.totalItems}} _items_ within {{Global.quests.StarFish.MaxDays}} days",
+"translation_key": "If you are worthy you will find my {{Global.quests.StarFish.totalItems}} {{Global.quests.StarFish.QuestItem}}s within {{Global.quests.StarFish.MaxDays}} days",
 "type": "dialogue"
 },
 "22": {

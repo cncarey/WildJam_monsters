@@ -26,8 +26,8 @@ Shark: I was surfing a HUGE wave...maybe a bit too huge
 Shark: ...When I lost controll and landed up here.
 Shark: I dropped all my blue diamonds and I need help finidng them
 Player: I can help you with that.
-Shark: Really. I'm missing 5 blue diamonds throught the map.
-Player: So if I find your 5 blue diamonds you'll head back to the sea
+Shark: Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} throught the map.
+Player: So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}} you'll head back to the sea
 Shark: Yeah. And can you please take me there after you find them. I can get back from the big flag
 set Global.quests.Shark.QuestStarted = true
 do startQuest(Global.quests.Shark.QuestItem, "Shark")

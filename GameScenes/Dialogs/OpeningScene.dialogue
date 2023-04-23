@@ -123,6 +123,7 @@ Towns Person 4: Only the worthy can open the cave's doors.
 Player : Well I still have to find the last piece.
 Towns Person 4:  Here I want you to have it. I'm Sterling, the fourth brother.
 set Global.quests.Maps.Q4 = true
+
 if Global.quests.Morality >= 3
 	Sterling: I'm so happy you have brought peace back to my family.
 else
@@ -134,8 +135,7 @@ Sterling: We weren't found worthy and my brothers have been bickering with each 
 Player: Oh...That why you don't talk to Bruno.
 Sterling: I talk to him, just in secret.
 Player: 
-if Global.quests.Morality >= 3
-	- I think I'm worty
+- I think I'm worthy [if Global.quests.Morality >= 3]
 - Maybe I could have been nicer to the monsters on the island.
 Sterling: Now go find that fish. He's way up high.
 => END!
