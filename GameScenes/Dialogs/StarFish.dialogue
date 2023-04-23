@@ -1,5 +1,6 @@
 ~ Start
 do pauseTimer()
+set Global.isTalking = true
 if Global.quests.StarFish.QuestStarted == false
 	=> Pre_Quest
 else
@@ -27,6 +28,7 @@ if Global.quests.Morality < 3
 	Starfish: Either you're worthy or your not
 	=> Start_Quest
 - End the conversation 
+	set Global.isTalking = false
 	do restartTimer()
 	=> END
 
@@ -34,6 +36,7 @@ if Global.quests.Morality < 3
 Starfish: Take them to the flag when you find them. Good luck.
 set Global.quests.StarFish.QuestStarted = true
 do startQuest(Global.quests.StarFish.QuestItem, "StarFish")
+set Global.isTalking = false
 do restartTimer()
 => END
 
@@ -44,5 +47,6 @@ elif Global.quests.StarFish.CurrQuestItemCount >= Global.quests.StarFish.totalIt
 	Starfish: You don't have too many more to find.
 else
 	Starfish: Go find my _.
+set Global.isTalking = false
 do restartTimer()
 => END!

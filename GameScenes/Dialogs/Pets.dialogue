@@ -1,11 +1,16 @@
 
 ~ Start_Flag
+set Global.isTalking = true
 if Global.quests.Pets.QuestStarted == false
 	You don't have an active quest.
+	set Global.isTalking = false
+	do restartTimer()
 elif  Global.quests.Pets.CurrQuestItemCount >= Global.quests.Pets.totalItems 
 	=> Flag_Stop
 else
 	You don't have all the pets.
+	set Global.isTalking = false
+	do restartTimer()
 => END
 
 ~ Flag_Stop
@@ -22,4 +27,6 @@ else
 	set Global.previousQuest = Global.currentQuest
 	set Global.currentQuest = "Quest4"
 - Come back later
+set Global.isTalking = false
+do restartTimer()
 => END!

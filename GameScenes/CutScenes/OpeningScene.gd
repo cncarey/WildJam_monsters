@@ -2,7 +2,7 @@ extends Node2D
 
 
 @export var dialogueResourse : DialogueResource
-@onready var youWin = $YouWin
+@onready var youWin = $AnimationPlayer/YouWin
 @onready var anima = $AnimationPlayer
 
 func _ready():

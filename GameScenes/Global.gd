@@ -5,8 +5,10 @@ enum GameMode {Story, Endless}
 
 @onready var day : Dictionary = {}
 @onready var currentQuest = "Quest1"
+@onready var curLevelComplete = false
 @onready var previousQuest = ""
 @onready var playerName = "Player"
+@onready var isTalking = false
 
 @onready var quests : Dictionary = {}
 
@@ -23,6 +25,9 @@ func resetDay():{
 }
 
 func resetGameValues():
+	currentQuest = "Quest1"
+	previousQuest = ""
+	isTalking = false
 	quests = {
 	"Complete" : false,
 	"Quit": false,
