@@ -29,6 +29,7 @@ func _ready():
 	
 	if(Global.currentQuest == "Quest1" || Global.currentQuest == "Crab"):
 		tutorial.visible = true
+		Global.resetDay()
 	else:
 		tutorial.visible = false
 		door.isLocked = false

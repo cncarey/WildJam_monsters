@@ -3,10 +3,7 @@ enum TimeOfDay {Day, Night}
 enum GameDifficulty {Easy, Med, Hard}
 enum GameMode {Story, Endless}
 
-@onready var day : Dictionary = {
-	"State" : TimeOfDay.Day,
-	"Day" : 0
-}
+@onready var day : Dictionary = {}
 @onready var currentQuest = "Quest1"
 @onready var previousQuest = ""
 
@@ -17,6 +14,12 @@ enum GameMode {Story, Endless}
 	"GameMode" : GameMode.Story
 }
 
+func resetDay():{
+	day = {
+	"State" : TimeOfDay.Day,
+	"Day" : 1
+}
+}
 
 func resetGameValues():
 	quests = {

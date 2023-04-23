@@ -1,9 +1,11 @@
-Label
+AnimatedSprite2D
+Camera2D
+TileMap
 AnimationPlayer
+Label
 Sprite2D
 CollisionShape2D
 Area2D
-AnimatedSprite2D
 CharacterBody2D
 MarginContainer
 GridContainer
@@ -26,7 +28,5 @@ Button
 RichTextLabel
 TextEdit
 TextureButton
-TileMap
 RayCast2D
 VisibleOnScreenNotifier2D
-Camera2D

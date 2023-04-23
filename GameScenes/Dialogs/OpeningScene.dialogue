@@ -1,7 +1,4 @@
 ~ Quest1
-# first quest to find crab
-#do walkIntoBar()
-#do wait(0.5)
 #do add_portrait("player", 0)
 Player : Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town
 Player : Have you seen it?
@@ -11,31 +8,27 @@ Player: ...I could use the gold.
 Towns Person 1: I guess I could tell you were some of it is, but you have to do something for me first.
 Player: Some of it... What am I suppose to do with some of it?
 Towns Person 1: Okay well I guess you can have none of it.
-#do TP1WalkAway
 Player: Wait. What do you need me to do?
 Towns Person 1: There's a Giant Crab at the bottom of the cavern that has been causing a lot of trouble in the area.
 Towns Person 1: If you get rid of them I can get you part of the map
-Towns Person 2: But we are leaving in {{Global.quests.Quest1.MaxDays}} days, so you have to be back by then
-- What's so bad about this crab
-	#do TP2WalksIn
+do playAnimation("Quest1_ReddMove")
+Towns Person 2: But we are leaving in {{Global.quests.Quest1.MaxDays}} days, so you have to be back by then.
+Player: 
+- What's so bad about this crab?
 	Towns Person 2: Well..
 	set Global.quests.Morality += 1
 	Towns Person 2 : It seems pretty harmless during the day...[wait=1]but night it thrashes about
 	Player: I'll be back just you wait.
 	=> END
-- Sure this shouldn't be too bad
-	#do TP2WalksIn
+- Sure, this shouldn't be too bad.
 	Towns Person 2: Well..
 	set Global.quests.Morality += 1
 	Towns Person 2 : Not too bad...that thing is crazy. Expecially at night
 	Player: I'll be back just you wait.
 	=> END
-- This may have been way move then I want to sign up for
-	#do TP2WalksIn
-	Towns Person 2 : Well take your ship and get out of here
+- This may have been way move then I want to sign up for.
+	Towns Person 2 : Well take your ship and get out of here.
 	=> END
-
-
 
 
 ~ Quest2
@@ -44,7 +37,8 @@ Player : That wasn't so bad. The crab was actually pretty nice. He lost some stu
 # TODO Change dialog based on days remaining 
 Towns Person 2 : Then why was he always making so much noise at night 
 Player : Probably because he couldn't see.
-Towns Person 1 : Well he's gone so here you go.
+do playAnimation("Quest2_GivePiece")
+Towns Person 1 : Well he's gone so here you go.[wait=2]
 set Global.quests.Maps.Q1 = true
 Player : You had the map piece all along. Can you tell me where to get more?
 Towns Person 1 : ...
@@ -72,9 +66,10 @@ Player:
 ~ Quest3
 # find the missing pets
 Player : That shark is a pretty cool dude. He lost somethings just like the crab and was looking for them.
-Redd : Here you go
+do playAnimation("Quest3_GivePiece")
+Redd : Here you go [wait=2]
 set Global.quests.Maps.Q2 = true
-# enter TP3
+# do play("Quest3_Bruno")
 Towns Person 3: Has anyone seen my fluffy. I can't find him anywhere. 
 Towns Person 3: Oh...Jett and Redd. What are you doing here.
 Redd : Jett did you hear something. 

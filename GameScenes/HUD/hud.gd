@@ -49,6 +49,16 @@ func updateHUDQuest():
 		
 	QuestInstructions.text =  curQuest.QuestInstructions
 	QuestName.text = curQuest.QuestName
+	
+	updateDayCount(Global.day.Day)
+	
+	match Global.day.State:
+		Global.TimeOfDay.Day:
+			isDay()
+		Global.TimeOfDay.Night:
+			isNight()
+		_:
+			isDay()
 
 func updateItemCount(score):
 	QuestItemCount.text = str(score)
