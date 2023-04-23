@@ -8,7 +8,7 @@ else
 
 ~ Pre_Quest
 Shark: ...
-Player: 
+{{Global.playerName}}: 
 - Why are you terrorizing to town?
 	Shark: What are you talking about. What town?
 	Shark: I've been here in the swell all week.
@@ -25,10 +25,10 @@ Player:
 Shark: I was swimming in this lake when a boat hit me.
 Shark: ...I was knocked out cold and woke up here.
 Shark: I dropped all my {{Global.quests.Shark.QuestItem}}s and I need help finidng them.
-Player: I can help you with that.
+{{Global.playerName}}: I can help you with that.
 Shark: Really. I'm missing {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s throught the map.
-Player: So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s you'll head back to the sea
-Shark: Yeah. Yeah. And can you please put them at the big flag after you find them?
+{{Global.playerName}}: So if I find your {{Global.quests.Shark.totalItems}} {{Global.quests.Shark.QuestItem}}s you'll head back to the sea
+Shark: Yeah. And can you please put them at the big flag after you find them?
 set Global.quests.Shark.QuestStarted = true
 do startQuest(Global.quests.Shark.QuestItem, "Shark")
 do restartTimer()
@@ -39,8 +39,8 @@ do restartTimer()
 if  Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems 
 	Shark: You got all my diamonds. Let's find the flag!
 elif Global.quests.Shark.CurrQuestItemCount >= Global.quests.Shark.totalItems/2
-	Shark: Yeah we don't have to many more to find
+	Shark: Yeah! You don't have to many more to find.
 else
-	Shark: Let's find my totalItems.
+	Shark: Let's find my {{Global.quests.Shark.QuestItem}}s.
 do restartTimer()
 => END!

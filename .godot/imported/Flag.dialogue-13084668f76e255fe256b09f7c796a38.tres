@@ -15,7 +15,7 @@ titles = {
 "StarFishFlagStop": "92",
 "StarFishStart": "83"
 }
-character_names = PackedStringArray("Crab", "Shark", "Pets", "Player", "Starfish")
+character_names = PackedStringArray("Crab", "Shark", "Pets", "{{Global.playerName}}", "Starfish")
 first_title = "2"
 lines = {
 "1": {
@@ -1068,8 +1068,19 @@ lines = {
 "type": "response"
 },
 "76": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
+"character": "{{Global.playerName}}",
+"character_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
 "next_id": "77",
 "parent_id": "75",
 "text": "I guess everyone will be sad if I leave you out here. Let's go.",

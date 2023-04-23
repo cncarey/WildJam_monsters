@@ -6,6 +6,7 @@ enum GameMode {Story, Endless}
 @onready var day : Dictionary = {}
 @onready var currentQuest = "Quest1"
 @onready var previousQuest = ""
+@onready var playerName = "Player"
 
 @onready var quests : Dictionary = {}
 
