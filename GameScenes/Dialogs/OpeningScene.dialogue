@@ -1,33 +1,34 @@
 ~ Quest1
 #do add_portrait("player", 0)
-Player : Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town
+Player : Excuse me, I'm looking for the cave of treasures map that's suppose to be hidden around town.
 Player : Have you seen it?
 #do add_portrait("TownsPerson1", 4)
 Towns Person 1: Why do you want to find that old thing?
-Player: ...I could use the gold.
+Player: Treasure?!...I could use the gold.
 Towns Person 1: I guess I could tell you were some of it is, but you have to do something for me first.
 Player: Some of it... What am I suppose to do with some of it?
-Towns Person 1: Okay well I guess you can have none of it.
+Towns Person 1: Well I guess you could have none of it.
 Player: Wait. What do you need me to do?
 Towns Person 1: There's a Giant Crab at the bottom of the cavern that has been causing a lot of trouble in the area.
-Towns Person 1: If you get rid of them I can get you part of the map
+Towns Person 1: If you get rid of it I can get you part of the map.
 do playAnimation("Quest1_ReddMove")
 Towns Person 2: But we are leaving in {{Global.quests.Quest1.MaxDays}} days, so you have to be back by then.
 Player: 
 - What's so bad about this crab?
 	Towns Person 2: Well..
 	set Global.quests.Morality += 1
-	Towns Person 2 : It seems pretty harmless during the day...[wait=1]but night it thrashes about
+	Towns Person 2 : It seems pretty harmless during the day...[wait=1]but night it thrashes about.
 	Player: I'll be back just you wait.
 	=> END
 - Sure, this shouldn't be too bad.
 	Towns Person 2: Well..
 	set Global.quests.Morality += 1
-	Towns Person 2 : Not too bad...that thing is crazy. Expecially at night
+	Towns Person 2 : Not too bad...that thing is crazy. Expecially at night.
 	Player: I'll be back just you wait.
 	=> END
 - This may have been way move then I want to sign up for.
 	Towns Person 2 : Well take your ship and get out of here.
+	set Global.quests.Quit = true
 	=> END
 
 
@@ -35,7 +36,7 @@ Player:
 # second quest to find shark
 Player : That wasn't so bad. The crab was actually pretty nice. He lost some stuff and had been looking for it.
 # TODO Change dialog based on days remaining 
-Towns Person 2 : Then why was he always making so much noise at night 
+Towns Person 2 : Then why was he always making so much noise at night?
 Player : Probably because he couldn't see.
 do playAnimation("Quest2_GivePiece")
 Towns Person 1 : Well he's gone so here you go.[wait=2]
@@ -43,7 +44,7 @@ set Global.quests.Maps.Q1 = true
 Player : You had the map piece all along. Can you tell me where to get more?
 Towns Person 1 : ...
 Towns Person 2 : ...I have a piece too. I'll give you mine if you clear a monster out for me too.
-Player : Wait you have one too?...[wait=1]Why didn't you say something earlier.
+Player : Wait you have one too?...[wait=1]Why didn't you say something earlier?
 Towns Person 2: I didn't need anything earlier, but now there's a shark that has taken over my favorites fishing spot.
 Towns Person 1: Hey you can just give away your map piece like that!
 Towns Person 2 : Why not? You just did.
@@ -52,55 +53,58 @@ Towns Person 2: Go show that big lub whose boss cause there's not much to do bes
 Towns Person 2: By the way I'm Redd and this is my brother Jett.
 Player: 
 - Sure, but how did you get these map pieces in the first place.
-	Jett : You take care of that shark an I'll tell you
-	Redd : Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days
+	Jett : You take care of that shark an I'll tell you.
+	Redd : Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days.
 	=> END!
 - Sure. I like fishing too. Maybe we can fish together when the shark leaves
-	Redd : I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days
+	Redd : I didn't say I was sharing, but I guess so. Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days.
 	=> END!
-- This may have been way move then I want to sign up for
+- This may have been way move then I want to sign up for.
 	Player: First a giant crab and now a giant shark?!
-	Redd : Well it was nice meeting you. I guess I'll never fish again 
+	Redd : Well it was nice meeting you. I guess I'll never fish again. 
+	set Global.quests.Quit = true
 	=> END!
 
 ~ Quest3
 # find the missing pets
 Player : That shark is a pretty cool dude. He lost somethings just like the crab and was looking for them.
 do playAnimation("Quest3_GivePiece")
-Redd : Here you go [wait=2]
+Redd : Here you go [wait=6]
 set Global.quests.Maps.Q2 = true
-# do play("Quest3_Bruno")
+do playAnimation("Quest3_Bruno")
+Redd : Here you go. [wait=2]
 Towns Person 3: Has anyone seen my fluffy. I can't find him anywhere. 
 Towns Person 3: Oh...Jett and Redd. What are you doing here.
 Redd : Jett did you hear something. 
 Jett : Nope.
 Player : Are you guys okay?
-Redd : This is our other brother Bruno
-Jett : We don't talk to or about Bruno
-Bruno : I'm literally still here...[wait=1]And your pets are missing too
-Redd : Not my Scalawag
+Redd : This is our other brother Bruno.
+Jett : We don't talk to or about Bruno.
+Bruno : I'm literally still here...[wait=1]And your pets are missing too!
+Redd : Not my Scalawag!
 Jett : Puppuccino?! You can have his map piece too, just find our pets.
-Bruno: My map piece is mine...I knew you would try to take it from me
+Bruno: My map piece is mine...I knew you would try to take it from me.
 Jett : Player has been able to free the island of two monster. They are way more worthy of the finding the treasure then we will ever be.
-Bruno : Fine you get all our pets back and you can have my map piece
-- I'll get your pets back, but you have to agree to make up
+Bruno : Fine you get all our pets back and you can have my map piece.
+- I'll get your pets back, but you have to agree to make up.
 	set Global.quests.Morality += 2
 	Bruno: What?!
 	Jett: I thought you wanted treasure. Now your trying to fix out family problems too?!
 	Redd : And if we don't. 
-	Player : I guess your pets will enjoy their new homes
+	Player : I guess your pets will enjoy their new homes.
 	Bruno : Fine we'll work on it while you are away. They can only be out there for {{Global.quests.Quest3.MaxDays}} days before they starve.
 	=> END!
-- I'll get your pets back. You all are nuts
-	Jett : Hey
-	Redd : Hey
-	Bruno: Sounds about right...You need to get them back here in the next {{Global.quests.Quest3.MaxDays}} days or they will starve
+- I'll get your pets back. You all are nuts.
+	Jett : Hey!
+	Redd : Hey!
+	Bruno: Sounds about right...You need to get them back here in the next {{Global.quests.Quest3.MaxDays}} days or they will starve.
 	=> END!
-- This may have been way move then I want to sign up for
+- This may have been way move then I want to sign up for.
 	Player : Do I look like Animal Control Services?!
-	Redd : You're just going to let Scalawag die out there 
-	Bruno : And Fluffy
-	Jett : And Puppuccino
+	Redd : You're just going to let Scalawag die out there.
+	Bruno : And Fluffy.
+	Jett : And Puppuccino.
+	set Global.quests.Quit = true
 	=> END!
 
 
@@ -108,9 +112,10 @@ Bruno : Fine you get all our pets back and you can have my map piece
 # TODO Branch on goodness score
 Bruno: You found them. Thank you so much.
 Redd & Jett: Thanks
-Bruno: As promised here you go
 set Global.quests.Maps.Q3 = true
-
+do playAnimation("Quest4_GivePiece3")
+Bruno: As promised here you go. [wait=7]
+do playAnimation("Quest4_Sterling")
 Towns Person 4: Thanks for helping the brothers. 
 if Global.quests.Morality >= 3
 	Towns Person 4: I never thought they would talk to each other again after not being able to open the cave of treasures.
@@ -123,8 +128,8 @@ if Global.quests.Morality >= 3
 	Sterling: I'm so happy you have brought peace back to my family.
 else
 	Sterling: I'm so happy you have brought peace back to the island.
-
-Player: It's the last peice...but you are brothers...why didn't you get the treasure together?
+do playAnimation("Quest4_GivePiece4")
+Player: It's the last peice...but you are brothers...why didn't you get the treasure together?[wait=6]
 Sterling: There's a giant pink fish that guards the treauser and only let's those worthy in.
 Sterling: We weren't found worthy and my brothers have been bickering with each other ever since.
 Player: Oh...That why you don't talk to Bruno.

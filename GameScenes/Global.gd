@@ -24,6 +24,7 @@ func resetDay():{
 func resetGameValues():
 	quests = {
 	"Complete" : false,
+	"Quit": false,
 	"Maps" : {
 		"Q1" : false,
 		"Q2" : false,

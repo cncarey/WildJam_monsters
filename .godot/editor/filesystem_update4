@@ -10,3 +10,4 @@ res://GameScenes/HUD/mini_map.tscn
 res://GameScenes/Characters/starfish.tscn
 res://GameScenes/Objects/Interactable/Flag.tscn
 res://GameScenes/CutScenes/OpeningScene.gd
+res://GameScenes/Global.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://cxpm24gal0ien"]
+[gd_scene load_steps=146 format=3 uid="uid://cxpm24gal0ien"]
 
 [ext_resource type="Script" path="res://GameScenes/CutScenes/OpeningScene.gd" id="1_ob55m"]
 [ext_resource type="Resource" uid="uid://df0k34mg4ks74" path="res://GameScenes/Dialogs/OpeningScene.dialogue" id="2_bo3k3"]
@@ -66,6 +66,64 @@
 [ext_resource type="Texture2D" uid="uid://cm5vtavkn80ky" path="res://Assets/Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 4/06.png" id="55_8oyjw"]
 [ext_resource type="Texture2D" uid="uid://cbfjnkxmjm4qw" path="res://Assets/Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 4/07.png" id="56_pkg0c"]
 [ext_resource type="Texture2D" uid="uid://281m12gna3m" path="res://Assets/Treasure Hunters/Pirate Treasure/Sprites/Small Maps/Small Map 4/08.png" id="57_cciqr"]
+[ext_resource type="Texture2D" uid="uid://cyj5e265nksll" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/1.png" id="58_2w3eq"]
+[ext_resource type="Texture2D" uid="uid://bud88tbml3kp7" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/2.png" id="59_161di"]
+[ext_resource type="Texture2D" uid="uid://cuylyqua85ust" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/3.png" id="60_0r5hs"]
+[ext_resource type="Texture2D" uid="uid://ctgrugwiqoqrg" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/4.png" id="61_60wch"]
+[ext_resource type="Texture2D" uid="uid://bcm7vt2cvojyo" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/5.png" id="62_5eq3i"]
+[ext_resource type="Texture2D" uid="uid://b2gmlmb648apy" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/6.png" id="63_od8eo"]
+[ext_resource type="Texture2D" uid="uid://54xbqqxnm3uo" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/7.png" id="64_d1bva"]
+[ext_resource type="Texture2D" uid="uid://bjfuckih6fybd" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/8.png" id="65_xhvs8"]
+[ext_resource type="Texture2D" uid="uid://c2ay2tasimljd" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/9.png" id="66_le4vy"]
+[ext_resource type="Texture2D" uid="uid://bm3q8hehypucv" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/10.png" id="67_b3g6f"]
+[ext_resource type="Texture2D" uid="uid://d1kext1s7igsa" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/11.png" id="68_q8p8c"]
+[ext_resource type="Texture2D" uid="uid://dcnflx5rn6h78" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/12.png" id="69_p4er3"]
+[ext_resource type="Texture2D" uid="uid://cft3tx8qv1f6w" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/13.png" id="70_0du6p"]
+[ext_resource type="Texture2D" uid="uid://bhc5bkcy1mpb3" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/14.png" id="71_p2awd"]
+[ext_resource type="Texture2D" uid="uid://cx7nqyuwx5thl" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/15.png" id="72_qyi0b"]
+[ext_resource type="Texture2D" uid="uid://bp467lcc6tjcq" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/16.png" id="73_f0t12"]
+[ext_resource type="Texture2D" uid="uid://chyrxp1ofefd1" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/17.png" id="74_1fwuo"]
+[ext_resource type="Texture2D" uid="uid://b7givpfucj06l" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/18.png" id="75_pxr23"]
+[ext_resource type="Texture2D" uid="uid://clcwpv1mmuc25" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/19.png" id="76_r6klh"]
+[ext_resource type="Texture2D" uid="uid://dw7oxn74a51ny" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/20.png" id="77_nssnd"]
+[ext_resource type="Texture2D" uid="uid://cbr7j2wr2iopn" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/21.png" id="78_uko85"]
+[ext_resource type="Texture2D" uid="uid://c53gi3gequaxa" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/22.png" id="79_easxe"]
+[ext_resource type="Texture2D" uid="uid://p8nbh2360q01" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/23.png" id="80_gjvvc"]
+[ext_resource type="Texture2D" uid="uid://bl6nmlhrbs467" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/24.png" id="81_0tx5x"]
+[ext_resource type="Texture2D" uid="uid://bimfstc2t5gcg" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/25.png" id="82_o5s6l"]
+[ext_resource type="Texture2D" uid="uid://c1uvk5f4hjyj4" path="res://Assets/Pirate Bomb/Sprites/1-Player-Bomb Guy/1-Idle/26.png" id="83_cpcui"]
+[ext_resource type="Texture2D" uid="uid://dg073j5opsb48" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/1.png" id="84_gqpte"]
+[ext_resource type="Texture2D" uid="uid://b473xhsvuy5ww" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/2.png" id="85_nis1l"]
+[ext_resource type="Texture2D" uid="uid://widvsihuslix" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/3.png" id="86_f10bi"]
+[ext_resource type="Texture2D" uid="uid://e1i1872vnjqk" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/4.png" id="87_x54xe"]
+[ext_resource type="Texture2D" uid="uid://ffwytefyqxmn" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/5.png" id="88_3dn6w"]
+[ext_resource type="Texture2D" uid="uid://b8d22pt5pdasa" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/6.png" id="89_utg5h"]
+[ext_resource type="Texture2D" uid="uid://cuh1ueurhqaso" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/7.png" id="90_hmwe4"]
+[ext_resource type="Texture2D" uid="uid://cr8psss1bodrj" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/8.png" id="91_3q5m3"]
+[ext_resource type="Texture2D" uid="uid://byeo6bgdjug40" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/9.png" id="92_1abrg"]
+[ext_resource type="Texture2D" uid="uid://40uv4f004wh5" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/10.png" id="93_celsp"]
+[ext_resource type="Texture2D" uid="uid://bk5qcitqj7pno" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/11.png" id="94_0pqrm"]
+[ext_resource type="Texture2D" uid="uid://c5bvirgqrwksm" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/12.png" id="95_l05sq"]
+[ext_resource type="Texture2D" uid="uid://bqhi0h3r2erti" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/13.png" id="96_pv8ds"]
+[ext_resource type="Texture2D" uid="uid://cvnqrko6nxl7n" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/14.png" id="97_hahp8"]
+[ext_resource type="Texture2D" uid="uid://cisw1u4m5365g" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/15.png" id="98_ppdhq"]
+[ext_resource type="Texture2D" uid="uid://bvrq4452xlgyc" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/16.png" id="99_w4tta"]
+[ext_resource type="Texture2D" uid="uid://bgbxs52wegjnh" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/17.png" id="100_cxxfj"]
+[ext_resource type="Texture2D" uid="uid://decl2kuh82umd" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/18.png" id="101_ofuha"]
+[ext_resource type="Texture2D" uid="uid://dqpj8rgdgm7oe" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/19.png" id="102_dbhik"]
+[ext_resource type="Texture2D" uid="uid://cphvt4p0hrnhn" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/20.png" id="103_dcngw"]
+[ext_resource type="Texture2D" uid="uid://w60syfa1ehqm" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/21.png" id="104_creju"]
+[ext_resource type="Texture2D" uid="uid://dltp62u86mehi" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/22.png" id="105_tumkv"]
+[ext_resource type="Texture2D" uid="uid://ohwxhodkvj8a" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/23.png" id="106_w65no"]
+[ext_resource type="Texture2D" uid="uid://j3mb0268g7qr" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/24.png" id="107_sfrbo"]
+[ext_resource type="Texture2D" uid="uid://c0pl7ue8tqf5q" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/25.png" id="108_6m4cb"]
+[ext_resource type="Texture2D" uid="uid://b4igrgxnhb5ug" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/26.png" id="109_s66kl"]
+[ext_resource type="Texture2D" uid="uid://c270tkp5uq6va" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/27.png" id="110_e7cs5"]
+[ext_resource type="Texture2D" uid="uid://uvynbtajsm7t" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/28.png" id="111_7brl2"]
+[ext_resource type="Texture2D" uid="uid://ct0j3oci4u0uw" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/29.png" id="112_n1t2m"]
+[ext_resource type="Texture2D" uid="uid://cc7futlpk8mgw" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/30.png" id="113_yk25p"]
+[ext_resource type="Texture2D" uid="uid://b0wocpbprs1nl" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/31.png" id="114_63nlb"]
+[ext_resource type="Texture2D" uid="uid://b2ugty43kyax5" path="res://Assets/Pirate Bomb/Sprites/5-Enemy-Captain/1-Idle/32.png" id="115_ft07l"]
 
 [sub_resource type="Animation" id="Animation_2u33q"]
 resource_name = "Quest1_Enter"
@@ -140,7 +198,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(469, 140)]
+"values": [Vector2(460, 140)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -189,6 +247,66 @@ tracks/9/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [&"Idle"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(833, 146)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
 }
 
 [sub_resource type="Animation" id="Animation_uxof7"]
@@ -252,7 +370,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(469, 140)]
+"values": [Vector2(460, 140)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -313,6 +431,66 @@ tracks/9/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [&"Idle"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(833, 146)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
 }
 
 [sub_resource type="Animation" id="Animation_x5v1n"]
@@ -426,6 +604,78 @@ tracks/8/keys = {
 "update": 1,
 "values": [&"Idle"]
 }
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(833, 146)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Jett:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(460, 140)]
+}
 
 [sub_resource type="Animation" id="Animation_ye7gd"]
 resource_name = "Quest2_GivePiece"
@@ -440,7 +690,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(469, 140)]
+"values": [Vector2(460, 140)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -561,6 +811,66 @@ tracks/10/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [&"Idle"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(833, 146)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
 }
 
 [sub_resource type="Animation" id="Animation_dh474"]
@@ -697,6 +1007,78 @@ tracks/10/keys = {
 "update": 1,
 "values": [&"Idle"]
 }
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(833, 146)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Bruno:flip_h")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
+}
 
 [sub_resource type="Animation" id="Animation_o1lig"]
 resource_name = "Quest3_GivePiece"
@@ -711,7 +1093,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(469, 140)]
+"values": [Vector2(460, 140)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -833,6 +1215,66 @@ tracks/10/keys = {
 "update": 1,
 "values": [&"Idle"]
 }
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(833, 146)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
+}
 
 [sub_resource type="Animation" id="Animation_ctd0x"]
 resource_name = "Quest4_GivePiece3"
@@ -847,7 +1289,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(469, 140)]
+"values": [Vector2(460, 140)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -919,7 +1361,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(557, 145.75)]
+"values": [Vector2(600, 145.75)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -968,6 +1410,66 @@ tracks/10/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [&"Idle"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(510, 146)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
 }
 
 [sub_resource type="Animation" id="Animation_w0fnt"]
@@ -1105,6 +1607,30 @@ tracks/10/keys = {
 "update": 1,
 "values": [&"Idle"]
 }
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(675, 139)]
+}
 
 [sub_resource type="Animation" id="Animation_qvqp7"]
 resource_name = "YouWin"
@@ -1229,6 +1755,666 @@ tracks/9/keys = {
 "update": 1,
 "values": [&"Idle"]
 }
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(645, 146)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:flip_h")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(710, 139)]
+}
+
+[sub_resource type="Animation" id="Animation_nr4jd"]
+resource_name = "Quest3_Bruno"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Jett:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(460, 140)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Redd:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(400, 136)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/map:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(470, 75)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/map:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/map:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"piece2"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Player:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Player:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(557, 145.75)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/YouWin:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Player:animation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AnimationPlayer/Redd:animation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Jett:animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(833, 146), Vector2(833, 146), Vector2(650, 146)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Bruno:flip_h")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
+}
+
+[sub_resource type="Animation" id="Animation_limhr"]
+resource_name = "Quest4_Enter"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Player:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(825, 145.75), Vector2(600, 145.75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/map:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(470, 75)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/map:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Redd:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(400, 136)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/YouWin:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Player:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Redd:animation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Jett:animation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(510, 146)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:flip_h")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(827, 139)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Jett:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(3),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(460, 140)]
+}
+
+[sub_resource type="Animation" id="Animation_0q0hs"]
+resource_name = "Quest4_Sterling"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Jett:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(460, 140)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Redd:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(400, 136)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/map:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(470, 75)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/map:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2, 5, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/map:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"piece3"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Player:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Player:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(600, 145.75)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/YouWin:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Jett:animation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AnimationPlayer/Redd:animation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AnimationPlayer/Player:animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AnimationPlayer/Bruno:animation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AnimationPlayer/Bruno:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(510, 146)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AnimationPlayer/Bruno:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AnimationPlayer/Sterling:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AnimationPlayer/Sterling:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 1, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(827, 139), Vector2(827, 139), Vector2(675, 139)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_elgg5"]
 _data = {
@@ -1236,9 +2422,12 @@ _data = {
 "Quest1_ReddMove": SubResource("Animation_uxof7"),
 "Quest2_Enter": SubResource("Animation_x5v1n"),
 "Quest2_GivePiece": SubResource("Animation_ye7gd"),
+"Quest3_Bruno": SubResource("Animation_nr4jd"),
 "Quest3_GivePiece": SubResource("Animation_o1lig"),
+"Quest4_Enter": SubResource("Animation_limhr"),
 "Quest4_GivePiece3": SubResource("Animation_ctd0x"),
 "Quest4_GivePiece4": SubResource("Animation_w0fnt"),
+"Quest4_Sterling": SubResource("Animation_0q0hs"),
 "RESET": SubResource("Animation_dh474"),
 "YouWin": SubResource("Animation_qvqp7")
 }
@@ -1484,6 +2673,196 @@ animations = [{
 }],
 "loop": true,
 "name": &"piece4",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7nbp4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_2w3eq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_161di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_0r5hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_60wch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_5eq3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_od8eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_d1bva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_xhvs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_le4vy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_b3g6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_q8p8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_p4er3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_0du6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_p2awd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_qyi0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_f0t12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_1fwuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pxr23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_r6klh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_nssnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_uko85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_easxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_gjvvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_0tx5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_o5s6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_cpcui")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0esc3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("84_gqpte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_nis1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_f10bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_x54xe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_3dn6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_utg5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_hmwe4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_3q5m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_1abrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_celsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_0pqrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_l05sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_pv8ds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_hahp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_ppdhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_w4tta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_cxxfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ofuha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_dbhik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_dcngw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_creju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_tumkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_w65no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_sfrbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_6m4cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_s66kl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_e7cs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_7brl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_n1t2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_yk25p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_63nlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_ft07l")
+}],
+"loop": true,
+"name": &"default",
 "speed": 5.0
 }]
 
@@ -1891,12 +3270,12 @@ text = "YOU WIN"
 position = Vector2(469, 140)
 sprite_frames = SubResource("SpriteFrames_0xmf3")
 animation = &"Idle"
-frame_progress = 0.168853
+frame_progress = 0.558149
 
 [node name="Redd" type="AnimatedSprite2D" parent="AnimationPlayer"]
 position = Vector2(135, 265)
 sprite_frames = SubResource("SpriteFrames_7jjs8")
-frame_progress = 0.748712
+frame_progress = 0.138004
 
 [node name="Player" type="AnimatedSprite2D" parent="AnimationPlayer"]
 modulate = Color(1, 1, 1, 0)
@@ -1904,7 +3283,7 @@ position = Vector2(1186.5, 128.75)
 scale = Vector2(1.8375, 2.3085)
 sprite_frames = SubResource("SpriteFrames_w7nqw")
 animation = &"Idle"
-frame_progress = 0.179874
+frame_progress = 0.569179
 flip_h = true
 
 [node name="map" type="AnimatedSprite2D" parent="AnimationPlayer"]
@@ -1913,6 +3292,19 @@ position = Vector2(470, 75)
 scale = Vector2(2.2, 2.2)
 sprite_frames = SubResource("SpriteFrames_tuqvm")
 animation = &"piece1"
+
+[node name="Bruno" type="AnimatedSprite2D" parent="AnimationPlayer"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(833, 146)
+sprite_frames = SubResource("SpriteFrames_7nbp4")
+frame_progress = 0.262799
+
+[node name="Sterling" type="AnimatedSprite2D" parent="AnimationPlayer"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(827, 139)
+sprite_frames = SubResource("SpriteFrames_0esc3")
+frame_progress = 0.450219
+flip_h = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_o8n18")
