@@ -3259,6 +3259,7 @@ libraries = {
 }
 
 [node name="YouWin" type="Label" parent="AnimationPlayer"]
+visible = false
 modulate = Color(1, 1, 1, 0)
 offset_left = 472.0
 offset_top = 65.0
@@ -3270,12 +3271,12 @@ text = "YOU WIN"
 position = Vector2(469, 140)
 sprite_frames = SubResource("SpriteFrames_0xmf3")
 animation = &"Idle"
-frame_progress = 0.558149
+frame_progress = 0.885482
 
 [node name="Redd" type="AnimatedSprite2D" parent="AnimationPlayer"]
 position = Vector2(135, 265)
 sprite_frames = SubResource("SpriteFrames_7jjs8")
-frame_progress = 0.138004
+frame_progress = 0.465278
 
 [node name="Player" type="AnimatedSprite2D" parent="AnimationPlayer"]
 modulate = Color(1, 1, 1, 0)
@@ -3283,7 +3284,7 @@ position = Vector2(1186.5, 128.75)
 scale = Vector2(1.8375, 2.3085)
 sprite_frames = SubResource("SpriteFrames_w7nqw")
 animation = &"Idle"
-frame_progress = 0.569179
+frame_progress = 0.896508
 flip_h = true
 
 [node name="map" type="AnimatedSprite2D" parent="AnimationPlayer"]
@@ -3297,13 +3298,13 @@ animation = &"piece1"
 modulate = Color(1, 1, 1, 0)
 position = Vector2(833, 146)
 sprite_frames = SubResource("SpriteFrames_7nbp4")
-frame_progress = 0.262799
+frame_progress = 0.590078
 
 [node name="Sterling" type="AnimatedSprite2D" parent="AnimationPlayer"]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(827, 139)
 sprite_frames = SubResource("SpriteFrames_0esc3")
-frame_progress = 0.450219
+frame_progress = 0.777536
 flip_h = true
 
 [node name="TileMap" type="TileMap" parent="."]

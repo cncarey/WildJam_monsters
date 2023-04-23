@@ -11,3 +11,4 @@ res://GameScenes/Characters/starfish.tscn
 res://GameScenes/Objects/Interactable/Flag.tscn
 res://GameScenes/CutScenes/OpeningScene.gd
 res://GameScenes/Global.gd
+res://GameScenes/HUD/StartMenu.tscn
