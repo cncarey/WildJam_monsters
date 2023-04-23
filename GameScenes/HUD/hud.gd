@@ -41,7 +41,7 @@ func updateHUDQuest():
 				itemPic.texture = BlueDiamond
 			"Pets":
 				itemPic.texture = Pets
-				itemPic.scale = Vector2(.75, .75)
+				itemPic.scale = Vector2(.7, .7)
 		
 	if "KeyedItemCount" in curQuest:
 		curKeyCount.visible = true

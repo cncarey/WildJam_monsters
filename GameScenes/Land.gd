@@ -40,7 +40,7 @@ func _ready():
 			crab.visible = true
 		"Quest2", "Shark":
 			shark.visible = true
-		"Quest4", "StarFish":
+		"Quest4", "StarFish": 
 			starfish.visible = true
 		_:
 			pass

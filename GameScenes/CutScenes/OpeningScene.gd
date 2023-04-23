@@ -8,7 +8,8 @@ extends Node2D
 func _ready():
 	
 	if Global.quests.Complete:
-		youWin.visible
+		anima.play("YouWin")
+		
 	else:
 		match Global.currentQuest:
 			"Quest1":
@@ -29,3 +30,9 @@ func _on_dialogue_ended(_resource: DialogueResource):
 
 func playAnimation(toPlay):
 	anima.play(toPlay)
+
+
+func _on_animation_player_animation_finished(anim_name):
+	if Global.quests.Complete:
+		get_tree().change_scene_to_file("res://GameScenes/HUD/StartMenu.tscn")
+	pass # Replace with function body.

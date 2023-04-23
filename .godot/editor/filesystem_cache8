@@ -1,5 +1,5 @@
 b4bb536c7fbe646fec36344f2ea47b2f
-::res://::1682193064
+::res://::1682247455
 icon.svg::CompressedTexture2D::1150606008245948866::1681521490::1681521506::1::::<><>::
 ::res://addons/::1681787781
 ::res://addons/dialogue_manager/::1682130372
@@ -2490,7 +2490,7 @@ starfish.tscn::PackedScene::93941095113908494::1682220795::0::1::::<><>::res://G
 ::res://GameScenes/CutScenes/::1682220795
 OpeningScene.gd::GDScript::-1::1682218547::0::1::::<>Node2D<>::
 OpeningScene.tscn::PackedScene::6418928790182145709::1682220795::0::1::::<><>::res://GameScenes/CutScenes/OpeningScene.gd<>uid://df0k34mg4ks74<>uid://t4pfbekufyr4<>uid://dfepjygckoxt8<>uid://dbts5peacbp23<>uid://0gf2hxtkcwc8<>uid://d0c0me3epuebn<>uid://82sjw7mqh2mm<>uid://u773j87kjsvy<>uid://cfq43dfnqebwm<>uid://vqt1p0aj38jf<>uid://c14ssgfbygs46<>uid://cm1j3wlwlo4lv<>uid://ct2wkueem4mbf<>uid://jsrnp55bvdb0<>uid://8bw84gp1n5mn<>uid://djc2l6fh82w7y<>uid://bs0d145eul5qc<>uid://cqlwek0swumnt<>uid://cd1jnfydndi37<>uid://um827thoyi6m<>uid://dw56nqx7tjkgp<>uid://ccq6fb168a2np<>uid://bhdtigx78krnm<>uid://bfhpcgudsdo6n<>uid://8fn54p21iegy<>uid://th1a3rx2i26o<>uid://drn487yqmk5g0<>uid://lv2dm6m2y773<>uid://bjcvbceilda4i<>uid://ekmou8o6f4dd<>uid://cf6ovaxxkc2p<>uid://lsjg0xukoulg<>uid://rhybgw4eogn0<>uid://b6f6ncyp8f8u3<>uid://suy0via40cj5<>uid://dwbcsdvqx3hdj<>uid://ddbhmgckjqsen<>uid://bx1wy1no67ol1<>uid://hlyhxl4lttpr<>uid://rydclvvemf8n<>uid://33o5b6oqf6qv<>uid://cwdbemmn3cih6<>uid://cb5f053dbmp38<>uid://cthk2pbcn8mus<>uid://vtrvf4i7mkkm<>uid://cv1qfv1yfnjli<>uid://cu5ousdjr1kl4<>uid://heukrwvq0kgb<>uid://s6eufn0bd3x6<>uid://c82crm76rogv3<>uid://b8hshfeepgix0<>uid://drkrx0ssmt8v2<>uid://bgwlv6yvuv4v4<>uid://d4ai6wdx6pc8x<>uid://p86ocqj2nbss<>uid://cgdshl7tg4daa<>uid://j52iucqxvyqu<>uid://b536ltxrrl5vg<>uid://btyqltwakl2ys<>uid://dpqln34f5qwd4<>uid://dpfeae3vyjf3s<>uid://ijpn7xfqxx66<>uid://cm5vtavkn80ky<>uid://cbfjnkxmjm4qw<>uid://281m12gna3m
-::res://GameScenes/Dialogs/::1682220697
+::res://GameScenes/Dialogs/::1682222100
 Actionable.gd::GDScript::-1::1682128851::0::1::::<>Area2D<>::
 actionable.tscn::PackedScene::5556275905783787235::1681940124::0::1::::<><>::res://GameScenes/Dialogs/Actionable.gd
 Crab.dialogue::Resource::4334390324077287481::1682221896::1682221896::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
@@ -2502,9 +2502,9 @@ StarFish.dialogue::Resource::5378982895559318796::1682208136::1682208136::1::::<
 ::res://GameScenes/Environment/::1682126156
 DayAndNight.gd::GDScript::-1::1682126156::0::1::::<>StaticBody2D<>::
 DayAndNight.tscn::PackedScene::3970810308821794842::1682125792::0::1::::<><>::res://GameScenes/Environment/DayAndNight.gd
-::res://GameScenes/HUD/::1682220800
+::res://GameScenes/HUD/::1682222101
 hud.gd::GDScript::-1::1682218436::0::1::::<>CanvasLayer<>::
-hud.tscn::PackedScene::8801356600342173109::1682221896::0::1::::<><>::res://GameScenes/HUD/hud.gd<>uid://b4ppv4ormedlc<>uid://chmcavxpv6aeg<>uid://bn0xo235tfl63<>uid://cjdvnkwjrnmcx
+hud.tscn::PackedScene::8801356600342173109::1682222101::0::1::::<><>::res://GameScenes/HUD/hud.gd<>uid://b4ppv4ormedlc<>uid://chmcavxpv6aeg<>uid://bn0xo235tfl63<>uid://cjdvnkwjrnmcx
 mini_map.gd::GDScript::-1::1682194805::0::1::::<>MarginContainer<>::
 mini_map.tscn::PackedScene::8245530135793695559::1682220795::0::1::::<><>::uid://bsaqj8f1rsenn<>res://GameScenes/HUD/mini_map.gd<>uid://xgm1npf17aob<>uid://d0nytrflcuv48<>uid://vqeg1ricu7t3<>uid://dvuglilfki6j4<>uid://b6ike16cp0t80<>uid://bfyxtm38phc2x<>uid://di8v2rdqjw1h2<>uid://ixtj38wlht5c
 PauseMenu.gd::GDScript::-1::1682190751::0::1::::<>CanvasLayer<>::
