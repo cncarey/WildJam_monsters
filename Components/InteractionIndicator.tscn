@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://bapqf8o7m2t2u"]
+
+[ext_resource type="Script" path="res://Components/InteractionIndicator.gd" id="1_gjrje"]
+[ext_resource type="Texture2D" uid="uid://cgbgmqvb3761w" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation In 01.png" id="1_nucck"]
+[ext_resource type="Texture2D" uid="uid://dgwkn1pg188cg" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation In 02.png" id="2_k8e5o"]
+[ext_resource type="Texture2D" uid="uid://dwyt4264xsqy1" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation In 03.png" id="3_507f3"]
+[ext_resource type="Texture2D" uid="uid://n08h5dq82pq5" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation Out 01.png" id="4_awlpk"]
+[ext_resource type="Texture2D" uid="uid://d1yce8eykf17k" path="res://Assets/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation Out 02.png" id="5_a3i3o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_htqce"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nucck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k8e5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_507f3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_awlpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a3i3o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="InteractionIndicator" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_htqce")
+script = ExtResource("1_gjrje")

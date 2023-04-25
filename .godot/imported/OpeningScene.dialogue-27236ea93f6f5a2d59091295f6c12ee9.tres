@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_elqcs"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1c8ag"]
 
 [resource]
-script = ExtResource("1_elqcs")
+script = ExtResource("1_1c8ag")
 titles = {
 "Quest1": "3",
 "Quest2": "37",
@@ -664,8 +664,11 @@ lines = {
 "type": "dialogue"
 },
 "16": {
-"character": "{{Global.playerName}}:",
-"character_replacements": Array[Dictionary]([{
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "17",
+"text": "{{Global.playerName}}",
+"text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
 "value": "Global"
@@ -677,10 +680,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.playerName}}"
 }]),
-"next_id": "17",
-"text": "",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "",
+"translation_key": "{{Global.playerName}}",
 "type": "dialogue"
 },
 "17": {

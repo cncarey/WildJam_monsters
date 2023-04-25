@@ -1,7 +1,10 @@
 extends AnimatedSprite2D
 
 @onready var actionFinder = $ActionFinder
+@onready var touchIndicator = $InteractionIndicator
+
 @export var dialogueResourse : DialogueResource
+@export var isTouched = false
 
 var openDialog = preload("res://GameScenes/Dialogs/OpeningScene.dialogue")
 var flagDialog = preload("res://GameScenes/Dialogs/Flag.dialogue")
@@ -11,6 +14,19 @@ signal changeScene()
 
 func _ready():
 	play("flying")
+	touchIndicator.visible = false
+
+func _on_body_entered(body):
+	if body.is_in_group("Collector"):
+		isTouched = true
+		touchIndicator.visible = true
+	pass # Replace with function body.
+
+func _on_body_exited(body):
+	if body.is_in_group("Collector"):
+		isTouched = false
+		touchIndicator.visible = false
+	pass # Replace with function body.
 
 func _unhandled_input(event):
 	if Input.is_action_just_pressed("Talk"):

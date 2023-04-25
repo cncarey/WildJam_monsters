@@ -13,7 +13,7 @@ Towns Person 1: There's a Giant Crab at the bottom of the cavern that has been c
 Towns Person 1: If you get rid of it I can get you part of the map.
 do playAnimation("Quest1_ReddMove")
 Towns Person 2: But we are leaving in {{Global.quests.Quest1.MaxDays}} days, so you have to be back by then.
-{{Global.playerName}}: 
+{{Global.playerName}}
 - What's so bad about this crab?
 	Towns Person 2: Well..
 	set Global.quests.Morality += 1
