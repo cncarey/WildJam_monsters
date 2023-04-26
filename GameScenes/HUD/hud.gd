@@ -5,8 +5,9 @@ extends CanvasLayer
 @onready var DayCount = $DayHolder/DayCount
 @onready var Banner = $Banner
 @onready var CurQuestItemCount = $CurQuestItemCount
-@onready var curKeyCount = $KeyCount
-@onready var keyLabel = $KeyLabel
+
+@onready var keyContainer = $KeyContainer
+@onready var keyItem = $KeyIcon
 
 @onready var QuestName = $CurQuestName
 @onready var QuestInstructions = $CurQuestInstuctions
@@ -43,10 +44,6 @@ func updateHUDQuest():
 				itemPic.texture = Pets
 				itemPic.scale = Vector2(.7, .7)
 		
-	if "KeyedItemCount" in curQuest:
-		curKeyCount.visible = true
-		keyLabel.visible = true
-		
 	QuestInstructions.text =  curQuest.QuestInstructions
 	QuestName.text = curQuest.QuestName
 	
@@ -70,7 +67,14 @@ func updateItemCount(score):
 		pass
 	
 func updateKeyCount(keysCount):
-	curKeyCount.text = str(keysCount)
+	for k in keyContainer.get_children():
+		k.free()
+		
+	for i in range(keysCount):
+		var newKey = keyItem.duplicate()
+		
+		newKey.visible = true
+		keyContainer.add_child(newKey)
 	
 func updateDayCount(day):
 	DayCount.text = str(day)

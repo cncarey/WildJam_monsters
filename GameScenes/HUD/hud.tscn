@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxnpb7iv5b3q4"]
+[gd_scene load_steps=8 format=3 uid="uid://dxnpb7iv5b3q4"]
 
 [ext_resource type="Script" path="res://GameScenes/HUD/hud.gd" id="1_21n4f"]
 [ext_resource type="Texture2D" uid="uid://b4ppv4ormedlc" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Yellow Board/16.png" id="2_1acro"]
 [ext_resource type="Texture2D" uid="uid://chmcavxpv6aeg" path="res://Assets/BootStrapIcons/moon-fill.svg" id="3_mlsoo"]
 [ext_resource type="Texture2D" uid="uid://bn0xo235tfl63" path="res://Assets/BootStrapIcons/brightness-high.svg" id="4_15n0m"]
 [ext_resource type="Texture2D" uid="uid://cjdvnkwjrnmcx" path="res://Assets/Treasure Hunters/Wood and Paper UI/Sprites/Small Banner/4.png" id="4_vw321"]
+[ext_resource type="Texture2D" uid="uid://vqeg1ricu7t3" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/1.png" id="6_8atv1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xg2e5"]
+atlas = ExtResource("6_8atv1")
+region = Rect2(6.23506, 3.41158, 10.8642, 17.3333)
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_21n4f")
@@ -119,25 +124,15 @@ position = Vector2(144, 33.5)
 scale = Vector2(3.32812, 2.53125)
 texture = ExtResource("4_vw321")
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="KeyContainer" type="GridContainer" parent="."]
 offset_left = 94.0
 offset_top = 48.0
-offset_right = 220.0
+offset_right = 298.0
 offset_bottom = 98.0
 columns = 4
 
-[node name="KeyLabel" type="Label" parent="."]
+[node name="KeyIcon" type="TextureRect" parent="."]
 visible = false
-offset_left = 174.0
-offset_top = 16.0
-offset_right = 214.0
-offset_bottom = 39.0
-text = "keys"
-
-[node name="KeyCount" type="Label" parent="."]
-visible = false
-offset_left = 213.0
-offset_top = 15.0
-offset_right = 260.0
-offset_bottom = 41.0
-text = "0"
+offset_right = 32.0
+offset_bottom = 36.0
+texture = SubResource("AtlasTexture_xg2e5")
