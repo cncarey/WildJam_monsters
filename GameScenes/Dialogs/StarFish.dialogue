@@ -10,6 +10,7 @@ else
 Starfish: ...
 {{Global.playerName}}: Do you know where I can find the cave of treasures?
 Starfish: Yes, but why should I tell you?
+{{Global.playerName}} 
 - I want to help the village get back on their feet
 	set Global.quests.Morality += 1
 - I've been looking for it

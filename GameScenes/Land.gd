@@ -10,6 +10,7 @@ var pet = preload("res://GameScenes/Objects/Collectables/Pets.tscn")
 @onready var standAlonePoint = $StandAloneCollectables
 @onready var keyPoints = $KeyCollectionPair
 @onready var chestPoints = $ChestPositions
+@onready var flooredPoints = $FlooredCollectionPositions
 
 @onready var HUD = $HUD
 @onready var miniMap = $HUD/MiniMap
@@ -34,7 +35,7 @@ func _ready():
 		tutorial.visible = false
 		door.isLocked = false
 		door.unlock(false)
-		
+	#I know this is bad but it works; refactor later
 	match Global.currentQuest:
 		"Quest1", "Crab":
 			shark.disableCollider()
@@ -42,6 +43,10 @@ func _ready():
 		"Quest2", "Shark":
 			starfish.disableCollider()
 			crab.disableCollider()
+		"Quest3":
+			crab.disableCollider()
+			shark.disableCollider()
+			starfish.disableCollider()
 		"Quest4", "StarFish": 
 			crab.disableCollider()
 			shark.disableCollider()
@@ -96,6 +101,24 @@ func startQuest(type : StringName, questName: StringName):
 					pass
 				_:
 					assert("do not have a collectabnle of passed type preloaded")
+		
+		
+	#flooredPoints
+	if "FlooredItemCount" in curQuest:
+		TotalCount += curQuest.FlooredItemCount
+		var floored = pick_rand_number(flooredPoints.get_children(), curQuest.FlooredItemCount)
+		for fP in floored :
+			match curQuest.QuestItem:
+				"Blue Diamond":
+					spawnCollectable(blueDiamond.instantiate(), fP)
+				"Red Diamond":
+					spawnCollectable(redDiamond.instantiate(), fP)
+				"Pets":
+					spawnCollectable(pet.instantiate(), fP)
+					pass
+				_:
+					assert("do not have a collectabnle of passed type preloaded")
+		
 					
 	if "KeyedItemCount" in curQuest:
 		TotalCount += curQuest.KeyedItemCount
@@ -121,7 +144,7 @@ func startQuest(type : StringName, questName: StringName):
 					spawnCollectable(redDiamond.instantiate(), p)
 				_:
 					assert("do not have a collectabnle of passed type preloaded")
-		pass
+		
 	curQuest.QuestInstructions = curQuest.QuestInstructions.replace("___", str(TotalCount))
 	HUD.updateHUDQuest()
 	miniMap.updateMarkers()

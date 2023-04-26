@@ -86,7 +86,7 @@ func resetGameValues():
 		"QuestItem" : "Pets",
 		"CurrQuestItemCount" : 0,
 		"CurrQuestKeyCount" : 0,
-		"StandAloneItemCount" : 3, 
+		"FlooredItemCount" : 3, 
 		"totalItems" : 3,
 		"MaxDays": 10,
 		"QuestComplete": false,

@@ -32,6 +32,7 @@ func _ready():
 	playerMarker.position.x = (self.size.x/2) - (playerMarker.texture.get_width()/2)
 	playerMarker.position.y = (self.size.y/2) - (playerMarker.texture.get_height()/2)
 	paperScale = paper.size/ (get_viewport_rect().size * zoom)
+	
 
 func updateMarkers():
 	var mapObjects = get_tree().get_nodes_in_group("miniMap")
@@ -49,6 +50,8 @@ func updateMarkers():
 				newMarker = icons[mmItem.CharcterName].duplicate()
 				
 			if newMarker:
+				
+				
 				paper.add_child(newMarker)
 				newMarker.show()
 				markers[mmItem] = newMarker
@@ -62,6 +65,8 @@ func _process(delta):
 	else:
 		return
 	
+	var vp = paper.get_viewport_rect()
+	
 	for item in markers:
 		var iPos = (item.position - player.position) * paperScale
 		var proX = ((self.size.x/2) - (playerMarker.texture.get_width()/2))
@@ -73,6 +78,11 @@ func _process(delta):
 		iPos.y = clamp(iPos.y, 0, self.size.y)
 		
 		#TODO if the position is off the map set the scale to .7,.7
+		#TODO hold onto the base scale as not everything starts at scale 1,1
+#		if vp.has_point(markers[item].position):
+#			markers[item].scale = Vector2(1, 1)
+#		else:
+#			markers[item].scale = Vector2(.6, .6)
 		
 		markers[item].position = iPos
 

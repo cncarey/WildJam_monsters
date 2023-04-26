@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7jprw"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_jjgcu"]
 
 [resource]
-script = ExtResource("1_7jprw")
+script = ExtResource("1_jjgcu")
 titles = {
 "Pre_Quest": "10",
 "Start": "2",
-"Start_Quest": "36",
-"Update_Quest": "44"
+"Start_Quest": "37",
+"Update_Quest": "45"
 }
 character_names = PackedStringArray("Starfish", "{{Global.playerName}}")
 first_title = "2"
@@ -57,15 +57,35 @@ lines = {
 "type": "dialogue"
 },
 "13": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "next_id": "14",
-"next_id_after": "19",
-"responses": PackedStringArray("13", "15", "16"),
+"text": "{{Global.playerName}}",
+"text_replacements": Array[Dictionary]([{
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "playerName"
+}]),
+"value_in_text": "{{Global.playerName}}"
+}]),
+"translation_key": "{{Global.playerName}}",
+"type": "dialogue"
+},
+"14": {
+"next_id": "15",
+"next_id_after": "20",
+"responses": PackedStringArray("14", "16", "17"),
 "text": "I want to help the village get back on their feet",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I want to help the village get back on their feet",
 "type": "response"
 },
-"14": {
+"15": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -88,27 +108,27 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "19",
-"parent_id": "13",
+"next_id": "20",
+"parent_id": "14",
 "type": "mutation"
 },
-"15": {
-"next_id": "19",
-"next_id_after": "19",
+"16": {
+"next_id": "20",
+"next_id_after": "20",
 "text": "I've been looking for it",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I've been looking for it",
 "type": "response"
 },
-"16": {
-"next_id": "17",
-"next_id_after": "19",
+"17": {
+"next_id": "18",
+"next_id_after": "20",
 "text": "I know you know where it is just tell me",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I know you know where it is just tell me",
 "type": "response"
 },
-"17": {
+"18": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -131,11 +151,22 @@ lines = {
 "value": 1
 }])
 },
-"next_id": "19",
-"parent_id": "16",
+"next_id": "20",
+"parent_id": "17",
 "type": "mutation"
 },
-"19": {
+"2": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "pauseTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "3",
+"type": "mutation"
+},
+"20": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -158,23 +189,12 @@ lines = {
 "value": 3
 }])
 },
-"next_conditional_id": "22",
-"next_id": "20",
-"next_id_after": "22",
+"next_conditional_id": "23",
+"next_id": "21",
+"next_id_after": "23",
 "type": "condition"
 },
-"2": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"function": "pauseTimer",
-"type": "function",
-"value": Array[Array]([])
-}])
-},
-"next_id": "3",
-"type": "mutation"
-},
-"20": {
+"21": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -202,14 +222,14 @@ lines = {
 "value": 2
 }])
 },
-"next_id": "22",
-"parent_id": "19",
+"next_id": "23",
+"parent_id": "20",
 "type": "mutation"
 },
-"22": {
+"23": {
 "character": "Starfish",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "23",
+"next_id": "24",
 "text": "If you are worthy you will find my {{Global.quests.StarFish.totalItems}} {{Global.quests.StarFish.QuestItem}}s within {{Global.quests.StarFish.MaxDays}} days",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
@@ -278,10 +298,10 @@ lines = {
 "translation_key": "If you are worthy you will find my {{Global.quests.StarFish.totalItems}} {{Global.quests.StarFish.QuestItem}}s within {{Global.quests.StarFish.MaxDays}} days",
 "type": "dialogue"
 },
-"23": {
+"24": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "24",
+"next_id": "25",
 "text": "{{Global.playerName}}",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
@@ -298,22 +318,22 @@ lines = {
 "translation_key": "{{Global.playerName}}",
 "type": "dialogue"
 },
-"24": {
-"next_id": "25",
-"next_id_after": "26",
-"responses": PackedStringArray("24"),
+"25": {
+"next_id": "26",
+"next_id_after": "27",
+"responses": PackedStringArray("25"),
 "text": "I'll find them",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I'll find them",
 "type": "response"
 },
-"25": {
+"26": {
 "is_snippet": false,
-"next_id": "36",
-"parent_id": "24",
+"next_id": "37",
+"parent_id": "25",
 "type": "goto"
 },
-"26": {
+"27": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -336,36 +356,30 @@ lines = {
 "value": 3
 }])
 },
-"next_conditional_id": "30",
-"next_id": "27",
-"next_id_after": "30",
+"next_conditional_id": "31",
+"next_id": "28",
+"next_id_after": "31",
 "type": "condition"
 },
-"27": {
-"next_id": "28",
-"next_id_after": "28",
-"parent_id": "26",
-"responses": PackedStringArray("27"),
+"28": {
+"next_id": "29",
+"next_id_after": "29",
+"parent_id": "27",
+"responses": PackedStringArray("28"),
 "text": "Why so little time?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Why so little time?",
 "type": "response"
 },
-"28": {
+"29": {
 "character": "Starfish",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "29",
-"parent_id": "26",
+"next_id": "30",
+"parent_id": "27",
 "text": "Either you're worthy or your not",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Either you're worthy or your not",
 "type": "dialogue"
-},
-"29": {
-"is_snippet": false,
-"next_id": "36",
-"parent_id": "26",
-"type": "goto"
 },
 "3": {
 "mutation": {
@@ -389,15 +403,21 @@ lines = {
 "type": "mutation"
 },
 "30": {
-"next_id": "31",
-"next_id_after": "36",
-"responses": PackedStringArray("30"),
+"is_snippet": false,
+"next_id": "37",
+"parent_id": "27",
+"type": "goto"
+},
+"31": {
+"next_id": "32",
+"next_id_after": "37",
+"responses": PackedStringArray("31"),
 "text": "End the conversation",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "End the conversation",
 "type": "response"
 },
-"31": {
+"32": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -415,11 +435,11 @@ lines = {
 "value": false
 }])
 },
-"next_id": "32",
-"parent_id": "30",
+"next_id": "33",
+"parent_id": "31",
 "type": "mutation"
 },
-"32": {
+"33": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "restartTimer",
@@ -427,31 +447,31 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "33",
-"parent_id": "30",
+"next_id": "34",
+"parent_id": "31",
 "type": "mutation"
 },
-"33": {
+"34": {
 "is_snippet": false,
 "next_id": "end",
-"parent_id": "30",
+"parent_id": "31",
 "type": "goto"
 },
-"35": {
-"next_id": "36",
+"36": {
+"next_id": "37",
 "text": "Start_Quest",
 "type": "title"
 },
-"36": {
+"37": {
 "character": "Starfish",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "37",
+"next_id": "38",
 "text": "Take them to the flag when you find them. Good luck.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Take them to the flag when you find them. Good luck.",
 "type": "dialogue"
 },
-"37": {
+"38": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -479,10 +499,10 @@ lines = {
 "value": true
 }])
 },
-"next_id": "38",
+"next_id": "39",
 "type": "mutation"
 },
-"38": {
+"39": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "startQuest",
@@ -509,27 +529,6 @@ lines = {
 "type": "string",
 "value": "StarFish"
 }])])
-}])
-},
-"next_id": "39",
-"type": "mutation"
-},
-"39": {
-"mutation": {
-"expression": Array[Dictionary]([{
-"type": "variable",
-"value": "Global"
-}, {
-"type": "dot"
-}, {
-"type": "variable",
-"value": "isTalking"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "bool",
-"value": false
 }])
 },
 "next_id": "40",
@@ -571,25 +570,46 @@ lines = {
 "40": {
 "mutation": {
 "expression": Array[Dictionary]([{
-"function": "restartTimer",
-"type": "function",
-"value": Array[Array]([])
+"type": "variable",
+"value": "Global"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isTalking"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": false
 }])
 },
 "next_id": "41",
 "type": "mutation"
 },
 "41": {
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "restartTimer",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "42",
+"type": "mutation"
+},
+"42": {
 "is_snippet": false,
 "next_id": "end",
 "type": "goto"
 },
-"43": {
-"next_id": "44",
+"44": {
+"next_id": "45",
 "text": "Update_Quest",
 "type": "title"
 },
-"44": {
+"45": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -632,22 +652,22 @@ lines = {
 "value": "totalItems"
 }])
 },
-"next_conditional_id": "46",
-"next_id": "45",
-"next_id_after": "50",
+"next_conditional_id": "47",
+"next_id": "46",
+"next_id_after": "51",
 "type": "condition"
 },
-"45": {
+"46": {
 "character": "Starfish",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "50",
-"parent_id": "44",
+"next_id": "51",
+"parent_id": "45",
 "text": "You got all my _. Go find the flag!",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You got all my _. Go find the flag!",
 "type": "dialogue"
 },
-"46": {
+"47": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -696,36 +716,26 @@ lines = {
 "value": 2
 }])
 },
-"next_conditional_id": "48",
-"next_id": "47",
-"next_id_after": "50",
+"next_conditional_id": "49",
+"next_id": "48",
+"next_id_after": "51",
 "type": "condition"
 },
-"47": {
+"48": {
 "character": "Starfish",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "50",
-"parent_id": "46",
+"next_id": "51",
+"parent_id": "47",
 "text": "You don't have too many more to find.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "You don't have too many more to find.",
 "type": "dialogue"
 },
-"48": {
-"next_conditional_id": "50",
-"next_id": "49",
-"next_id_after": "50",
-"type": "condition"
-},
 "49": {
-"character": "Starfish",
-"character_replacements": Array[Dictionary]([]),
+"next_conditional_id": "51",
 "next_id": "50",
-"parent_id": "48",
-"text": "Go find my _.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Go find my _.",
-"type": "dialogue"
+"next_id_after": "51",
+"type": "condition"
 },
 "5": {
 "is_snippet": false,
@@ -734,6 +744,16 @@ lines = {
 "type": "goto"
 },
 "50": {
+"character": "Starfish",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "51",
+"parent_id": "49",
+"text": "Go find my _.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Go find my _.",
+"type": "dialogue"
+},
+"51": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -751,10 +771,10 @@ lines = {
 "value": false
 }])
 },
-"next_id": "51",
+"next_id": "52",
 "type": "mutation"
 },
-"51": {
+"52": {
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "restartTimer",
@@ -762,10 +782,10 @@ lines = {
 "value": Array[Array]([])
 }])
 },
-"next_id": "52",
+"next_id": "53",
 "type": "mutation"
 },
-"52": {
+"53": {
 "is_snippet": false,
 "next_id": "end!",
 "type": "goto"
@@ -778,7 +798,7 @@ lines = {
 },
 "7": {
 "is_snippet": false,
-"next_id": "44",
+"next_id": "45",
 "parent_id": "6",
 "type": "goto"
 },
