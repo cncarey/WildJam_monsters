@@ -17,13 +17,15 @@ const speed = 300;
 const jumpVolocity = -400
 const maxJumps = 2
 var curJumps = 0
+var isTouched = false
 
 @export var jumpmaxoffset : float = 0
 
 const canFollow = true;
 
 @onready var animation = $AnimatedSprite2D
-@onready var actionFinder = $ActionFinder
+@onready var touchIndicator = $InteractionIndicator
+@onready var collider = $CollisionShape2D
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var curDirction = 0
@@ -34,6 +36,24 @@ func _ready():
 	animation.play("idle")
 	# Make sure to not await during _ready.
 	call_deferred("actor_setup")
+	touchIndicator.visible = false
+	isTouched = false
+
+func disableCollider():
+	collider.disabled = true
+	visible = false
+	
+func _on_body_entered(body):
+	if body.is_in_group("Collector"):
+		touchIndicator.visible = true
+		isTouched = true
+	pass
+
+func _on_body_exited(body):
+	if body.is_in_group("Collector"):
+		touchIndicator.visible = false
+		isTouched = false
+	pass
 
 func actor_setup():
 	# Wait for the first physics frame so the NavigationServer can sync.
@@ -65,8 +85,7 @@ var whatToFollow = null
 
 func _unhandled_input(event):
 	if Input.is_action_just_pressed("Talk"):
-		var actionables = actionFinder.get_overlapping_areas()
-		if actionables && actionables.size() > 0:
+		if isTouched:
 			Talk()
 	pass
 
@@ -121,3 +140,4 @@ func Talk():
 	await get_tree().create_timer(0.4).timeout
 	DialogueManager.show_example_dialogue_balloon(dialogueResourse, "Start")
 	pass
+

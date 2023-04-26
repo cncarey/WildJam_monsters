@@ -10,7 +10,7 @@ titles = {
 "Quest3": "71",
 "Quest4": "114"
 }
-character_names = PackedStringArray("{{Global.playerName}}", "Towns Person 1", "Towns Person 2", "{{Global.playerName}}:", "Jett", "Redd", "Towns Person 3", "Bruno", "Redd & Jett", "Towns Person 4", "Sterling")
+character_names = PackedStringArray("{{Global.playerName}}", "Towns Person 1", "Towns Person 2", "Jett", "Redd", "Towns Person 3", "Bruno", "Redd & Jett", "Towns Person 4", "Sterling")
 first_title = "3"
 lines = {
 "1": {
@@ -547,8 +547,11 @@ lines = {
 "type": "dialogue"
 },
 "138": {
-"character": "{{Global.playerName}}:",
-"character_replacements": Array[Dictionary]([{
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "139",
+"text": "{{Global.playerName}}",
+"text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
 "value": "Global"
@@ -560,10 +563,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.playerName}}"
 }]),
-"next_id": "139",
-"text": "",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "",
+"translation_key": "{{Global.playerName}}",
 "type": "dialogue"
 },
 "139": {
@@ -1191,8 +1191,11 @@ lines = {
 "type": "dialogue"
 },
 "55": {
-"character": "{{Global.playerName}}:",
-"character_replacements": Array[Dictionary]([{
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "56",
+"text": "{{Global.playerName}}",
+"text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
 "value": "Global"
@@ -1204,10 +1207,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.playerName}}"
 }]),
-"next_id": "56",
-"text": "",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "",
+"translation_key": "{{Global.playerName}}",
 "type": "dialogue"
 },
 "56": {
@@ -1527,9 +1527,9 @@ lines = {
 "character": "Towns Person 3",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "79",
-"text": "Oh...Jett and Redd. What are you doing here.",
+"text": "Oh...Jett and Redd. What are you doing here?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Oh...Jett and Redd. What are you doing here.",
+"translation_key": "Oh...Jett and Redd. What are you doing here?",
 "type": "dialogue"
 },
 "79": {

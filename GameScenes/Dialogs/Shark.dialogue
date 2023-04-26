@@ -9,7 +9,7 @@ else
 
 ~ Pre_Quest
 Shark: ...
-{{Global.playerName}}: 
+{{Global.playerName}} 
 - Why are you terrorizing to town?
 	Shark: What are you talking about. What town?
 	Shark: I've been here in the swell all week.

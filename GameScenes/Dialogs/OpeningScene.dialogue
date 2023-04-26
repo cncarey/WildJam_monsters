@@ -52,7 +52,7 @@ Towns Person 1 : ...
 Towns Person 2: Go show that big lub whose boss cause there's not much to do besides coming to the bar.
 Towns Person 2: By the way I'm Redd and this is my brother Jett.
 {{Global.playerName}}: I'm {{Global.playerName}}.
-{{Global.playerName}}: 
+{{Global.playerName}}  
 - Sure, but how did you get these map pieces in the first place.
 	Jett : You take care of that shark an I'll tell you.
 	Redd : Our plans changed so we'll be around for {{Global.quests.Quest2.MaxDays}} more days.
@@ -75,7 +75,7 @@ set Global.quests.Maps.Q2 = true
 do playAnimation("Quest3_Bruno")
 Redd : Here you go. [wait=2]
 Towns Person 3: Has anyone seen my fluffy. I can't find him anywhere. 
-Towns Person 3: Oh...Jett and Redd. What are you doing here.
+Towns Person 3: Oh...Jett and Redd. What are you doing here?
 Redd : Jett did you hear something. 
 Jett : Nope.
 {{Global.playerName}} : Are you guys okay?
@@ -135,7 +135,7 @@ Sterling: There's a giant pink fish that guards the treauser and only let's thos
 Sterling: We weren't found worthy and my brothers have been bickering with each other ever since.
 {{Global.playerName}}: Oh...That why you don't talk to Bruno.
 Sterling: I talk to him, just in secret.
-{{Global.playerName}}: 
+{{Global.playerName}}  
 - I think I'm worthy [if Global.quests.Morality >= 3]
 - Maybe I could have been nicer to the monsters on the island.
 Sterling: Now go find that fish. He's way up high.

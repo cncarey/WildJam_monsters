@@ -13,3 +13,10 @@ res://GameScenes/CutScenes/OpeningScene.tscn
 res://GameScenes/Characters/Player.tscn
 res://GameScenes/Objects/Interactable/chest.tscn
 res://GameScenes/Objects/Interactable/chest.gd
+res://GameScenes/Characters/Crab.tscn
+res://GameScenes/Characters/Crab.gd
+res://GameScenes/Characters/Player.gd
+res://GameScenes/Characters/shark.tscn
+res://GameScenes/Characters/shark.gd
+res://GameScenes/Characters/starfish.gd
+res://GameScenes/Land.gd

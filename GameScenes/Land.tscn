@@ -829,15 +829,12 @@ shape = SubResource("RectangleShape2D_oejdg")
 position = Vector2(-103.904, 123.786)
 
 [node name="Crab" parent="." instance=ExtResource("4_3a6g4")]
-visible = false
 position = Vector2(807.25, 448.5)
 
 [node name="Starfish" parent="." instance=ExtResource("8_ngip4")]
-visible = false
-position = Vector2(-1950.1, -1629.3)
+position = Vector2(-1938.6, -1631.6)
 
 [node name="Shark" parent="." instance=ExtResource("8_w3q1q")]
-visible = false
 position = Vector2(-2430.8, -175.2)
 
 [node name="EasyCollectables" type="Node2D" parent="."]
@@ -905,6 +902,14 @@ offset_bottom = 31.0
 text = "Move"
 metadata/_edit_use_anchors_ = true
 
+[node name="Esc" type="Label" parent="Tutorial"]
+offset_left = 329.0
+offset_top = -123.0
+offset_right = 485.0
+offset_bottom = -97.0
+text = "Esc or Shift to pause"
+metadata/_edit_use_anchors_ = true
+
 [node name="Up" type="Sprite2D" parent="Tutorial"]
 position = Vector2(47, 47)
 texture = ExtResource("15_8rmol")
@@ -945,20 +950,20 @@ offset_bottom = -190.0
 text = "Double Jump"
 
 [node name="Interact" type="Label" parent="Tutorial"]
-offset_left = 764.0
+offset_left = 671.0
 offset_top = 340.0
-offset_right = 895.0
+offset_right = 802.0
 offset_bottom = 418.0
-text = "Space to Talk
+text = "Space to Interact
      to Follow
      to Stop Follow"
 
 [node name="x" type="Sprite2D" parent="Tutorial"]
-position = Vector2(772, 380)
+position = Vector2(679, 380)
 texture = ExtResource("16_bhx3t")
 
 [node name="z" type="Sprite2D" parent="Tutorial"]
-position = Vector2(773, 405)
+position = Vector2(679, 405)
 texture = ExtResource("17_r84kg")
 
 [node name="Door" parent="." instance=ExtResource("18_lldoq")]

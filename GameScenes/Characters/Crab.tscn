@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bkw4vx5wbtqpw"]
+[gd_scene load_steps=36 format=3 uid="uid://bkw4vx5wbtqpw"]
 
 [ext_resource type="Script" path="res://GameScenes/Characters/Crab.gd" id="1_hhhbs"]
 [ext_resource type="Texture2D" uid="uid://domlq0i6vrlic" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/10-Dead Ground/Dead Ground 01.png" id="1_vxh5c"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://b8g1c0gfwqywp" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 04.png" id="27_g27fo"]
 [ext_resource type="Texture2D" uid="uid://wym5oxya06i4" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 05.png" id="28_3f6yo"]
 [ext_resource type="Texture2D" uid="uid://bmd1dqnmplh6f" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 06.png" id="29_2x6yr"]
+[ext_resource type="PackedScene" uid="uid://bapqf8o7m2t2u" path="res://Components/InteractionIndicator.tscn" id="32_uyal2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3eng3"]
 animations = [{
@@ -160,8 +161,8 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oemc0"]
 height = 24.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vtmb"]
-size = Vector2(57, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26h8u"]
+size = Vector2(54, 20)
 
 [node name="Crab" type="CharacterBody2D" groups=["Climbers", "miniMap"]]
 script = ExtResource("1_hhhbs")
@@ -174,10 +175,14 @@ animation = &"idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_oemc0")
 
-[node name="ActionFinder" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 16
+[node name="InteractionIndicator" parent="." instance=ExtResource("32_uyal2")]
+position = Vector2(16, -19)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ActionFinder"]
-position = Vector2(-1.5, 0)
-shape = SubResource("RectangleShape2D_6vtmb")
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_26h8u")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

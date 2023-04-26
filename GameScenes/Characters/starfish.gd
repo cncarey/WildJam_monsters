@@ -23,10 +23,12 @@ var curJumps = 0
 const canFollow = true;
 
 @onready var animation = $AnimatedSprite2D
-@onready var actionFinder = $ActionFinder
+@onready var touchIndicator = $InteractionIndicator
+@onready var collider = $CollisionShape2D
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var curDirction = 0
+var isTouched = false
 
 @export var dialogueResourse : DialogueResource
 
@@ -35,7 +37,24 @@ func _ready():
 	animation.flip_h = true
 	# Make sure to not await during _ready.
 	call_deferred("actor_setup")
+	touchIndicator.visible = false
 
+func disableCollider():
+	collider.disabled = true
+	visible = false
+	
+func _on_body_entered(body):
+	if body.is_in_group("Collector"):
+		touchIndicator.visible = true
+		isTouched = true
+	pass
+
+func _on_body_exited(body):
+	if body.is_in_group("Collector"):
+		touchIndicator.visible = false
+		isTouched = false
+	pass
+	
 func actor_setup():
 	# Wait for the first physics frame so the NavigationServer can sync.
 	await get_tree().physics_frame
@@ -66,8 +85,7 @@ var whatToFollow = null
 
 func _unhandled_input(event):
 	if Input.is_action_just_pressed("Talk"):
-		var actionables = actionFinder.get_overlapping_areas()
-		if actionables && actionables.size() > 0:
+		if isTouched:
 			Talk()
 	pass
 

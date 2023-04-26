@@ -1,8 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://blrgwx765nna"]
+[gd_scene load_steps=24 format=3 uid="uid://blrgwx765nna"]
 
 [ext_resource type="Script" path="res://GameScenes/Characters/starfish.gd" id="1_rc8h8"]
 [ext_resource type="Texture2D" uid="uid://ffcoorukxru7" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="2_cw7ej"]
 [ext_resource type="Resource" uid="uid://civvcee8tiedg" path="res://GameScenes/Dialogs/StarFish.dialogue" id="2_woe1n"]
+[ext_resource type="PackedScene" uid="uid://bapqf8o7m2t2u" path="res://Components/InteractionIndicator.tscn" id="3_sre4x"]
 [ext_resource type="Texture2D" uid="uid://c75lkvxlxdsw3" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 02.png" id="3_svmog"]
 [ext_resource type="Texture2D" uid="uid://dniets600wvff" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 03.png" id="4_ipu7v"]
 [ext_resource type="Texture2D" uid="uid://llwgje4dgebu" path="res://Assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 04.png" id="5_mnpti"]
@@ -93,22 +94,29 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrlgr"]
-size = Vector2(59, 26)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rhb6"]
+size = Vector2(66, 24)
 
 [node name="Starfish" type="CharacterBody2D" groups=["Climbers", "miniMap"]]
 script = ExtResource("1_rc8h8")
 dialogueResourse = ExtResource("2_woe1n")
+
+[node name="InteractionIndicator" parent="." instance=ExtResource("3_sre4x")]
+position = Vector2(21, -17)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_nkxov")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_bwg6c")
-animation = &"jump"
+animation = &"idle"
+flip_h = true
 
-[node name="ActionFinder" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ActionFinder"]
-position = Vector2(-0.5, -3)
-shape = SubResource("RectangleShape2D_lrlgr")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_0rhb6")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

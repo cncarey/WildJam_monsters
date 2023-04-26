@@ -8,7 +8,7 @@ else
 
 ~ Pre_Quest
 Crab: ...
-{{Global.playerName}}: 
+{{Global.playerName}} 
 - Why are you terrorizing to town?
 	Crab: What are you talking about. What town?
 	Crab: I've been here in the swell all week.

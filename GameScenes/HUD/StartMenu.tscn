@@ -58,7 +58,6 @@ layout_mode = 2
 text = "Quit Game"
 
 [connection signal="focus_exited" from="MarginContainer/VBoxContainer/PlayerName" to="." method="nameChanged"]
-[connection signal="text_changed" from="MarginContainer/VBoxContainer/PlayerName" to="." method="nameChanged"]
 [connection signal="text_submitted" from="MarginContainer/VBoxContainer/PlayerName" to="." method="nameChanged"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/QuitGame" to="." method="_on_quit_game_pressed"]

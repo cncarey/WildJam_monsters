@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dip8ud33rj63w"]
+[gd_scene load_steps=16 format=3 uid="uid://dip8ud33rj63w"]
 
 [ext_resource type="Texture2D" uid="uid://bfyxtm38phc2x" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_ruccw"]
 [ext_resource type="Texture2D" uid="uid://dfn6th5i1g6we" path="res://Assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_m2r2a"]
@@ -49,10 +49,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sf6s0"]
-radius = 30.0
-height = 118.0
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_da36h"]
 radius = 29.0
 height = 110.0
@@ -66,14 +62,6 @@ dialogueResourse = ExtResource("11_t618k")
 [node name="Platform" type="Sprite2D" parent="."]
 position = Vector2(-15, 54)
 texture = ExtResource("10_v0u62")
-
-[node name="ActionFinder" type="Area2D" parent="."]
-collision_layer = 17
-collision_mask = 16
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ActionFinder"]
-position = Vector2(-11, 5)
-shape = SubResource("CapsuleShape2D_sf6s0")
 
 [node name="InteractionIndicator" parent="." instance=ExtResource("13_xrm1b")]
 position = Vector2(-20, -50)

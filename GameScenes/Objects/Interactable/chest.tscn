@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b0hjjutiu6185"]
+[gd_scene load_steps=15 format=3 uid="uid://b0hjjutiu6185"]
 
 [ext_resource type="Texture2D" uid="uid://fgi4jxicub5b" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Idle/1.png" id="1_hkbol"]
 [ext_resource type="Script" path="res://GameScenes/Objects/Interactable/chest.gd" id="1_tinic"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cph12qebuviym" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/5.png" id="7_1gk5c"]
 [ext_resource type="Texture2D" uid="uid://ch4w80svbpvhd" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/6.png" id="8_1chss"]
 [ext_resource type="Texture2D" uid="uid://cbqgo5vio8ryw" path="res://Assets/Treasure Hunters/Merchant Ship/Sprites/Chest/Unlocked/7.png" id="9_7to4e"]
+[ext_resource type="PackedScene" uid="uid://bapqf8o7m2t2u" path="res://Components/InteractionIndicator.tscn" id="11_mdwsh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ix5ln"]
 size = Vector2(27, 19)
@@ -81,6 +82,9 @@ shape = SubResource("RectangleShape2D_i82xw")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oa8tr")
 animation = &"locked"
+
+[node name="InteractionIndicator" parent="." instance=ExtResource("11_mdwsh")]
+position = Vector2(0, -21)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

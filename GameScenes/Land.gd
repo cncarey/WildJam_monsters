@@ -37,11 +37,14 @@ func _ready():
 		
 	match Global.currentQuest:
 		"Quest1", "Crab":
-			crab.visible = true
+			shark.disableCollider()
+			starfish.disableCollider()
 		"Quest2", "Shark":
-			shark.visible = true
+			starfish.disableCollider()
+			crab.disableCollider()
 		"Quest4", "StarFish": 
-			starfish.visible = true
+			crab.disableCollider()
+			shark.disableCollider()
 		_:
 			pass
 			

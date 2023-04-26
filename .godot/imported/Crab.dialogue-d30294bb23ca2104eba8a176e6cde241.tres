@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4nijq"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_73pa3"]
 
 [resource]
-script = ExtResource("1_4nijq")
+script = ExtResource("1_73pa3")
 titles = {
 "Pre_Quest": "10",
 "Start": "2",
 "Start_Quest": "26",
 "Update_Quest": "40"
 }
-character_names = PackedStringArray("Crab", "{{Global.playerName}}:", "{{Global.playerName}}")
+character_names = PackedStringArray("Crab", "{{Global.playerName}}")
 first_title = "2"
 lines = {
 "1": {
@@ -28,8 +28,11 @@ lines = {
 "type": "dialogue"
 },
 "11": {
-"character": "{{Global.playerName}}:",
-"character_replacements": Array[Dictionary]([{
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "12",
+"text": "{{Global.playerName}}",
+"text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
 "value": "Global"
@@ -41,10 +44,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.playerName}}"
 }]),
-"next_id": "12",
-"text": "",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "",
+"translation_key": "{{Global.playerName}}",
 "type": "dialogue"
 },
 "12": {

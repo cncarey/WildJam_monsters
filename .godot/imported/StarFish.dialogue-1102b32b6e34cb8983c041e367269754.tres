@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0d6np"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7jprw"]
 
 [resource]
-script = ExtResource("1_0d6np")
+script = ExtResource("1_7jprw")
 titles = {
 "Pre_Quest": "10",
 "Start": "2",
@@ -282,7 +282,7 @@ lines = {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "next_id": "24",
-"text": "{{Global.playerName}}:",
+"text": "{{Global.playerName}}",
 "text_replacements": Array[Dictionary]([{
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -295,7 +295,7 @@ lines = {
 }]),
 "value_in_text": "{{Global.playerName}}"
 }]),
-"translation_key": "{{Global.playerName}}:",
+"translation_key": "{{Global.playerName}}",
 "type": "dialogue"
 },
 "24": {
