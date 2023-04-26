@@ -1,5 +1,6 @@
+[![Hosted on](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white)](https://theimmuneckay.itch.io)
 # WildJam_monsters
-Godot Wild Jam #56 game submission
+[Godot Wild Jam #56](https://itch.io/jam/godot-wild-jam-56) [game submission](https://theimmuneckay.itch.io/treasure-monster-hunter)
 
 Monster Treasure Hunter is a collect-a-thon platformer which semi-randomly places collectibles to find. You play as the protagonist who travels to a far of island search of treasure. Along the way you must help the towns people to find the treasure. 
 
@@ -19,5 +20,5 @@ esc or shift to pause
 
 
 ## Assets from
-[Pixel Frog](https://pixelfrog-assets.itch.io/pirate-bomb)
+[Pixel Frog](https://pixelfrog-assets.itch.io/pirate-bomb) 
 [Free Game Assets](https://free-game-assets.itch.io/free-street-animal-pixel-art-asset-pack)
