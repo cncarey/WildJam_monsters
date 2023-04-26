@@ -85,7 +85,7 @@ var whatToFollow = null
 
 func _unhandled_input(event):
 	if Input.is_action_just_pressed("Talk"):
-		if isTouched:
+		if isTouched && visible:
 			Talk()
 	pass
 

@@ -20,3 +20,4 @@ res://GameScenes/Characters/shark.tscn
 res://GameScenes/Characters/shark.gd
 res://GameScenes/Characters/starfish.gd
 res://GameScenes/Land.gd
+res://GameScenes/HUD/mini_map.gd

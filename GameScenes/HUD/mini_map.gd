@@ -36,23 +36,16 @@ func _ready():
 func updateMarkers():
 	var mapObjects = get_tree().get_nodes_in_group("miniMap")
 	
-	print("in miniMap")
-	var c = 0
 	for mmItem in mapObjects:
-		c += 1
-		print(str(c))
 		if !markers.has(mmItem):
 			var newMarker = null
 			
 			if "collectionType" in mmItem:
-				print(mmItem.collectionType)
 				mmItem.collection.removedFromMiniMap.connect(removeIcon)
 				newMarker = icons[mmItem.collectionType].duplicate()
 			elif "interactableType" in mmItem:
-				print(mmItem.interactableType)
 				newMarker = icons[mmItem.interactableType].duplicate()
 			elif "CharcterName" in mmItem && mmItem.visible:
-				print (mmItem.CharcterName)
 				newMarker = icons[mmItem.CharcterName].duplicate()
 				
 			if newMarker:
@@ -60,7 +53,6 @@ func updateMarkers():
 				newMarker.show()
 				markers[mmItem] = newMarker
 				
-				print(newMarker)
 	pass
 
 func _process(delta):
